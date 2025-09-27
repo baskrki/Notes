@@ -1,7 +1,58 @@
 \subsection{Definition and Examples}
 
 \begin{definition}
-    Let $\varphi : G \to H$ be a homomorphism. A \textit{fiber} over $a$, where $a \in H$, is the set of elements in $G$ that gets 
-    mapped to $a$ under $\varphi$ i.e 
+    Let $\varphi : G \to H$ be a homomorphism. A \textit{fiber} over $a$, where $a \in \operatorname{im}(\varphi)$, is the set of elements 
+    in $G$ that gets mapped to $a$ under $\varphi$ i.e 
     \[ X_a = \{ g \in G \mid \varphi(g)=a \} \]
+    It is also denoted by $\varphi^{-1}(a)$.
 \end{definition}
+
+
+\begin{definition}
+    We define the product of \textit{fibers} as following
+    \[ X_a \cdot X_b = \{g_1 g_2 \mid g_1 \in X_a , g_2 \in X_b\} \]
+\end{definition}
+
+\begin{remark}
+    By definition of the product of fibers, we can see that
+    \[ X_a \cdot X_b = X_{ab} \]
+\end{remark}
+
+\begin{proposition}
+    The set of \textit{fibers} over the elements of $\operatorname{im}(\varphi)$ forms a group. 
+\end{proposition}
+
+\begin{proof}
+    The identity element of the set is going to be $X_{1_H}$. The inverse of $X_a$ is going to be $X_{a^{-1}}$. And one can check that
+    the associativity the closure property holds.
+\end{proof}
+
+\begin{definition}
+    If $\varphi$ is a homomorphism $\varphi : G \to H$, the \textit{kernel} of $\varphi$ is the set 
+    \[ \{g \in G \mid \varphi(g)=1_H\} \]
+    and will be denoted by $\ker \varphi$.
+\end{definition}
+
+\begin{remark}
+    The kernel of $\varphi$ is the same as the fiber over $1_h$ i.e 
+    \[ \ker \varphi = X_{1_H} \] 
+\end{remark}
+
+\begin{definition}
+    Let $\varphi : G \to H$ be a homomorphism with kernel $K$. The \textit{quotient group} or the \textit{factor group}, $G/K$
+    (read as $G$ \textit{mod} $K$), is the group whose elements are the \textit{fibers} of $\varphi$. 
+\end{definition}
+
+
+\begin{proposition}
+    Let $\varphi : G \to H$ be a homomorphism of groups with kernel $K$. Let $X \in G/K$ be the fiber above $a$. i.e 
+    $X = \varphi^{-1}(a)$
+    \begin{enumerate}
+        \item For any $u \in X$, $X = \{u k \mid k \in K\}$
+        \item For any $u \in X$, $X=\{ku \mid k \in K\}$
+    \end{enumerate}
+\end{proposition}
+
+\begin{proof}
+    We'll prove $2.$ and leave $1.$ for the future me.
+\end{proof}
