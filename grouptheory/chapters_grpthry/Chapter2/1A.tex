@@ -1,0 +1,154 @@
+First, we'll define some things which will come in handy later on.
+\subsection{Definitions and Examples}
+
+\begin{definition}
+    A subgroup $H$ of $G$ is subset of $G$ such that every group axiom holds on $H$ with the same group operation of $G$.
+    If $H$ is a subgroup of $G$ we shall write $H \le G$.
+\end{definition}
+
+\begin{definition}
+    A \textit{kernel} of a function $\varphi : G \to H$ are groups, is the set 
+    \[ \ker(\varphi) = \{ g \in G \mid \varphi(g)=e_H \} \]
+    where $G$ and $H$ are groups.
+\end{definition}
+
+\begin{proposition}
+    A function $\varphi : G \to H$ is injective if and only if 
+    $\ker (\varphi) = \{0\} $.
+\end{proposition}
+
+\begin{definition}
+    A group action is a function $\mu : G \times A \to A$ such that
+    \begin{enumerate}
+        \item $\mu(g_1, \mu(g_2,a))=\mu(g_1 \cdot g_2,a)$
+        \item $\mu(e,a)=a$
+    \end{enumerate}
+    To make the notation simple enough, we abbreviate the notation of
+    $\mu(g,a)$ to $g \cdot a$ or sometimes $ga$.    
+\end{definition}
+
+\begin{remark}
+    Instead of saying 'Group Action of $G$ on $A$', we saying group $G$
+    acts on the set $A$. 
+\end{remark}
+
+\begin{definition}
+    Let group $G$ act on set $A$. 
+    A \textit{stabilizer of} $a$, where $a \in A$, is a the set consisting of elements
+    which fixes $a$. i.e
+    \[ G_a = \{ g \in G \mid g \cdot a = a \} \]
+\end{definition}
+
+\begin{proposition}
+    The $G_a$ is a subgroup of $G$ for all $a \in A$.
+\end{proposition}
+
+\begin{proposition}
+    Let the group $G$ act on a set $A$.             
+    The relation $\sim$ defined on $A$ by 
+    \[ a \sim b \iff a = hb \quad \text{ for some } h \in G\]
+    is a equivalence relation.
+\end{proposition}
+
+\begin{definition}
+    For each $a \in A$ the equivalence class under $\sim$ is called
+    \textit{orbit} of $a$ under action of $G$. Thus,
+    \[ \mathcal{O}(a) = \{ x \in A \mid x \sim a \} = \{ ha \mid h \in G \}\ \]
+\end{definition}
+
+\begin{definition}
+    Let $G$ be an abelian group. Define
+    \[ t=\{ g \in G \mid |g| < \infty \} \]
+    and call it the torsion subgroup of $G$.
+\end{definition}
+
+You can check that the set if a subgroup of $G$.
+
+\eject
+
+\subsection*{Problems and Solutions}
+
+\paragraph{Problem :} Find a non-abelian group $G$ such that the set of all elements with finite order is not a subgroup of $G$.
+
+\vspace{4mm}
+\textit{Solution :} $G=GL_2({\mathbb{Q}})$.
+Take $a=\begin{pmatrix}
+    0 && 1 \\
+    1 && 0 
+\end{pmatrix}$ 
+and 
+$b = \begin{pmatrix}
+    0 && 2 \\
+    1/2 && 0
+\end{pmatrix}$.
+
+Here, $|a|=|b|=2$ but $|ab|=\infty$.
+
+
+\paragraph{Problem :} Let $H$ and $K$ be subgroups of $G$. Prove that $H \cup K$ is a subgroup if and only if $H \subseteq K$ or 
+$K \subseteq H$.
+
+\vspace{4mm}
+\textit{Solution :}
+The $(\Leftarrow)$ is pretty simple. For $(\Rightarrow)$, suppose neither of $H \subseteq K$ or 
+$K \subseteq H$ is true. Then, there exists a element $h,k$  s.t $h \in H$ and $h \not \in K$ and $k \in K$ and $k \not \in H$.
+But since $H \cup K$ is a subgroup, $h\cdot k$ must be either in $H$ or $K$. If $h \cdot k \in H$ then $h^{-1} \cdot (h \cdot k) \in H$
+and if $h \cdot k \in K$ then $(h \cdot k) \cdot k^{-1} \in K$
+
+\paragraph{Problem :} Let $F$ be any field. Define 
+\[ SL_n(F) = \{ A \in GL_n(F) \mid \det(A)=1 \} \]
+(called the \textit{special linear group}). Prove that $SL_n(F) \le GL_n(F)$.
+
+\vspace{4mm}    
+\textit{Solution :} If we use some basic properties of determinants we should be able to prove that this is a subgroup of the general linear group.
+We know that,
+\[ \det(A B) = \det(A) \cdot \det(B)\]
+
+From this basic fact, we should be able to verify every subgroup axiom.
+
+\paragraph{Problem :} Prove that the intersection of arbitrary amount of non-empty collection of subgroups of $G$ is also a subgroup of $G$.
+
+
+\vspace{4mm}
+\textit{Solution :} Let us suppose 
+\[ K = \bigcap G_i \]
+where $G_i$ are the subgroups. 
+
+Let us take $a \in K$. Since, $a \in K$ that implies that $a \in G_i$. Since, of them are subgroups $a^{-1} \in G_i$ thus $a^{-1} \in K$.
+It's easy to see that $e_G \in K$.Associativity is also pretty easy to check. If $a \in G$ and $b \in G$ then $ab \in G$ as $a, b\in G_i$ which means $ab \in G_i$.
+
+\paragraph{Problem :} Let $A$ be an abelian group and fix some $n \in \mathbb{Z}$. Prove that the following subsets are subgroup of $A$,
+\begin{enumerate}
+    \item $\{a^n \mid a \in A\}$
+    \item $\{a \in A \mid a^n =1 \}$
+\end{enumerate}
+
+\vspace{4mm}
+\textit{Solution :} The problem can be easily solved if we know a facts about abelian group. Let $a,b \in A$ then
+\begin{enumerate}
+    \item $(ab)^n= a^n b^n$
+    \item $(a^{-1})^n=(a^n)^{-1}$ \quad (\textit{This is true in general for all group }$A$)
+\end{enumerate}
+
+\paragraph{Problem :} Let $H$ be a subgroup of additive group of rational numbers with the property that $1/x \in H$ for every non-zero element of $x \in H$.
+Prove that $H=0$ or $H=\mathbb{Q}$.
+
+\vspace{4mm}
+\textit{Solution :} If $H$ has no non-zero element then $H=\{0\}$. If $H$ has has a non-zero element $x$ then $x=\frac{a}{b}$ for some $a,b \in \mathbb{Z}$.
+Since, $\frac{a}{b} \in H$ then $a \in H$ because of the additive nature of $H$. Since, $a \in H$ we have $\frac{1}{a} \in H$, thus $1 \in H$ as 
+$a \cdot \frac{1}{a} = 1$. Since, $1 \in H$ we must have $-1 \in H$ as well. Thus, every integer $a$ is in $H$. Since, $a \in H$ we have $\frac{1}{a} \in H$
+thus, $\frac{b}{a} \in H$ for any $b \in \mathbb{Z}$. Thus, every rational number can be obtained by this method. Thus, $\mathbb{Q}=H$.
+
+\paragraph{Problem :} Show that $\{x \in D_{2n} \mid x^2 = 1\}$ is not a subgroup of $D_{2n}$ ($n>2$).
+
+
+\vspace{4mm}
+\textit{Solution :} We know that $(r^k s)^2=1$ for all $0 \le k \le n$. Thus, $(r^{k}s)(r^{j}s)= r^k (s r^j) s = r^{k-j}$. Thus $r^k=r^j \implies k=j$. But
+since $n > 2$ we can take different $k,j$. Thus, the set is not closed and thus it cannot be a subgroup of $D_2n$.
+
+\begin{remark}
+    Here, if you do not know about the Dihedral groups, then it might be little confusing but, essentially 
+    \[ D_{2n} = \{1,r,r^2,\ldots,r^{n-1},s,sr,\ldots,sr^{n-1} \} \] 
+    This Dihedral group is the set of symmetries of a regular $n$-gon. You can check that
+    \[ sr^k = r^{-k}s  \]
+\end{remark}

@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+% \usepackage{libertinus}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem} 
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usetikzlibrary{positioning}
+
+\setlength{\headheight}{15pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\parindent}{0pt}
+
+
+
+% Header and Footer
+\fancyhead[L]{Group Theory}
+\fancyhead[R]{\thepage}
+\fancyfoot[L]{}
+\fancyfoot[R]{}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\contentsname}{\centering\Huge Content}
+
+%new command
+\newcommand{\refer}[2]{\hyperref[sec:#1]{\color{blue}#2}}
+
+%Theorems styles without numbering
+{
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{proposition}{Proposition}[section]
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}
+
+\theoremstyle{definition}
+\newtheorem*{remark}{Remark}
+}
+
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{4cm} % push title down a bit
+
+    {\Huge Group Theory\\[0.5em]
+    % \Huge Theory\\[1em]
+    \huge Notes\\[1em]}
+    
+    {\LARGE Basu Dev Karki\par}
+\end{titlepage}
+
+{
+    \thispagestyle{plain}
+    \tableofcontents
+}
+
+\eject
+\section{Subgroups}
+\input{chapters_grpthry/Chapter2/1A.tex}
+\eject
+\input{chapters_grpthry/Chapter2/1B.tex}
+\eject
+\input{chapters_grpthry/Chapter2/1C.tex}
+\eject
+\input{chapters_grpthry/Chapter2/1D.tex}
+
+\eject
+\section{Quotients Groups and Homomorphism}
+\input{chapters_grpthry/Chapter3/2A.tex}
+
+
+
+
+
+\end{document}

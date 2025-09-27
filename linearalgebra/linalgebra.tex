@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+% \usepackage{libertinus}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem} 
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\parindent}{0pt}
+
+\DeclareMathOperator{\LL}{\mathcal{L}}
+\DeclareMathOperator{\MM}{\mathcal{M}}
+
+% Header and Footer
+\fancyhead[L]{Linear Algebra}
+\fancyhead[R]{\thepage}
+\fancyfoot[L]{}
+\fancyfoot[R]{}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\contentsname}{\centering\Huge Content}
+
+%new command
+%Theorems styles without numbering
+{
+    \theoremstyle{definition}
+    \newtheorem{definition}{Definition}[section]
+    \newtheorem{proposition}{Proposition}[section]
+    
+    \theoremstyle{plain}
+    \newtheorem{theorem}{Theorem}[section]
+    \newtheorem{lemma}{Lemma}
+    
+    \theoremstyle{definition}
+    \newtheorem*{remark}{Remark}
+    
+    }
+    
+\setlength{\headheight}{15pt}
+
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{4cm} % push title down a bit
+
+    {\Huge Linear Algebra\\[0.5em]
+    % \Huge Theory\\[1em]
+    \huge Notes\\[1em]}
+    
+    {\LARGE Basu Dev Karki\par}
+\end{titlepage}
+
+{
+    \thispagestyle{plain}
+    \tableofcontents
+}
+
+\eject
+
+\section{Linear Maps}
+\input{chapters_linalgbra/Linear_maps/3A.tex}
+\eject
+\input{chapters_linalgbra/Linear_maps/3B.tex}
+\eject
+\input{chapters_linalgbra/Linear_maps/3C.tex}
+\end{document}

@@ -1,0 +1,385 @@
+\subsection{Matrices}
+
+\subsubsection{Representing a Linear Map by a Matrix}
+
+\begin{definition}
+    Suppose $m$ and $n$ are two non-negative integers. A $m \times n$ matrix is $A$ is a rectangular array of elements in $\mathbf{F}$ 
+    with $m$ rows and $n$ columns
+    \[ A = \begin{pmatrix}
+        A_{1,1} && \cdots && A_{1,n} \\
+        \vdots && && \vdots \\
+        A_{m,1} && \cdots && A_{m,n} 
+    \end{pmatrix} \]
+    The $A_{i,j}$ represents the entry in $i$-th row and $j$-th column.
+\end{definition}
+
+\begin{definition}
+    Suppose $T \in \LL(V,W)$ and $v_1, \ldots, v_n$ is the basis of $V$ and $w_1, \ldots, w_m$ is a basis of $W$. The matrix of 
+    $T$ with respect to these bases is the $m \times n$ matrix $\mathcal{M}(T)$ whose entries $A_{i,j}$ are defined by
+    \[ Tv_k = A_{1,k} w_1 + \cdots A_{m,k} w_m \] 
+\end{definition}
+
+\textbf{Examples :}
+
+\vspace{4mm}
+Suppose $T \in \LL(\mathbf{F}^2, \mathbf{F}^3)$ is defined by 
+\[ T(x,y) = (x+3y, 2x+5y, 7x+9y) \]
+Then,
+\[ \mathcal{M}(T) = \begin{pmatrix}
+    1 && 3 \\
+    2 && 5 \\
+    7 && 9 \\
+\end{pmatrix} \] 
+
+As $T(1,0) = 1(1,0,0) + 2(0,1,0) + 7(0,0,1)$ and $T(0,1) = 3(1,0,0)+5(0,1,0)+9(0,0,1)$.
+
+
+\subsubsection{Addition and Scalar Multiplication of Matrices}
+
+\begin{definition}
+    The sum of two matrices of same size is obtained by adding corresponding entries in the matrices i.e 
+    \[ 
+    \begin{pmatrix}
+        A_{1,1} && \cdots && A_{1,n} \\
+        \vdots && && \vdots \\
+        A_{m,1} && \cdots && A_{m,n} 
+    \end{pmatrix} + \begin{pmatrix}
+        B_{1,1} && \cdots && B_{1,n} \\
+        \vdots && && \vdots \\
+        B_{m,1} && \cdots && B_{m,n} 
+    \end{pmatrix} \]
+    \[= \begin{pmatrix}
+        A_{1,1} + B_{1,1}&& \cdots && A_{1,n}+B_{1,n} \\
+        \vdots && && \vdots \\
+        A_{m,1} + B_{1,1} && \cdots && A_{m,n} + B_{m,n}
+    \end{pmatrix}
+     \]
+\end{definition}
+
+\begin{proposition}
+    Suppose $S,T \in \LL(V,W)$. Then $\mathcal{M}(S+T) = \mathcal{M}(S) + \mathcal{M}(T)$.
+\end{proposition}
+
+\begin{proof}
+    Follows from the definition.
+\end{proof}
+
+\begin{definition}
+    The product of a scalar and a matrix is obtained by multiplying each entry by the scalar i.e 
+    \[ \lambda \begin{pmatrix}
+        A_{1,1} && \cdots && A_{1,n} \\
+        \vdots && && \vdots \\
+        A_{m,1} && \cdots && A_{m,n} 
+    \end{pmatrix} = \begin{pmatrix}
+        \lambda A_{1,1} && \cdots && \lambda A_{1,n} \\
+        \vdots && && \vdots \\
+        \lambda A_{m,1} && \cdots && \lambda A_{m,n} 
+    \end{pmatrix} \]
+\end{definition}
+
+\begin{proposition}
+    Suppose $T \in \LL(V,W)$ and $\lambda \in \mathbf{F}$ then $\lambda \mathcal{M}(T) = \mathcal{M}(\lambda T)$.
+\end{proposition}
+
+\begin{proof}
+    Again, just use the definitions.
+\end{proof}
+
+\begin{theorem}
+    Suppose $\mathbf{F}^{m,n}$ be the set of all the matrices with entries in $\mathbf{F}$. Then, with addition and scalar multiplication
+    defined above $\mathbf{F}^{m,n}$ is a vector space and $\dim \mathbf{F}^{m,n} = mn$. 
+\end{theorem}
+
+\begin{proof}
+    Proving it is a vector space is pretty easy. To verify $\dim \mathbf{F}^{m,n}=mn$ define
+    \[ X_{i,j} = \begin{pmatrix}
+        0 && \cdots && \cdots && \cdots  \\
+        \vdots && \ddots && \vdots && \vdots \\
+        \vdots && \vdots && 1 && \vdots \\
+        \vdots && \vdots && \vdots && \ddots \\
+    \end{pmatrix} \]    
+    where every entry is $0$ expect the $A_{i,j}$ entry which is equal to $1$. Now, its easy to see that every $Z \in \mathbf{F}^{m,n}$
+    can be written as some linear combination of $X_{i,j}$'s. Thus, $F^{m,n}= \operatorname{span}\{X_{i,j}\}$ where $i,j$ vary with 
+    $i=1,\ldots,m$ and $j=1,\ldots,n$. Also, every matrix with only $0$ as its entry can only be written as linear combination of $X_{i,j}$
+    with all of its scalars equal to $0$. Since, there are $mn$ entries the dimension of $\mathbf{F}^{m,n}$ is equal to $mn$. 
+\end{proof}
+
+\subsubsection{Matrix Multiplication}
+
+\begin{definition}
+    Suppose $A$ is a $m \times n$ matrix and $B$ is $n \times p$ matrix. Then $AB$ is defined as to be an $m \times p$ matrix whose 
+    entry in row $j$ and column $k$ is given by
+    \[ (AB)_{j,k} = \sum_{r=1}^{n} A_{j,r} B_{k,r} \]
+\end{definition}
+
+\begin{remark}
+    The motivation for us to define the product like this comes from questioning, does $\mathcal{M}(ST)=\mathcal{M}(S) \mathcal{M}(T)?$
+    Suppose $v_1, \cdots, v_n$ is a basis of $V$ and $w_1, \cdots, w_m$ is the basis of $W$. Suppose $u_1, \cdots, u_k$ is the basis of
+    $U$ then consider the map $T : U \to V$ and $S : V \to W$. Suppose 
+    $\mathcal{M}(S)=A$ and $\mathcal{T}=B$. Then
+    \begin{align*}
+        (ST)u_k &= S\left( \sum_{r=1}^{n} B_{r,k} v_r \right) \\
+        &= \sum_{r=1}^{n} B_{r,k} Sv_r \\
+        &= \sum_{r=1}^{n} B_{r,k} \sum_{j=1}^{m} A_{j,r} w_j \\
+        &= \sum_{j=1}^{m} \left( \sum_{r=1}^{n} A_{j,r} B_{r,k}  \right) w_j
+    \end{align*}
+    That is how we define $M(ST)$ and that is why \textbf{Definition 1.13.} makes sense.
+\end{remark}
+
+\begin{proposition}
+    Suppose $T \in \LL(U,V)$ and $S \in \LL(V,W)$, then 
+    \[ \MM(ST)=\MM(S) \MM(T) \]
+\end{proposition}
+
+\begin{proof}
+    It follows from our remark and how we defined the product of the matrix.
+\end{proof}
+
+\begin{definition}
+    Suppose $A$ is a $m \times n$ matrix then
+    \begin{enumerate}
+        \item If $1 \le j \le m$ then $A_{j,\cdot}$ denotes the $1 \times n$ matrix consisting of row $j$ of $A$.
+        \item If $1 \le j \le n$ then $A_{\cdot, j}$ denotes $m \times 1$ matrix consisting of column $j$ of $A$.
+    \end{enumerate} 
+\end{definition}
+
+\textbf{Example :}
+
+Suppose $A = \begin{pmatrix}
+    1 && 2 && 3 \\
+    4 && 5 && 6
+\end{pmatrix}$ then 
+\[
+ A_{1, \cdot} = \begin{pmatrix}
+    1 && 2 && 3
+\end{pmatrix}
+\] 
+
+\[
+A_{\cdot, 3} = \begin{pmatrix}
+     3 \\ 6  
+\end{pmatrix}
+ \]
+
+
+\begin{theorem}
+    Suppose $A$ is a $m \times n$ matrix and $B$ is a $n \times p$ matrix. Then
+    \[ (AB)_{j,k} = A_{j, \cdot} B_{\cdot,k} \]
+    where $1 \le j \le m$ and $1 \le k \le p$.
+\end{theorem}
+
+\begin{proof}
+    The definition of matrix multiplication states that
+    \begin{align*}
+    (AB)_{j,k} &= \sum_{r=1}^{n} A_{j,r} B_{r,k} \\
+    &= A_{j,1} B_{1,k} + \cdots + A_{j,n} B_{n,k}
+    \end{align*} 
+    Now, if you take $A_{j,\cdot}$ and $B_{\cdot,k}$ and multiply it out you'll get the same thing. 
+\end{proof}
+
+\begin{theorem}
+    Suppose $A$ is a $m \times n$ matrix and $B$ is a $n \times p$ matrix. Then
+    \[ (AB)_{\cdot, k} = A B_{\cdot, k} \]
+    for $1 \le k \le p$.
+\end{theorem}
+
+\begin{proof}
+    Both of the matrix have size $m \times 1$. The $j$-th row of $(AB)_{\cdot,k}$ has the element $(AB)_{j,k}$ 
+    and the $j$-th row of $A B_{\cdot,k}$ has element $A_{j,1} B_{1,1} + A_{j,2} B_{2,1} + \cdots A_{j,n} B_{n,1}$.
+    Thus, from our previous theorem they're equal.   
+\end{proof}
+
+\begin{theorem}
+    Suppose $A$ is a $m \times n$ matrix and $b = \begin{pmatrix}
+        b_1 \\ \vdots \\ b_n
+    \end{pmatrix}$ is a $n \times 1$ matrix. Then, 
+    \[ Ab = b_1 A_{\cdot,1} + \cdots + b_n A_{\cdot, n} \] 
+\end{theorem}
+
+\begin{proof}
+    They both have same size and the entries of of $Ab$ is the same as of the right side.
+\end{proof}
+
+\begin{theorem}
+    Suppose $C$ is an $m \times c$ matrix and $R$ is a $c \times n$ matrix
+    \begin{enumerate}
+        \item The column $k$ of $CR$ is the linear combination of the columns of $C$, with coefficients of this linear combination coming
+              from column $k$ of $R$.
+        \item Then row $j$ of $CR$ is a linear combination of the rows of $R$, with the coefficients of this linear combination coming from
+              row $j$ of $C$.
+    \end{enumerate}
+\end{theorem}
+
+\begin{proof}
+    Use \textbf{Theorem 1.7.} and \textbf{Theorem 1.8.} for $1.$ and we'll prove $2.$ in the exercise section.
+\end{proof}
+
+\subsubsection{Column-Row Factorization and Rank of a Matrix}
+
+\begin{definition}
+    Suppose $A$ is a $m \times n$ matrix with entries in $\mathbf{F}$.
+    \begin{enumerate}
+        \item The \textbf{column rank} of $A$ is the dimension of the span of columns of $A$ in $\mathbf{F}^{1,m}$. 
+        \item The \textbf{row rank} of $A$ is the dimension of the span of rows of $A$ in $\mathbf{F}^{n,1}$.
+    \end{enumerate}
+\end{definition}
+
+\textbf{Example :}
+Suppose 
+\[ A = \begin{pmatrix}
+    1 && 2 && 3 \\
+    4 && 5 && 6 
+\end{pmatrix} \]
+then the column rank is the dimension of 
+\[ \operatorname{span}\left( \begin{pmatrix}
+    1 \\ 4
+\end{pmatrix} , \begin{pmatrix}
+    2 \\ 5
+\end{pmatrix}, \begin{pmatrix}
+    3 \\ 6
+\end{pmatrix} \right) \]
+
+and the row rank is the dimension of
+\[ \operatorname{span} \left(  \begin{pmatrix}
+    1 && 2 && 3
+\end{pmatrix} , \begin{pmatrix}
+    4 && 5 && 6
+\end{pmatrix}\right) \]
+
+\begin{definition}
+    The \textit{transpose} of a $m \times n$ matrix $A$, denoted by $A^t$, is the $n \times m$ matrix whose entries are given by
+    \[ (A^t)_{i,j} = A_{j,i} \] 
+\end{definition}
+
+\begin{theorem}
+    Suppose $A$ is an $m \times n$ matrix with entries in $\mathbf{F}$ and column rank $c \ge 1$. Then there exists a $m \times c$ matrix
+    $C$ and $c \times n$ matrix $R$, both with entries in $F$, such that $A=CR$. 
+\end{theorem}
+
+\begin{proof}
+    The list $A_{\cdot, 1}, \ldots, A_{\cdot, n}$ of columns of $A$ can be reduced to a basis of the span of the columns of $A$. This basis
+    has length $c$ by definition of column rank. The $c$ columns can be put together to form $m \times c$.
+    
+    Now, each column $k$ of $A$ is a linear combination of columns of $C$. Make the coefficients of this linear combination column $k$ of 
+    $R$. This matrix $R$ has size $c \times n$. Thus, $A = CR$ follows form \textbf{Theorem 1.9.}(a).
+\end{proof}
+
+\begin{theorem}
+    Suppose $A \in \mathbf{F}^{m,n}$ then the column rank of $A$ equals row rank of $A$.
+\end{theorem}
+
+\begin{proof}
+    Let $c$ be the column rank of $A$. Then $A=CR$ by the previous theorem where $C$ and $R$ are the matrix whose size are $m \times c$ and 
+    $c \times n$ respectively. Now, from textbf{Theorem 1.9.} (b) each row of $A$ is a linear combination of rows of $R$. Since, $R$ has 
+    $c$ columns this implies that 
+    \[  \operatorname{row rank} A \le c = \operatorname{column rank} A \] 
+
+    Now applying the same thing to $A^t$ we get
+    \begin{align*}
+        \operatorname{column rank } A &= \operatorname{row rank } A^t \\
+        &\le \operatorname{column rank} A^t \\ 
+        &= \operatorname{row rank} A 
+    \end{align*}
+    Thus, we're done.
+\end{proof}
+
+\begin{remark}
+    From now on, we'll limit our use our terminology of ``row rank" and ``column rank" to just ``rank". 
+\end{remark}
+
+\eject
+\subsubsection{Exercise}
+
+\paragraph{Problem :} Suppose $T \in \LL(V,W)$. Show that with respect to each choice of basis of $V$ and $W$, the matrix of $T$ has 
+at least $\dim \operatorname{range} T$ nonzero entries.  
+
+\vspace{4mm}
+\textit{Solution :} Let $v_1, \ldots, v_n$ be the the basis of $V$ and $w_1, \ldots, w_m$ be the basis of $W$ then suppose $k$ of those
+vectors are $0$ under $T$ and let those vectors be $v_1, \ldots, v_k$. Thus, 
+\[ \operatorname{range} T = \operatorname{span} \{Tv_{k+1}, \ldots, Tv_{n}\} \]
+Thus, $\dim \operatorname{range} T \le n-k$. But since $T(v_j) \neq 0$ for each $k+1 \le j \le n$, there must be one entry thats not $0$
+for each $T(v_j)$. Since, the number of $T(v_j) \neq 0$ are exactly $n-k$ and $n-k \ge \dim \operatorname{range} T$ this means there is 
+at least $\dim \operatorname{range} T$ nonzero entries in matrix of $T$.
+
+\paragraph{Problem :} Suppose $V$ and $W$ are finite-dimensional and $T \in \LL(V,W)$. Prove that $\dim \operatorname{range} T = 1$ if and 
+only if there exist a basis of $V$ and a basis of $W$ such that with respect to these bases, all the entries of $\MM(T)$ is $1$.
+
+\vspace{4mm}
+\textit{Solution :} Let us first prove $(\Leftarrow)$. Suppose $A_{i,j}=1$ for all $i,j$. That means, $T(v_i) = \sum w_j$ where 
+$v_1,\ldots,v_n$ is the basis of $V$ and $w_1,\ldots,w_m$ is the basis of $W$. Thus, $Tv_1=Tv_2=\cdots=Tv_n=k$ and
+$\operatorname{range} T = \operatorname{span}\{Tv_1,\cdots,Tv_n\} = \operatorname{span}\{k\} \implies \dim \operatorname{range} T = 1$.
+
+Now, for the $(\Rightarrow)$ we use the Fundamental theorem of linear maps,
+\[ \dim V = \dim \operatorname{null} T + \dim \operatorname{range} T  \]
+\[ \implies \dim V = \dim \operatorname{null} T + 1 \]
+
+Now, suppose $v_2, \ldots, v_n$ be that basis of $\operatorname{null} T$. Then extend this basis to $V$, suppose $v_2,\ldots,v_n,v$ then
+\[ T(v_2)=T(v_3)= \cdots = T(v_n) = 0 \]
+\[ \implies T(v) = T(v_2+v)= \cdots = T(v_n+v) \]
+One can check that $v_2+v,\ldots,v$ is a basis of $V$(as its linearly independent and has length $n$). Now, since 
+$\dim \operatorname{range} T = 1$ we have $T(x)= \lambda T(v)$ and we choose $T(v),w_2,\ldots,w_m$ as our basis for $W$. Now,
+we use a clever trick and set $w_1=T(v)-w_2-w_3- \cdots - w_m$ and notice that $w_1,\cdots,w_m$ is a basis of $W$.  Thus,
+\[ T(v_i)=T(v)=\sum w_j \]
+Thus, we're done.
+
+
+\paragraph{Problem :}
+Suppose that \(D\in\LL(\mathcal{P}_{3}({\bf R}),\mathcal{P}_{2}({\bf R}))\) is the differentiation map defined by \(Dp=p^{\prime}\). 
+Find a basis of \(\mathcal{P}_{3}({\bf R})\) and a basis of \(\mathcal{P}_{2}({\bf R})\) such that the matrix of \(D\) with respect to these 
+bases is
+\[
+\left(\begin{array}{cccc}1&0&0&0\\ 0&1&0&0\\ 0&0&1&0\end{array}\right)
+\]
+
+\vspace{4mm}
+\textit{Solution :} Take the the basis of  $\mathcal{P}_3({\bf R})$ to be $z,\frac{z^2}{2},\frac{z^3}{3},1$ and $\mathcal{P}_2({{\bf R}})$ to be 
+$1,z,z^2$.
+
+\paragraph{Problem :}
+Suppose \(V\) and \(W\) are finite-dimensional and \(T\in\LL(V,W)\). Prove that there exist a basis of \(V\) and a basis of \(W\) 
+such that with respect to these bases, all entries of \(\mathcal{M}(T)\) are \(0\) except that the entries in row \(k\), column \(k\), equal 
+\(1\) if \(1\leq k\leq\text{dim}\) range \(T\).
+
+\vspace{4mm}
+\textit{Solution :} Let $\dim V = n$ and $\dim \operatorname{range} T = m$. Now, let $v_{m+1}, \cdots, v_n$ be the basis of 
+$\dim \operatorname{null} T$. Now, extend these basis such in the following way
+\[ (v_1,\ldots,v_m,v_{m+1},\ldots,v_n) \]
+Here, $T(v_i) \neq 0$ for $1 \le i \le m$. Now, since $(v_1,\cdots,v_m,v_{m+1},\cdots,v_n)$ spans $V$ the list $(Tv_1,,\ldots,Tv_m)$ 
+must span $\operatorname{range} T$ and in fact it is the basis of $\operatorname{range} T$ (one can check that its linearly independent). 
+We can now extend this basis to the basis of $W$. Suppose $(Tv_1,\ldots,Tv_m,w_1,\ldots,w_k)$ is the basis of $W$. Then,
+\[ T(v_i) = 0 \cdot T(v_1) + \cdots + 1 \cdot T(v_i) + \cdots + 0 \cdot w_k \]
+for $1 \le i \le m = \dim \operatorname{range} T$. But for $i > \dim \operatorname{range} T$ we have
+\[ 0=T(v_i)= 0 \cdot T(v_1) + 0 \cdot T(v_2) + \cdots + 0 \cdot w_k \]
+
+
+\paragraph{Problem :}
+Suppose \(\sigma_{1},...,\sigma_{m}\) is a basis of \(V\) and \(W\) is finite-dimensional. Suppose \(T\in\LL(V,W)\). Prove that there 
+exists a basis \(w_{1},...,w_{n}\) of \(W\) such that all entries in the first column of \(\mathcal{M}(T)\) [with respect to the bases 
+\(\sigma_{1},...,\sigma_{m}\) and \(w_{1},...,w_{n}\)] are \(0\) except for possibly a \(1\) in the first row, first column.
+
+\vspace{4mm}
+\textit{Solution :} 
+
+
+% \paragraph{Problem :}
+% Suppose \(w_{1},...,w_{n}\) is a basis of \(W\) and \(V\) is finite-dimensional. Suppose \(T\in\LL(V,W)\). Prove that there exists 
+% a basis \(\sigma_{1},...,\sigma_{m}\) of \(V\) such that all entries in the first row of \(\mathcal{M}(T)\) [with respect to the bases 
+% \(\sigma_{1},...,\sigma_{m}\) and \(w_{1},...,w_{n}\)] are \(0\) except for possibly a \(1\) in the first row, first column.
+
+
+% \paragraph{Problem :}
+% Suppose \(A\) is an \(m\)-by-\(n\) matrix and \(B\) is an \(n\)-by-\(p\) matrix. Prove that
+% \[
+% (AB)_{j,:}=A_{j,:}\,B
+% \]
+% for each \(1\leq j\leq m\). In other words, show that row \(j\) of \(AB\) equals (row \(j\) of \(A\)) times \(B\).
+
+
+% \paragraph{Problem :}
+% Suppose \(a=\left(\begin{array}{ccc}a_{1}&...&a_{n}\end{array}\right)\) is a \(1\)-by-\(n\) matrix and \(B\) is an \(n\)-by-\(p\) matrix.
+%  Prove that
+% \[
+% aB=a_{1}B_{1,:}+...+a_{n}B_{n,:}\;.
+% \]
+% In other words, show that \(aB\) is a linear combination of the rows of \(B\), with the scalars that multiply the rows coming from \(a\).
+

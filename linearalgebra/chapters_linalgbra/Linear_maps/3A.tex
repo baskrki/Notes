@@ -1,0 +1,290 @@
+\subsection{Vector Spaces of Linear Maps}
+
+\subsubsection{Definiton and Examples of Linear Maps}
+\begin{definition}
+    A \textit{linear map} from $V$ to $W$ is a function $T: V \to W$ with the following properties.
+    \begin{enumerate}
+        \item (\textbf{Additivity}) $T(u+w)=T(u)+T(w)$ for all $u,v \in V$
+        \item (\textbf{Homogeneity}) $T(\lambda u)=\lambda T(u)$ for all $\lambda \in \mathbf{F}$ and for all $u \in V$
+    \end{enumerate}
+\end{definition}
+
+\begin{remark}
+    Some mathematicians use the phrase \textit{linear transformation}, which means the same as linear map.
+\end{remark}
+
+\begin{definition}{(Notation)}
+    \begin{enumerate}
+        \item The set of linear maps from $V \to W$ is denoted by $\mathcal{L}(V,W)$.
+        \item The set of linear maps from $V \to V$ is denoted bt $\mathcal{L}(V)$. In other words, $\mathcal{L}(V,V)=\mathcal{L}(V)$.
+    \end{enumerate}
+\end{definition}
+
+\textbf{Examples}:
+
+\vspace{4mm}
+\textbf{zero}
+
+We will let the symbol $0$ denote the liner map that takes every element of some vector space to additive identity of some another 
+vector space. Thus, $0 \in \mathcal{L}(V,W)$ is defined by 
+\[ 0(v)=0 \]
+
+\textbf{identity operator}
+
+Let $I \in \mathcal{L}(V)$ be defined by
+\[ I(v)=v \]
+
+\textbf{differentiation}
+
+Let $D \in \mathcal{L}(\mathcal{P}(\mathbf{R}))$ be defined by
+\[ D(p) = p' \]
+
+\textbf{integration}
+
+Let $T \in \mathcal{L}(\mathcal{P}(\mathbf{R}),\mathbf{R})$ be defined by\[ T(p) = \int_0^1 p \]
+
+\textbf{composition}
+
+Fix a polynomial $q \in \mathcal{P}(\mathbf{R})$. Let $T \in \mathcal{L}(\mathcal{P}(\mathbf{R}))$ be defined by
+\[ T(p) = (p \circ q) \]
+
+\begin{remark}
+    We'll limit the Notation of $T(v)$ to just $Tv$ for convenience.
+\end{remark}
+
+
+\begin{theorem}
+    Suppose $v_1, \ldots, v_n$ is a basis of $V$ and $w_1, \ldots, w_n \in W$. Then, there exists a unique linear map $T: V \to W$ such that
+    \[ Tv_k=w_k \]
+    for $i=1,2,3,\ldots,n$.  
+\end{theorem}
+
+\begin{proof}
+    First we show the existence of such map.
+    Define $T : V \to W$ by
+    \[ T(c_1 v_1 + \cdots + c_n v_n) = c_1 w_1 + \cdots + c_n w_n \]
+    where $c_i \in \mathbf{F}$. Since, $v_1,\ldots,v_n$ is a basis of $V$, it maps every element of $V$ to $W$, thus it is a function.
+    
+    Now, set $c_k=1$ and all other $c$'s to be $0$ to show that $Tv_k = w_k$. From, here one can show that $T$ is indeed a linear map.
+    To show the uniqueness, suppose $T' \in \mathcal{L}(V,W)$ and $T'v_k=w_k$.
+    Using the properties of linear map,
+    \[ T'(c_1v_1 + \cdots + c_n v_n) = c_1 w_1 + \cdots + c_n w_n \] 
+    Thus, $T$ and $T'$ agree on every input, thus $T = T'$.
+
+
+
+\end{proof}
+
+
+\subsubsection{Algebraic Operation on \texorpdfstring{$\mathcal{L}(V,W)$}{mathcal{L}(V,W)}}
+
+\begin{definition}
+    Suppose $T,S \in \mathcal{L}(V,W)$ and $\lambda \in \mathbf{F}$ then the \textit{sum} and the \textit{product} of the linear maps from $V$ to $W$ is defined by
+    \[ (S+T)(v) = Sv + Tv \quad \text{and} \quad (\lambda T)(v) = \lambda (Tv) \]
+    for all $v \in V$.
+\end{definition}
+
+\begin{proposition}
+    With the operations defined above, the set $\mathcal{L}(V,W)$ is a vector space.
+\end{proposition}
+
+\begin{proof}
+    The additive identity for $\mathcal{L}(V,W)$ is the zero linear map $0(v)=0$. The inverse for $T$ is $((-1)T)v= -(Tv)$. And the 
+    rest of the axioms are left for readers (future me) to verify.
+\end{proof}
+
+\begin{definition}
+    Suppose $T \in \mathcal{L}(U,V)$ and $S \in \mathcal{L}(V,W)$ then the \textit{product} $ST \in \mathcal{L}(U,W)$ is defined by
+    \[ (ST)(u) = S(Tu) \] 
+    for all $u \in U$.
+\end{definition}
+
+\begin{remark}
+    Be careful about the domains of $S$ and $T$. Here, the domain of $S$ must be the co-domain of $T$.
+\end{remark}
+
+\begin{proposition}
+    For the product of linear maps, the following holds
+    \begin{enumerate}
+        \item (\textbf{associativity}) $(T_1 T_2) T_3 = T_1(T_2 T_3)$ whenever the product makes sense(i.e $T_3$ must map to domain of 
+        $T_2$ and $T_2$ must map to the domain of $T_1$).
+        \item (\textbf{identity}) $TI_{W,V} = I_{V,W}T$ whenever $T \in \mathcal{L}(V,W)$. Here $I_{V,W}, I_{W,V}$ are the identity linear maps
+        from $V$ to $W$ and $W$ to $V$. We'll just limit he notation to $TI=IT$.
+        \item (\textbf{distributivity}) $(S_1 + S_2)T=S_1 T + S_2 T$ and $S(T_1 + T_2)=ST_1 + ST_2$ for $T,T_1,T_2 \in \mathcal{L}(U,V)$ and 
+        $S,S_1,S_2 \in \mathcal{L}(V,W)$.
+    \end{enumerate}
+\end{proposition}
+
+\begin{proposition}
+    Suppose $T$ is a linear map from $V$ to $W$. Then, $T(0)=0$.
+\end{proposition}
+
+\begin{proof}
+    From the definition of linear map we have,
+    \[ T(0)=T(0+0)=T(0)+T(0) \implies T(0)=0 \]
+\end{proof}
+
+\eject
+
+\subsubsection{Exercises}
+
+
+\paragraph{Problem :} Suppose $b,c \in \mathbf{R}$. Define $T : \mathbf{R}^3 \to \mathbf{R}^2$ by
+\[ T(x,y,z)=(2x-4y+3z,6x+cxyz) \]
+
+Show that $T$ is a linear map if and only if $b=c=0$.
+
+\vspace{4mm}
+\textit{Solution :} $(\Leftarrow)$ is pretty simple as you just have to verify the two axioms. For $(\Rightarrow)$, we know that
+if it is a linear map then $T(0)=0 \implies b=0$. Also, using the first axiom we get
+\[ T((x,y,z)+(1,0,0))=T((x,y,z))+T((1,0,0)) \implies c=0 \]
+
+\paragraph{Problem :} Suppose $b,c \in \mathbf{R}$. Define $T : \mathcal{P}(\mathbf{R}) \to \mathbf{R}^2$ by
+\[ Tp = \left( 3p(4)+5p'(6)+bp(1)p(2), \int_{-1}^{2} x^3 p (x) dx + c \sin(p(0)) \right) \]
+
+Show that $T$ is a linear map if and only if $b=c=0$.
+
+\vspace{4mm}
+\textit{Solution :} $(\Leftarrow)$ is pretty simple. For $(\Rightarrow)$, we can use the first axiom
+\[ T(p+q) = Tp + Tq\]
+we'll just look at the first component first,
+\begin{align*}
+    \implies 3(p+q)(4) + 5(p+q)'(6)+ b(p+q)(1)(p+q)(2) = & 3p(4)+5p'(6)+  bp(1)p(2)  + \\ 
+    & 3q(4)+5q'(6)+bq(1)q(2) \\
+\end{align*}
+Since, $(p+q)(4)=p(4)+q(4)$ and $(p+q)'(6)= p'(6) + q'(6)$, we can simplify is down to,
+\[ b(p(1)q(2)+p(2)q(1))=0 \]
+Now, if you choose polynomials $p,q > 0$ for $x>0$ then $b=0$. A similar argument works for $c=0$.
+
+\paragraph{Problem :} Suppose $T \in \mathcal{L}(V, W)$ and $v_1,\ldots, v_m$ is a list of vectors in $V$ such that
+$Tv_1 ,\ldots, Tv_m$ is a linearly independent list in $W$. Prove that $v_1 , \ldots, v_m$ is
+linearly independent.
+
+\vspace{4mm}
+\textit{Solution :} Suppose on the contrary that $v_1,\ldots,v_m$ are not linearly independent in $V$, then there exists 
+$\lambda_1, \ldots, \lambda_m$ not all zero such that 
+\[ \lambda_1 v_1 + \cdots + \lambda_m v_m = 0 \]  
+But $T(\lambda_1 v_1 + \cdots + \lambda_m v_m)= \lambda_1 T(v_1) + \cdots + \lambda_m T(v_m)$ which implies
+\[ \lambda_1 T(v_1) + \cdots + \lambda_m T(v_m) = 0 \implies \lambda_i = 0 \]
+a contradiction.
+
+\eject
+
+\paragraph{Problem :} Show that every linear map from a one-dimensional vector space to itself is
+multiplication by some scalar. More precisely, prove that if $\dim V = 1$ and
+$T \in \mathcal{L}(V)$, then there exists $\lambda \in \mathbf{F}$ such that $Tv = \lambda v$ for all $v \in V$.
+
+\vspace{4mm}
+\textit{Solution :}
+Since $\dim V = 1$ there exists a $v \in V$ s.t every $v_i \in V$ can be written as $\lambda_i v$ for some $\lambda_i \in \mathbf{F}$.
+Thus, $v_i = \lambda_i v \implies T(v_i) = \lambda_i T(v)$. Since, $T(v) = v_j \in V$ for some $j$. 
+Thus,  $T(v_i)=\lambda_i \lambda_j v = \lambda_j v_i$. 
+
+\paragraph{Problem :} Give an example of a function $\varphi : \mathbf{R}^2 \to \mathbf{R}$ such that
+\[ \varphi(av)= a \varphi(v) \]
+for all $a \in \mathbf{R}$ and $v \in \mathbf{R}^2$ but $\varphi$ is not linear.
+
+\vspace{4mm}
+\textit{Solution :} $\varphi(x,y)=\begin{cases}
+    \frac{x^3}{x^2+y^2} & \text{if } (x,y) \neq (0,0) \\
+    0 & \text{if } (x,y)=(0,0)
+\end{cases}$
+
+\paragraph{Problem :} Give an example of a function $\varphi : \mathbf{C} \to \mathbf{C}$ such that
+\[ \varphi(v+w)= \varphi(v)+\varphi(w) \]
+for all $v,w \in \mathbf{C}$ and but $\varphi$ is not homogeneous.
+
+\vspace{4mm}
+\textit{Solution :} $\varphi(x)=\operatorname{Re}(x)$.
+
+\paragraph{Problem :} Prove or give a counter example: Fix a polynomial $q \in \mathcal{P}(\mathbf{R})$. \newline 
+Let $T : \mathcal{P}(\mathbf{R}) \to \mathcal{P}(\mathbf{R})$ be defined by $Tp = q \circ p$ then $T$ is a linear map.
+
+\vspace{4mm}
+\textit{Solution :}
+Assume it was a linear map then $T(0)=q(0)=0$. Just pick $q(0) \neq 0$.
+Example : $q(x)=x+1$. 
+
+\paragraph{Problem :} Suppose $V$ is finite-dimensional and $T \in \mathcal{L}(V)$. Prove that $T$ is a scalar multiple
+of identity if and only if $ST=TS$ for every $S \in \mathcal{L}(V)$.
+
+\vspace{4mm}
+\textit{Solution :} I really tried but it seems very hard to prove $(\Rightarrow)$ but will come back later.
+
+\paragraph{Problem :} Suppose $U$ is a subspace of $V$ with $U \neq V$. Suppose $S \in \mathcal{L}(U,W)$ and $Su \neq 0$ for some $u \in U$.
+Define $T : V \to W$ by
+\[ Tv = \begin{cases}
+    Sv & \text{if } v \in U \\
+    0 & \text{if } v \in V \text{ and } v \not \in U
+\end{cases} \]
+Prove that $T \not \in \mathcal{L}(V,W)$.
+
+\vspace{4mm}
+\textit{Solution :} Suppose it is a linear map, then $T(u+v)=Tu + Tv$ where $u \in U$ and $v \in V$ and $v \not \in U$.
+One can check that $v+u \in V$ but $v+u \not \in U$. Thus, $0=Tu=Su$, but just take $u$ s.t $Su \neq 0$.
+
+\eject
+
+\paragraph{Problem :} Suppose $V$ is finite-dimensional. Prove that every linear map on a subspace of $U$ can be extended to a linear map 
+on $V$. In other words, let $U$ be a subspace of $V$ and  $S \in \mathcal{L}(U,W)$, then there exists a $T \in \mathcal{L}(V,W)$ such that
+$Tu = Su$ for all $u \in U$. 
+
+\vspace{4mm}
+\textit{Solution :} Let $u_1,\ldots,u_m$ be the basis of $U$ and let $u_1,\ldots,u_m,v_1,\ldots,v_k$ be the extended basis of $V$.
+Let $x=a_1u_1 + \cdots + a_m u_m + b_1 v_1 + \cdots + b_k v_k$ and define 
+\[ T(x)=a_1 Su_1 + \cdots a_m Su_m + b_1 v_1 + \cdots + b_k v_k \]
+From here its easy to see that $Tu=Su$ for all $u \in U$. We just have to prove this is a linear map on $V$. Let 
+$y=x=c_1u_1 + \cdots + c_m u_m + d_1 v_1 + \cdots + d_k v_k$ then
+\[ T(x+y)=(a_1+c_1)Su_1 + \cdots + (a_m+c_m) + (b_1+d_1)v_1 + \cdots + (b_k + d_k)v_k \] 
+\[ \implies T(x+y) = a_1 Su_1 + \cdots a_m Su_m + b_1 v_1 + \cdots + b_k v_k + c_1 Su_1 + \cdots c_m Su_m + d_1 v_1 + \cdots + d_k v_k \]
+\[ \implies T(x+y)= Tx + Ty \]
+Similarly one can prove $T(\lambda x) = \lambda T(x)$.
+
+\paragraph{Problem :} Suppose $V$ is finite-dimensional with $\dim V > 0$ and suppose $W$ is infinite-dimensional. Prove that $\mathcal{L}(V,W)$
+is infinite-dimensional.
+
+\vspace{4mm}
+\textit{Solution :} Let $v_1,\ldots, v_m$ be basis of $V$. Suppose $\mathcal{L}(V,W)$ is finite-dimensional then every $T \in \mathcal{L}(V,W)$
+can be written as 
+\[ T(x) = \lambda_1 T_1(x) + \lambda_2 T_2(x) + \cdots + \lambda_k T_k(x) \]
+
+for some fixed $T_1,T_2,\cdots,T_k \in \mathcal{L}(V,W)$ and $\lambda_i \in \mathbf{F}$.
+
+Since, $W$ is infinite-dimensional, $\exists w \in W$ s.t 
+$w \not \in  \operatorname{span}\{T_1(x), T_2(x), \ldots,T_k(x)\}$ for some fixed $x \in V$.
+
+Now, set $x=v_i$ then $w \neq \lambda_1 T_1(v_i) + \lambda_2 T_2(v_i) + \cdots + \lambda_k T_k(v_i)$. One can find $T \in \mathcal{L}(V,W)$
+such that $T(v_i)=w$ thus $T(v_i) \neq \lambda_1 T_1(v_i) + \lambda_2 T_2(v_i) + \cdots + \lambda_k T_k(v_i)$ contradicting our assumption.
+
+\paragraph{Problem :} Let $V$ be finite-dimensional and let $\dim V > 1$. Prove that there exists $S,T \in \mathcal{L}(V)$ such that $ST \neq TS$.
+
+\vspace{4mm}
+\textit{Solution :}
+Let $v_1,\ldots,v_m$ be the basis of $V$ and let $x=a_1v_1 + \cdots + a_m v_m$. Define $S(x)=a_1v_1$ and 
+$T(x)=a_1v_2+a_2v_3 + \cdots + a_{m-1}v_m + a_{m}v_1$. So, $T(S(x))=a_1v_2$ and $S(T(x))=a_m v_1$, thus
+\[ ST = TS \iff a_1 = a_m \]
+but one can always choose $x$ s.t $a_1 \neq a_m$.
+
+\paragraph{Problem :} Suppose $V$ is finite-dimensional. Show that the only two-sided ideas of $\mathcal{L}(V)$ are $\{0\}$ and 
+$\mathcal{L}(V)$. A subspace $\mathcal{E}$ of $\mathcal{L}(V)$ is called a two-sided ideal if for every $E \in \mathcal{E}$ and 
+$T \in \mathcal{L}(V)$, $TE \in \mathcal{E}$ and $ET \in \mathcal{E}$.
+
+\vspace{4mm} 
+\textit{Solution :} 
+Let $\mathcal E$ be a two-sided ideal of $\mathcal L(V)$. If $\mathcal E=\{0\}$ we are done. Otherwise pick a nonzero operator $A\in\mathcal E$.
+Choose $v\in V$ with $Av\neq0$. Fix any $y,z\in V$. Choose $R\in\mathcal L(V)$ with $R(z)=v$ and choose $S\in\mathcal L(V)$ with $S(Av)=y$. 
+Then
+
+$$
+T:=S A R\in\mathcal E
+$$
+
+(since $\mathcal E$ is a two-sided ideal), and
+
+$$
+T(z)=S(A(R(z)))=S(A(v))=y.
+$$
+
+Thus $\mathcal E$ contains, for every pair $y,z$, an operator that sends $z$ to $y$. Taking a basis $u_1,\dots,u_n$ of $V$ and the operators
+$E_{ij}$ defined by $E_{ij}(u_j)=u_i$ and $E_{ij}(u_k)=0$ for $k\ne j$, we see each $E_{ij}$ lies in $\mathcal E$. The set $\{E_{ij}\}$ 
+spans $\mathcal L(V)$, so $\mathcal E=\mathcal L(V)$. Hence the only two-sided ideals are $\{0\}$ and $\mathcal L(V)$. $\square$

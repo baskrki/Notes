@@ -1,0 +1,327 @@
+\subsection{Null Spaces and Ranges}
+
+\subsubsection{Null Space and Injectivity}
+\begin{definition}
+    let $T \in \mathcal{L}(V,W)$, the null space of $T$, written as $\operatorname{null}T$ is the following set
+    \[ \operatorname{null} T = \{v \in V \mid Tv=0\} \]
+\end{definition}
+
+\textbf{Examples}
+
+\begin{enumerate}
+    \item The zero map from $V$ to $W$ has a null space $V$ as everything gets mapped to $0$.
+    \item Let $D \in \mathcal{L}(\mathcal{P}(\mathbf{R}))$ be the differentiation map defined by $Dp=p'$. The only functions whose
+          derivative is equal to $0$ are the constant function. Thus, $\operatorname{null} D$ is the set of constant functions.
+    \item Let $D \in \mathcal{L}(\mathcal{P}(\mathbf{R}))$ be the multiplication by $x^2$ map i.e $Dp=x^2 p$. The only polynomial
+          such that $x^2 p = 0$ is $p = 0$. Thus, $\operatorname{null} D = \{0\}$.
+\end{enumerate}
+
+\begin{proposition}
+    Suppose $T \in \mathcal{L}(V,W)$. Then, $\operatorname{null} T$ is a subspace of $V$.
+\end{proposition}
+
+\begin{proposition}
+    Let $T \in \mathcal{T}(V,W)$. Then $T$ is injective $\iff$  $\operatorname{null} T =\{0\}$. 
+\end{proposition}
+
+\begin{proof}
+    Suppose $T$ is injective. Since it is a linear map $T(0)=0$, thus by injectivity the only thing that gets map to $0$ is $0$. Thus,
+    $\operatorname{null} T = \{0\}$. Suppose $T$ is such that $\operatorname{null} T = \{0\}$ then 
+    \[ T(v)=T(w) \implies T(v)+(-1)T(w)=0 \]
+    \[ \implies T(v)+T(-w) = 0 \implies T(v-w)=0 \implies v=w \]
+    Thus, the map is injective.
+\end{proof}
+
+\subsubsection{Range and Surjectivity}
+
+\begin{definition}
+    Let $T \in \mathcal{L}(V,W)$, the \textit{range} of $T$ is the following set,
+    \[ \operatorname{range} T = \{Tv \mid v \in V\} \]
+\end{definition}
+
+\textbf{Examples}
+
+\begin{enumerate}
+    \item If $T$ is the zero map then the range of $T$ is \{0\}.
+    \item Suppose $D \in \mathcal{L(\mathcal{P}(\mathbf{R}))}$ be the differentiation map. Since, for every polynomial $q$ there exists
+          a polynomial $p$ such that $p'=q$, the range is $\mathcal{P}(\mathbf{R})$.
+\end{enumerate}
+
+\begin{proposition}
+    Let $T \in \mathcal{L}(V,W)$ then $\operatorname{range} T$ is a subspace of $W$.
+\end{proposition}
+\begin{proof}
+    Since, $0 \in V$ we know $T(0)=0 \in \operatorname{range}T$. Now, suppose $x, y \in \operatorname{range} T$ then
+    $x=Tv$ and $y=Tw$. Since, $v+w \in V$, $T(v+w) \in \operatorname{range} T \implies Tv + Tw \in \operatorname{range} T$ which mean
+    $x+y \in \operatorname{range} T$. And $x \in \operatorname{range} T \implies Tv \in \operatorname{range}T$ which means 
+    $T(\lambda v) \in \operatorname{range} T$ as $\lambda v \in V$. Thus, $\lambda x = \lambda T(v) = T(\lambda v) \in 
+    \operatorname{range}T$.  
+\end{proof}
+
+\eject 
+
+
+\subsubsection{Fundamental Theorem of Linear Maps}
+
+\begin{theorem}
+    Suppose $V$ is finite-dimensional and $T \in \mathcal{L}(V,W)$. Then $\operatorname{range} T$ is finite-dimensional and
+    \[ \dim V = \dim \operatorname{null} T + \dim \operatorname{range} T \]
+\end{theorem}
+
+\begin{proof}
+    We know that $\operatorname{null} T$ is a subspace of $V$ then since $V$ is finite-dimensional it has a basis. Let $u_1,\ldots,u_m$
+    be the basis of $\operatorname{null} T$. Then we can extend this basis to a basis of $V$. Let $u_1,\ldots,u_m,v_1,\ldots,v_n$ be the
+    basis of $V$. Then,
+    \[ x = a_1 u_1 + \cdots + a_m u_m + b_1 v_1 + \cdots b_n v_n \]
+    \[ \implies Tx = b_1 Tv_1 + \cdots + b_n T v_n \]
+    Thus, every $Tv$ can be written as a linear combination of $Tv_1, \ldots, Tv_n$. Thus, $\operatorname{range} T$ is finite-dimensional.
+    To prove our main result, we need to show that $Tv_1, \ldots, Tv_n$ is a basis of $\operatorname{range} T$.
+    We already proved it spanned $\operatorname{range}T$, now suppose 
+    \[ b_1 Tv_1 + \cdots + b_n T v_n = 0 \]
+    \[ \implies T(b_1v_1 + \cdots + b_n v_n ) = 0 \]
+    Thus, $b_1 v_1 + \cdots + b_n  v_n \in \operatorname{null} T$ and we can write it as 
+    $b_1 v_1 + \cdots + b_n v_n = a_1 u_1 + \cdots + a_m u_m$. Since, $u_1,\ldots,u_m,v_1,\ldots,v_n$ is a basis vector we can say that
+    $b_i=a_i=0$. Thus, we have proved that $Tv_1, \ldots, Tv_n$ is a basis of $\operatorname{range}T$ and our theorem follows.
+\end{proof}
+
+
+\begin{theorem}
+    Suppose $V$ and $W$ are both finite-dimensional vector spaces such that $\dim V > \dim W$. Then, there exists no \textbf{injective}
+    linear map from $V$ to $W$.
+\end{theorem}
+
+\begin{proof}
+    We know that, for a $T \in \mathcal{L}(V,W)$,
+    \[ \dim V = \dim \operatorname{null} T + \dim \operatorname{range} T \]
+    Since $\operatorname{range} T$ is a subspace of $W$, $\dim W \ge \dim \operatorname{range} T$. Thus,
+    \begin{align*}
+        \dim \operatorname{null} T &= \dim V - \dim \operatorname{range} T \\
+        & \ge \dim V - \dim W \\
+        & > 0
+    \end{align*}
+    Thus, $\operatorname{null} T$ has more than one vector, so $T$ it's not injective by \textbf{Proposition 1.5}.
+\end{proof}
+
+\begin{theorem}
+    Suppose $V$ and $W$ are both finite-dimensional vector spaces such that $\dim V < \dim W$. Then, there exists no \textbf{surjective}
+    linear map from $V$ to $W$.
+\end{theorem}
+
+\begin{proof}
+    Similar to the proof above.
+\end{proof}
+
+\begin{definition}
+    Define $T: \mathbf{F}^n \to \mathbf{F}^m$ as 
+    \[ T(x_1,\cdots,x_n)=\left( \sum_{k=1}^{n} A_{1,k} x_k , \ldots, \sum_{k=1}^{n} A_{m,k} x_k \right)\]
+\end{definition}
+
+
+\begin{definition}
+    A homogeneous system of linear equations defined is as 
+    \[ \left( \sum_{k=1}^{n} A_{1,k} x_k , \ldots, \sum_{k=1}^{n} A_{m,k} x_k \right) = (0, \ldots, 0) \]
+    And a Inhomogeneous system of linear equation is defined as 
+    \[ \left( \sum_{k=1}^{n} A_{1,k} x_k , \ldots, \sum_{k=1}^{n} A_{m,k} x_k \right) = (c_1, \ldots, c_m) \]
+    where not all $c_i$ are zero.
+\end{definition}
+
+\begin{proposition}
+    A homogeneous system of linear equations with more variables than equations
+    has nonzero solutions.
+\end{proposition}
+
+\begin{proof}
+    Use \textbf{Theorem 1.3} and \textbf{Theorem 1.4}.
+\end{proof}
+
+\begin{proposition}
+    An inhomogeneous system of linear equations with more equations than
+    variables has no solution for some choice of the constant terms.
+\end{proposition}
+
+\begin{proof}
+    Use \textbf{Theorem 1.3} and \textbf{Theorem 1.4}.
+\end{proof}
+
+\subsubsection{Excercise}
+
+\paragraph{Problem :} Give an example of a linear map $T$ such that $\dim \operatorname{null} T = 3$ and \newline
+$\dim \operatorname{range} T = 2$.
+
+\vspace{4mm}
+\textit{Solution :} $T(x_1,x_2,x_3,x_4,x_5)=(x_1,x_2)$.
+
+\paragraph{Problem :} Suppose $S,T \in \mathcal{L}(V,W)$ are such that $\operatorname{range} S \subseteq \operatorname{null} T$.
+Prove that $(ST)^2=0$.
+
+\vspace{4mm}
+\textit{Solution :} Since $\operatorname{range} S \subseteq \operatorname{null} T$, $T(Sv)=0$. Thus, 
+\[ (ST)^2=(ST)(ST)= S(T(S(Tv)))=S(0)=0 \]
+
+\paragraph{Problem :} Suppose $v_1,\ldots,v_m$ is a list of vector in $V$. Define $T \in \mathcal{L}(\mathbf{F}^m,V)$ by
+\[ T(z_1,\ldots,z_m)= z_1 v_1 + \ldots + z_m v_m\]
+\begin{enumerate}[label=\alph*.]
+    \item What property of $T$ corresponds to $v_1, \ldots, v_m$ spanning $V$?
+    \item What property of $T$ corresponds to $v_1, \ldots, v_m$ being linearly independent on $V$?
+\end{enumerate}
+
+\vspace{4mm}
+\textit{Solution :} If $v_1, \ldots, v_m$ spans $V$ then $\operatorname{range} T = V$ thus $T$ being surjective corresponds to 
+$v_1,\ldots,v_m$ spanning $V$.
+
+If $v_1,\ldots,v_m$ is linearly independent on $V$ then $\operatorname{null} T = \{0\}$, thus $T$ being injective corresponds to 
+$v_1, \ldots, v_m$ being linearly independent on $V$.
+
+\eject
+
+\paragraph{Problem:} Show that $\{T \in \mathcal{L}(\mathbf{R}^5 , \mathbf{R}^4 ) : \dim \operatorname{null} T > 2\}$ 
+is not a subspace of $\mathcal{L}(\mathbf{R}^5, \mathbf{R}^4 )$.
+
+\vspace{4mm}
+\textit{Solution :}
+Let $T(x_1,x_2,x_3,x_4,x_5)=(x_1,x_2,0,0)$ and $T'(x_1,x_2,x_3,x_4,x_5)=(0,0,x_3,0)$. Both of them are in 
+$\mathcal{L}(\mathbf{R}^5, \mathbf{R}^4 )$. Also $\dim \operatorname{null} T = 3$ , $\dim \operatorname{null} T'=4$ but
+$T+T'=(x_1,x_2,x_3,0) \implies \dim \operatorname{null} (T+T') = 2 \not > 2$.
+
+\paragraph{Problem :} Give an example of $T \in \mathcal{L}(\mathbf{R}^4)$ such that $\operatorname{range} T = \operatorname{null} T$.
+
+\vspace{4mm}
+\textit{Solution :} $T(x_1,x_2,x_3,x_4)=(0,0,x_1,x_2)$.
+
+\paragraph{Problem :} Prove that there doesn't exists a $T \in \mathcal{L}(\mathbf{R}^5)$ such that 
+$\operatorname{range}T=\operatorname{null}T$.
+
+\vspace{4mm}
+\textit{Solution :} Suppose there exists such $T$, then $\dim \operatorname{range} T = \dim \operatorname{null} T$ but from the fundamental
+theorem of linear maps we have 
+\[ \dim V = \dim \operatorname{range} T + \dim \operatorname{null} T \]
+\[ \implies \dim \operatorname{range} T = \dim \operatorname{null} T = \frac{5}{2} \]
+which is impossible.
+
+
+\paragraph{Problem :} Suppose $V$ and $W$ are finite-dimensional with $2 \le \dim V \le \dim W$. Show that 
+$\{T \in \mathcal{L}(V,W) \mid T \text{ is not injective} \}$ is not a subspace of $\mathcal{L}(V,W)$.
+
+\vspace{4mm}
+\textit{Solution :} Let $v_1,\ldots,v_m$ be the basis of $V$ and $w_1,\ldots,w_n$ be the basis of $W$. 
+Then, define $T_i(a_1 v_1 + \cdots + a_m v_m)=a_i w_i$. One can check that this is not injective thus
+\[ T(a_1 v_1 + \cdots + a_m v_m)=\left( \sum_{i=1}^{m} T_i \right) (a_1 v_1 + \cdots + a_m v_m) = \sum_{i=1}^{m} a_i w_i \]
+
+Now, suppose $T(v)=T(v')$ then
+\[ a_1 w_1 + \cdots + a_m w_m = a_1' w_1 + \cdots + a_m' w_m \]
+\[ \implies b_1=b_1' \quad \textit{(because of linear independence)} \]
+Thus, $v=v'$.
+
+\paragraph{Problem :} Suppose $V$ is finite-dimensional and $T \in \mathcal{L}(V,W)$. Prove that there exists a subspace $U$ and $V$ 
+such that 
+\[ U \cap \operatorname{null} T = \{0\} \quad \text{and} \quad \operatorname{range} T = \{Tu \mid u \in U\} \]
+
+\vspace{4mm}
+\textit{Solution :} We know that $\operatorname{null} T$ is the subspace of $V$. Thus, there exists a $U$ such that 
+$V=U \oplus \operatorname{null} T$ and since it is a direct sum $U \cap \operatorname{null} T = \{0\}$. Now, for the range of $T$
+
+\[ \operatorname{range} T = \{ Tv \mid v \in V \} \] 
+\[ \implies \{ T(u+z) \mid u \in U , z \in \operatorname{null} T\} = \{Tu \mid u \in U\} \]
+
+\eject
+
+\paragraph{Problem :} Suppose $T$ is a linear map from $\mathbf{F}^4$ to $\mathbf{F}^2$ such that 
+\[ \operatorname{null} T = \{ (x_1, x_2, x_3, x_4) \in \mathbf{F}^4 \mid x_1 = 5x_2 \text{ and } x_3 = 7x_4 \} \]
+Prove that $T$ is a surjective linear map.
+
+\vspace{4mm}
+\textit{Solution :} We can write $T$ as
+\[ \operatorname{null} T = \{ (5x_2, x_2, 7x_4, x_4) \mid x_2 , x_4 \in \mathbf{F}  \} \]
+
+Now, since $(5x_2, x_2, 7x_4, x_4)= x_2(5,1,0,0) + x_4(0,0,7,1) \implies \dim \operatorname{null} T = 2 $. Thus,
+\[ \dim V = \dim \operatorname{null} T + \dim \operatorname{range} T \] 
+\[ \implies 4 = 2 + \dim \operatorname{range} T  \]
+\[ \implies \dim \operatorname{range} T = 2 \]
+
+Since, $\dim \mathbf{F}^2 = 2 = \dim \operatorname{range} T \implies \operatorname{range} T = \mathbf{F}^2$. Thus, $T$ is surjective.
+
+
+\paragraph{Problem :} Suppose $U$ is three-dimensional subspace of $\mathbf{R}^8$ and that $T$ is a linear map from $\mathbf{R}^8$ to 
+$\mathbf{R}^5$ such that $\operatorname{null} T = U$. Prove that $T$ is surjective.
+
+\vspace{4mm}
+\textit{Solution :} Since, $\operatorname{null} T = U \implies \dim \operatorname{null} T = 3 $. Thus,
+\[ \dim \mathbf{R}^8 = \dim \operatorname{null} T + \dim \operatorname{range} T  \]
+\[ \implies \dim \operatorname{range} T = 5 \]
+Since, $\operatorname{range} T $ is a subspace of $\mathbf{R}^5$ and $\dim \operatorname{range} T = \dim \mathbf{R}^5$ ,
+$\mathbf{R}^5 = \operatorname{range} T$. Thus, $T$ is surjective.
+
+\paragraph{Problem :} Prove that there does not exist a linear map from $\mathbf{F}^5$ to $\mathbf{F}^2$ whose null space doesn't 
+equals $\{ (x_1, x_2, x_3, x_4, x_5) \in \mathbf{F}^5 \mid x_1 = 3x_2 \text{ and } x_3 = x_4 = x_5 \}$.
+
+\vspace{4mm}
+\textit{Solution :} Suppose there does exist such a $T$. Then the null space can be written as
+\[ \operatorname{null} T = \{ (3x_2,x_2,k,k,k) \mid x_2, k \in \mathbf{F}\} \]
+One can check that $\dim \operatorname{null} T = 2$ but 
+\[ \dim \mathbf{F}^5 = \dim \operatorname{null} T + \dim \operatorname{range} T \]
+\[ \implies \dim \operatorname{range} T = 3 \]
+But $2=\dim \mathbf{F}^2 \ge \dim \operatorname{range} T = 3 $ which is false.
+
+
+\paragraph{Problem :} Suppose there exists a linear map on $V$ such that the null space and range of $T$ is finite dimensional. Prove that
+$V$ is finite-dimensional.
+
+\vspace{4mm}
+\textit{Solution :} Since, the range of $T$ is finite-dimensional it must have a basis. Suppose $Tv_1, \ldots, T v_m$ is the basis then
+\[ T(x) = \lambda_1 Tv_1 + \cdots + \lambda_m Tv_m  \]
+\[ \implies T(x-\lambda_1 v_1 - \cdots - \lambda_m v_m ) = 0 \]
+Since, the null space is also finite-dimensional 
+\[ x-\lambda_1 v_1 - \cdots - \lambda_m v_m = \lambda'_1 v'_1 + \cdots + \lambda'_n v'_n\]
+where $v'_1,\ldots,v'_n$ is the basis of the null space. Thus,
+\[ V = \operatorname{span}(v_1, \ldots, v_m, v'_1 \ldots, v'_n) \]
+
+\paragraph{Problem :} Suppose $V$ and $W$ are both finite-dimensional. Prove that there exists an injective linear map from $V$ to $W$ 
+if and only if $\dim V \le \dim W$.
+
+\vspace{4mm}
+\textit{Solution :} Suppose $T \in \mathcal{L}(V,W)$ is an injective map, then 
+\[ \dim V = \dim \operatorname{null} T + \dim \operatorname{range} T  \]
+\[ \implies \dim V = \dim \operatorname{range} T \le \dim W  \]
+Now suppose $\dim V \le \dim W$ then we can construct a injective map from $V$ to $W$. 
+\[ T(a_1 v_1 + \cdots + a_n v_n) = a_1 w_1 + \cdots + a_n w_n \]
+where $v_1, \ldots, v_n$ is the basis of $V$ and $w_1, \ldots, w_m$ is the basis of $W$.
+One can check this is a linear map and suppose $T(x)=T(y)$ and let $x=a_1 v_1 + \cdots + a_n v_n$ and $y=b_1 v_1 + \cdots + b_n v_n$ then
+\[ T(x)=T(y) \]
+\[ \implies (a_1-b_1)w_1 + \cdots + (a_n-b_n)w_n = 0 \]
+\[ \implies a_i = b_i \]
+Thus, $x=y$.
+
+\paragraph{Problem :} Suppose $V$ and $W$ are finite-dimensional vector spaces and $U$ is a subspace of $V$. Prove that there exists 
+$T \in \mathcal{L}(V,W)$ such that $\operatorname{null} T = U$ if and only if $\dim U \ge \dim V - \dim W$.
+
+\vspace{4mm}
+\textit{Solution :} Suppose $\operatorname{null} T = U$ then 
+\[ \dim V - \dim \operatorname{range} T = \dim U \]
+\[ \implies \dim V - \dim W \le \dim V - \dim \operatorname{range} T = \dim U\]
+
+Now, suppose $\dim U \ge \dim V - \dim W$ then let $u_1 , \ldots, u_k$ be the basis of $U$ and 
+\[ u_1, \ldots, u_k, v_1, \ldots, v_m \] 
+be the extended basis of $V$. Let $w_1, \ldots, w_j$ be the basis of $W$. From our condition, we know $k \ge k+m-j \implies j \ge m$. 
+Thus we define
+\[ T(a_1 u_1 + \cdots a_k u_k + b_1 v_1 + \cdots b_m v_m) = b_1 w_1 + \cdots b_m w_m \]
+Here, $\operatorname{null} T = U$.
+
+
+\paragraph{Problem :} Suppose $V$ is finite-dimensional, $T \in \mathcal{L}(V,W)$, and $U$ is a subspace of $W$. Prove that 
+$X = \{ v \in V \mid Tv \in U\}$ is a subspace of $V$ and
+\[ \dim X = \dim \operatorname{null} T + \dim (U \cap \operatorname{range} T ) \]
+
+\vspace{4mm}
+\textit{Solution :} The subspace part is pretty simple. Let $S : X \to U$ be a map such that $S(v)=T(v)$. Here,
+$\operatorname{range} S = U \cap \operatorname{range} T$ and $\operatorname{null} S = \operatorname{null} T$.
+
+\paragraph{Problem :} Suppose $U$ and $V$ are finite-dimensional vector spaces and $S \in \mathcal{L}(V,W)$ and $T \in \mathcal{L}(U,V)$. 
+Prove that
+\[ \dim \operatorname{null} ST \le \dim \operatorname{null} T + \dim \operatorname{null} S \]
+
+\vspace{4mm}
+\textit{Solution :} One can find that $\operatorname{null} ST = \operatorname{null} T \cup \{x \in U \mid S(T(x))=0 , T(x) \neq 0 \}$. 
+
+
+\vspace{9mm}
+\textbf{Note :} It seems that these exercises are taking way too long to do. I'll however come back to it and finish

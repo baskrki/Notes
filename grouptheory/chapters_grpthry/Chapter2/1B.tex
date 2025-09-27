@@ -1,0 +1,165 @@
+\subsection{Centralizers and Normalizers, Stabilizer and Kernels}
+
+We'll look at some important families of subgroups. Let $A$ be any non-empty subset of $G$.
+\begin{definition}
+    Define $C_G(A)=\{g \in G \mid g a g^{-1} = a \hspace{2mm}\forall a \in A\}$. This subset is called \textit{centralizers} of $A$ in $G$.
+    The set is the collection of elements in $G$ which commutes with every element of $A$.
+\end{definition}
+
+
+\begin{proposition}
+    $C_G(A) \le G$
+\end{proposition}
+
+\begin{proof}
+    One can check that $1 \in C_G(A)$. Suppose $x \in C_G(A)$, then $xax^{-1}=a \implies a = x^{-1}ax$. Thus, $x^{-1} \in C_G(A)$.
+    Let $x,y \in C_G(A)$ then 
+    \begin{align*}
+        (xy) a (xy)^{-1} &= (xy) a (y^{-1}x^{-1}) \\
+        &= x(yay^{-1})x^{-1} \\
+        &= xax^{-1} \\
+        &=a
+    \end{align*}
+    Thus, $xy \in C_G(A)$.
+\end{proof}
+
+\begin{definition}
+    Define $Z(G)=\{g \in G \mid gx=xg \hspace{2mm} \forall x \in G\}$. This is the set of elements in $G$ such that it commutes with every 
+    other element of $G$. This is called the \textit{center} of $G$. 
+\end{definition}
+
+\begin{remark}
+    You may notice that $Z(G)=C_G(G)$. Thus, $Z(G) \le G$.
+\end{remark}
+
+\begin{definition}
+    Define $gAg^{-1}=\{gag^{-1} \in G \mid a \in A\}$. Define the \textit{normalizers}
+    of $A$ in $G$ to be the set 
+    \[ N_G(A) = \{g \in G \mid g A g^{-1} = A\} \]
+\end{definition}
+
+\begin{proposition}
+    $N_G(A) \le G$ and $C_G(A) \le N_G(A)$.
+\end{proposition}
+
+\begin{proof}
+    Similar proof like \textbf{Proposition 1.4}. 
+\end{proof}
+
+\textbf{Examples}
+
+\begin{enumerate}
+    \item Let $G$ be abelian group. Then $Z(G)=G$, also $N_G(A)=C_G(A)=G$.
+    \item Let $G=D_8$. And let $A=\{1,r,r^2,r^3\}$ be a subgroup of rotations in $D_8$. We show that $C_{D_8}(A)=A$.
+          Since, powers of $r$ commute with each other, we have $A \le C_{D_8}(A)$. One can check $s \not \in C_{D_8}(A)$
+          as $sr = r^{-1}s \neq rs$. Now, if $a \not \in A$ and $a \in D_8$ then $a$ must be of the form $sr^i$. If $a \in C_{D_8}(A)$
+          with $a=sr^i$ then $s=(sr^{i})(r^{-i})$, thus a contradiction.
+\end{enumerate}
+
+\subsubsection*{Stabilizer and Kernels of a Group Action}
+
+We have already seen what a stabilizer is, now lets look at what a kernel of a group action is.
+
+\begin{definition}
+    A \textit{kernel} of a group $G$ acting on a set $A$ is the set of elements in $g$ such that it fixes every element in $A$. That is,
+    if $\phi : G \times A \to A$ is a group action then 
+    \[ \ker(\phi) = \{ g \in G \mid g \cdot s = s \hspace{2mm} \forall s \in A \} \]
+\end{definition}
+
+\begin{proposition}
+    Kernel of a group action is a subgroup of the group G. 
+\end{proposition}
+
+\begin{proof}
+    If $g \in \ker (\phi)$ then $g \cdot s = s \implies g^{-1} \cdot (g \cdot s )=g^{-1} \cdot s \implies s = g^{-1} \cdot s$.
+    Thus, $g^{-1} \in \ker(\phi)$. Similarly, you can verify other axioms.
+\end{proof}
+
+We'll see that the centralizers, normalizers and kernels are some special case of facts that stabilizer and kernels of actions are subgroups.
+Let $S=P(G)$ be the collection of all the subsets of group $G$, and let $G$ act on $S$ by \textit{conjugation} i.e 
+\[ \phi : G \times S \to S \quad \text{where} \quad g \cdot A=gAg^{-1} \]
+where $gAg^{-1}$ is defined just like in \textbf{Definition 1.9.}
+
+\vspace{4mm}
+Under this action, the stabilizer of $A$ is same as normalizer of $A$ i.e $N_G(A)=G_A$.
+This is basically of the definition, $N_G(A)=\{g \in G \mid gAg^{-1}=A\} = \{g \in G \mid g \cdot A = A \} = G_A$. Thus, $N_G(A) \le G$.
+
+\vspace{4mm}
+Next Let the group $N_G(A)$ act on $A \subseteq G$ by conjugation. One can check that the centralizer of $A$ is the same as 
+kernel of this action. Thus, $C_G(A)=\ker(\phi) \le N_G(A)$ and from the above argument $C_G(A) \le N_G(A) \le G \implies C_G(A) \le G$. 
+One can also check that $G$ acting on $G$ by conjugation has kernel same as the center of the group i.e $Z(G)$ thus, $Z(G) \le G$
+
+\eject
+
+\subsection*{Problems and Solutions}
+
+\paragraph{Problem :} Prove that $C_G(Z(G))=G$ and $N_G(Z(G)=G$.
+
+\vspace{4mm}
+\textit{Solution :} We already know that $C_G(Z(G))$ and $N_G(Z(G))$ are the subgroups of $G$. Thus, if we prove every element of 
+$C_G(Z(G))$ and $N_G(Z(G))$ is also an element of $G$ then we're done. Let $a \in Z(G)$, then $g a = a g$ for any $g \in G$. 
+Thus, $g \in C_G(Z(G))$. Since, $gZ(G)g^{-1}=\{gag^{-1} \mid a \in Z(G) \} = \{ a \mid a \in Z(G) \} = Z(G)$. Thus, for any $g \in G$
+we have $gZ(G)g^{-1}=Z(G)$ which means that $N_G(Z(G))$ collects all the $g \in G$. Thus, $N_G(Z(G))=G$.
+
+\paragraph{Problem :} If $A$ and $B$ are the subsets of $G$ such that $A \subseteq B$ then $C_G(B) \le C_G(A)$.
+
+\vspace{4mm}
+\textit{Solution :} Every element of $C_G(B)$ is in $C_G(A)$ as $xb=ba$ for all $b \in B$ so $xa = ax$ for all $a \in A$ thus, $x \in C_G(A)$.
+Thus, we are done.
+
+\paragraph{Problem :} Let $H$ be a subgroup of $G$.
+\begin{enumerate}
+    \item Show that $H \le N_G(H)$. 
+    \item Show that $H \le C_G(H) \iff H$ is abelian.  
+\end{enumerate}
+
+\vspace{4mm}
+\textit{Solution :}
+For the first part, $gHg^{-1}=\{ghg^{-1} \mid h \in H\}$. If we let $g \in H$ be an arbitrary element then $\{ghg^{-1} \mid h \in H\}=H$. This,
+can be proved by proving $\varphi_g : H \to H$ is a bijection for $g \in H$. Since, $g$ is arbitrary $H \le N_G(H)$.
+
+For the second part, if $H$ is abelian then $g a = a g $ for every $a,g \in H$ thus $H \le C_G(H)$. If $H \le C_G(H)$ then $g a = a g$ for all
+$a \in H$ and since $H$ is a subgroup of $C_G(H)$ every element of $H$ is in $C_G(H)$ that means $g a = a g$ for every $a,g \in H$. Thus
+$H$ is abelian.
+
+\paragraph{Problem :} Let $n \in \mathbb{Z}$ and $n \ge 3$. Prove the following
+\begin{enumerate}
+    \item $Z(D_{2n}) = \{1\}$ if $n$ is odd
+    \item $Z(D_{2n}) = \{1,r^k\}$ if $n=2k$ 
+\end{enumerate}
+
+\vspace{4mm}
+\textit{Solution :} We know that only elements that commute with powers of $r$ are powers of $r$. Thus, $r^i$ be the element that commutes with 
+every element of $D_{2n}$. Then, $r^i (sr^i)=(sr^i)r^i \implies r^i(r^{-i}s) = s r^{2i} \implies s = s r^{2i} \implies r^{2i}=1 
+\implies n \mid i$ if $n$ is odd. But $i < n$ so $i=0$. If $n=2k$ then $n \mid 2i \implies 2i = nk$ but $2i < 2n \implies 2 > k \implies k=1$.
+Thus $i=n/2$.  
+
+\paragraph{Problem :} Let $G=S_n$ and fix an $i \in \{1,2,3,\ldots,n\}$ and let $G_i=\{\sigma \in G \mid \sigma(i)=i\}$. Prove that $G_i$ is a
+subgroup of $G$ and find $|G_i|$.
+
+\vspace{4mm}
+\textit{Solution :} The subgroup part of this is pretty easy. To find, $|G_i|$ we fix the map $i \to i$ and let the other maps vary. The number
+of ways to do this is $(n-1)!$ and this is the size of the group.
+
+\eject
+
+\paragraph{Problem :} For any subgroup $H$ of $G$ and for any non-empty subset of $A$ in $G$ define $N_H(A)=\{h \in H \mid hAh^{-1}=A\}$.
+Show that $N_H(A)= N_G(A) \cap H$ and deduce that $N_H(A)$ is a subgroup of $H$.
+
+\vspace{4mm}
+\textit{Solution :} $N_H(A)$ collects every $h \in H$ for which $hAh^{-1}=A$. $N_{G}(A) \cap H$ also collects $h \in H$ for which $hAh^{-1}=A$
+thus $N_G(A) \cap H = N_H(A)$. To deduce $N_H(A)$ is a subgroup of $H$, you can easily check the axioms. 
+
+\paragraph{Problem :} Let $H$ be a subgroup of order 2 in $G$. Show that $N_G(H)=C_G(H)$. Deduce that if $N_G(H)=G$ then $H \le Z(G)$.
+
+\vspace{4mm}
+\textit{Solution :} Since, $H$ has order $2$ $H$ must be $\{e,h\}$ where $h \neq e $ and $h^2=e$. Now, if $gHg^{-1}=H$ then $\{ghg^{-1} \mid g \in G\}
+=\{e,ghg^{-1}\}=\{e,h\} \implies gh=hg$. Thus, $N_G(H)$ collects $g \in G$ which commutes with $h$ which is exactly $C_G(H)$. 
+For the second part, since $N_G(H)=G$ that means $h$ commutes with every $g \in G$. Thus, $\{e,h\} \subseteq Z(G)$ and $H \le Z(G)$.
+
+\paragraph{Problem :} Prove that $Z(G) \le N_G(A)$ for any subset $A$ of $G$.
+
+\vspace{4mm}
+\textit{Solution :} Since $Z(G)$ collects every $g \in G$ such that it commutes with every other element of $G$, it must commute with 
+every element of $A$. Thus, $gAg^{-1}=\{gag^{-1} \mid g \in Z(G)\} = \{a \mid g \in Z(G)\} = A$ which means every $g \in Z(G)$ is also an 
+element of $N_G(A)$.  
