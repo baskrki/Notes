@@ -48,11 +48,28 @@
     Let $\varphi : G \to H$ be a homomorphism of groups with kernel $K$. Let $X \in G/K$ be the fiber above $a$. i.e 
     $X = \varphi^{-1}(a)$
     \begin{enumerate}
-        \item For any $u \in X$, $X = \{u k \mid k \in K\}$
-        \item For any $u \in X$, $X=\{ku \mid k \in K\}$
+        \item For any $u \in X$, $X = \{u k \mid k \in K\} = uK$
+        \item For any $u \in X$, $X=\{ku \mid k \in K\} = Ku$
     \end{enumerate}
 \end{proposition}
 
 \begin{proof}
-    We'll prove $2.$ and leave $1.$ for the future me.
+    We'll prove $2.$ and leave $1.$ for the future me. Suppose $k \in K$ then 
+    \begin{align*}
+        \varphi(ku) &= \varphi(k) \varphi(u) \\
+        &= 1 \cdot \varphi(u) \\
+        &= a
+    \end{align*}
+    Thus, $ku \in X \implies Ku \subseteq X$. Now, to show $X \subseteq Ku$, take any $g \in X$ then define $k := gu^{-1}$ thus
+    \[ \varphi(k)=\varphi(gu^{-1})=a a^{-1}=1 \]
+    \[ \implies k \in K \]
+    Thus, $g=ku \in Ku \implies X \subseteq Ku$. 
 \end{proof}
+
+
+\begin{definition}
+    For a $N \le G$ and any $g \in G$ let 
+    \[ gN = \{ gn \mid n \in N\} \quad \text{and} \quad Ng = \{ ng \mid n \in G\} \]
+    be the \textit{left coset} and \textit{right coset} of $N$ in $G$. Any element of a coset is called a \textit{representative} of the 
+    coset.
+\end{definition}
