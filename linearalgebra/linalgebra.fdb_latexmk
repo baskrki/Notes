@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1758861557.07525 "/home/basudevkarki/Desktop/latex/linearalgebra/linalgebra.tex" "linalgebra.pdf" "linalgebra" 1758861557.94882 0
-  "/home/basudevkarki/Desktop/latex/linearalgebra/linalgebra.tex" 1758861556.7531 1472 cd63c22d155f5f2acb611d993f95c2d1 ""
+["pdflatex"] 1758940592.51236 "/home/basudevkarki/Desktop/latex/Notes/linearalgebra/linalgebra.tex" "linalgebra.pdf" "linalgebra" 1758940594.05851 0
+  "/home/basudevkarki/Desktop/latex/Notes/linearalgebra/linalgebra.tex" 1758861556.7531 1472 cd63c22d155f5f2acb611d993f95c2d1 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -103,11 +103,11 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1757910454 7753793 e02597db98c680464a942618a7305075 ""
   "chapters_linalgbra/Linear_maps/3A.tex" 1757502488.09861 12943 552cf72bd9d2f197f68ec5b13f627122 ""
   "chapters_linalgbra/Linear_maps/3B.tex" 1758189737.83486 16045 51a3744a57f0d9b15c06f8e13a21826c ""
-  "chapters_linalgbra/Linear_maps/3C.tex" 1758861556.84089 16401 6a4498f3217af92ab0449f47d19ce56f ""
-  "linalgebra.aux" 1758861557.83754 6032 ca0dd2e22dc0837eac185067d7817293 "pdflatex"
-  "linalgebra.out" 1758861557.83954 3155 7421bd3286d078385731105f0fe15a27 "pdflatex"
+  "chapters_linalgbra/Linear_maps/3C.tex" 1758940591.98699 16399 580060f493771e32d2c30631d504e728 ""
+  "linalgebra.aux" 1758940593.85898 6032 ca0dd2e22dc0837eac185067d7817293 "pdflatex"
+  "linalgebra.out" 1758940593.86098 3155 7421bd3286d078385731105f0fe15a27 "pdflatex"
   "linalgebra.tex" 1758861556.7531 1472 cd63c22d155f5f2acb611d993f95c2d1 ""
-  "linalgebra.toc" 1758861557.84066 3426 49083cabd405516b04cd347a81508e07 "pdflatex"
+  "linalgebra.toc" 1758940593.86198 3426 49083cabd405516b04cd347a81508e07 "pdflatex"
   (generated)
   "linalgebra.aux"
   "linalgebra.log"

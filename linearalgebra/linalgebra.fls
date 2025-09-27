@@ -1,8 +1,8 @@
-PWD /home/basudevkarki/Desktop/latex/linearalgebra
+PWD /home/basudevkarki/Desktop/latex/Notes/linearalgebra
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/basudevkarki/Desktop/latex/linearalgebra/linalgebra.tex
+INPUT /home/basudevkarki/Desktop/latex/Notes/linearalgebra/linalgebra.tex
 OUTPUT linalgebra.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
