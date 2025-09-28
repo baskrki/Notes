@@ -377,15 +377,16 @@ a basis \(\sigma_{1},...,\sigma_{m}\) of \(V\) such that all entries in the firs
     &= {}_{i}\lambda_{1} w_1 + \sum_{j=2}^{n} {}_{i} \lambda_{j} w_j
 \end{align*}
 
-Now, we construct a new basis which is 
-\[ 
-\left( \frac{v_1}{{}_{1}\lambda_{1}} , \frac{v_2}{{}_{2}\lambda_{1}} - \frac{v_1}{{}_{1}\lambda_{1}}, \cdots, \frac{v_m}{{}_{m}\lambda_{1}} 
-- \frac{v_{m-1}}{{}_{m-1}\lambda_{1} } \right) 
-\]
-
-If ${}_{k} \lambda_1=0$ then we just replace ${}_{k} \lambda_1=1$. One can check that, this is a basis of $V$ and 
+Now, if all the $T(v_i)$ has $0$ as the coefficient of $w_1$ then we're done. If not then take a $v_k$ for which ${}_{k}\lambda_1 \neq 0$
+then swap it with $v_1$.
+Then, define
 \begin{align*}
-    T\left(\frac{v_k}{{}_{k}\lambda_{1}} - \frac{v_{k-1}}{{}_{k-1}\lambda_{1}}\right) &= 
-    \frac{1}{{}_{k}\lambda_1}T(v_k)-\frac{1}{{}_{k-1}\lambda_1}T(v_{k-1}) \\
+    \sigma_1 &= \frac{v_1}{{}_{1}\lambda_1} \\
+    \sigma_i &:= v_i-\frac{{}_{i}\lambda_1}{{}_{1}\lambda_1} v_1 \quad \text{for } i \ge 2  
+\end{align*}
+
+Now, one can check that $(\sigma_1, \ldots,\sigma_m)$ is a basis and 
+\begin{align*}
+    T(\sigma_i) &= T(v_i) - \frac{{}_{i}\lambda_1}{{}_{1}\lambda_1} T(v_k) \\
     &= 0 \cdot w_1 + \sum b_j w_j
 \end{align*}
