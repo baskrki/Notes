@@ -390,3 +390,57 @@ Now, one can check that $(\sigma_1, \ldots,\sigma_m)$ is a basis and
     T(\sigma_i) &= T(v_i) - \frac{{}_{i}\lambda_1}{{}_{1}\lambda_1} T(v_k) \\
     &= 0 \cdot w_1 + \sum b_j w_j
 \end{align*}
+
+
+
+\paragraph{Problem :}
+Give an example of \(2 \times 2\) matrices \(A\) and \(B\) such that \(AB \neq BA\).
+
+\paragraph{Problem :}
+Prove that the distributive property holds for matrix addition and matrix multiplication. In other words, suppose \(A, B, C, D, E, F\) are matrices whose sizes are such that \(A(B + C)\) and \((D + E)F\) make sense. Explain why \(AB + AC\) and \(DF + EF\) both make sense and prove that
+\[
+A(B + C) = AB + AC 
+\quad \text{and} \quad
+(D + E)F = DF + EF.
+\]
+
+\paragraph{Problem :}
+Prove that matrix multiplication is associative. In other words, suppose \(A, B, C\) are matrices whose sizes are such that \((AB)C\) makes sense. Explain why \((AB)C\) makes sense and prove that
+\[
+(AB)C = A(BC).
+\]
+
+\paragraph{Problem :}
+Suppose \(A\) is an \(n \times n\) matrix and \(1 \leq j, k \leq n\). Show that the entry in row \(j\), column \(k\), of \(A^3\) (which is defined to mean \(AAA\)) is
+\[
+\sum_{r=1}^n \sum_{i=1}^n A_{j,r} A_{r,i} A_{i,k}.
+\]
+
+\paragraph{Problem :}
+Suppose \(m\) and \(n\) are positive integers. Prove that the function \(A \mapsto A^t\) is a linear map from 
+\(\mathbf{F}^{m,n}\) to \(\mathbf{F}^{n,m}\).
+
+\paragraph{Problem :}
+Prove that if \(A\) is an \(m \times n\) matrix and \(C\) is an \(n \times p\) matrix, then
+\[
+(AC)^t = C^t A^t.
+\]
+
+\paragraph{Problem :}
+Suppose \(A\) is an \(m \times n\) matrix with \(A \neq 0\). Prove that the rank of \(A\) is \(1\) 
+if and only if there exist \((c_{1}, \dots, c_{m}) \in \mathbf{F}^m\) and \((d_{1}, \dots, d_{n}) \in \mathbf{F}^n\) such that
+\[
+A_{j,k} = c_j d_k \quad \text{for every } j = 1, \dots, m \text{ and every } k = 1, \dots, n.
+\]
+
+\paragraph{Problem :}
+Suppose \(T \in \mathcal{L}(V)\), and \(u_{1}, \dots, u_{n}\) and \(v_{1}, \dots, v_{n}\) are bases of \(V\). Prove that the following are equivalent:
+\begin{enumerate}[label=(\alph*)]
+\item \(T\) is injective.
+\item The columns of \(\mathcal{M}(T)\) are linearly independent in \(\mathbf{F}^{n,1}\).
+\item The columns of \(\mathcal{M}(T)\) span \(\mathbf{F}^{n,1}\).
+\item The rows of \(\mathcal{M}(T)\) span \(\mathbf{F}^{1,n}\).
+\item The rows of \(\mathcal{M}(T)\) are linearly independent in \(\mathbf{F}^{1,n}\).
+\end{enumerate}
+
+Here \(\mathcal{M}(T)\) means \(\mathcal{M}(T, (u_{1}, \dots, u_{n}), (v_{1}, \dots, v_{n}))\).
