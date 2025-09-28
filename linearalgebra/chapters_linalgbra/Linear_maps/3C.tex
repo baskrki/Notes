@@ -371,22 +371,21 @@ a basis \(\sigma_{1},...,\sigma_{m}\) of \(V\) such that all entries in the firs
 \(\sigma_{1},...,\sigma_{m}\) and \(w_{1},...,w_{n}\)] are \(0\) except for possibly a \(1\) in the first row, first column.
 
 \vspace{4mm}
-\textit{Solution :}
+\textit{Solution :} Take any basis $v_1, \ldots, v_m$ of $V$. Then, suppose 
+\begin{align*}
+    T(v_i) &= \sum_{j=1}^{n} {}_{i} \lambda_{j} w_j \\
+    &= {}_{i}\lambda_{1} w_1 + \sum_{j=2}^{n} {}_{i} \lambda_{j} w_j
+\end{align*}
 
+Now, we construct a new basis which is 
+\[ 
+\left( \frac{v_1}{{}_{1}\lambda_{1}} , \frac{v_2}{{}_{2}\lambda_{1}} - \frac{v_1}{{}_{1}\lambda_{1}}, \cdots, \frac{v_m}{{}_{m}\lambda_{1}} 
+- \frac{v_{m-1}}{{}_{m-1}\lambda_{1} } \right) 
+\]
 
-% \paragraph{Problem :}
-% Suppose \(A\) is an \(m\)-by-\(n\) matrix and \(B\) is an \(n\)-by-\(p\) matrix. Prove that
-% \[
-% (AB)_{j,:}=A_{j,:}\,B
-% \]
-% for each \(1\leq j\leq m\). In other words, show that row \(j\) of \(AB\) equals (row \(j\) of \(A\)) times \(B\).
-
-
-% \paragraph{Problem :}
-% Suppose \(a=\left(\begin{array}{ccc}a_{1}&...&a_{n}\end{array}\right)\) is a \(1\)-by-\(n\) matrix and \(B\) is an \(n\)-by-\(p\) matrix.
-%  Prove that
-% \[
-% aB=a_{1}B_{1,:}+...+a_{n}B_{n,:}\;.
-% \]
-% In other words, show that \(aB\) is a linear combination of the rows of \(B\), with the scalars that multiply the rows coming from \(a\).
-
+If ${}_{k} \lambda_1=0$ then we just replace ${}_{k} \lambda_1=1$. One can check that, this is a basis of $V$ and 
+\begin{align*}
+    T\left(\frac{v_k}{{}_{k}\lambda_{1}} - \frac{v_{k-1}}{{}_{k-1}\lambda_{1}}\right) &= 
+    \frac{1}{{}_{k}\lambda_1}T(v_k)-\frac{1}{{}_{k-1}\lambda_1}T(v_{k-1}) \\
+    &= 0 \cdot w_1 + \sum b_j w_j
+\end{align*}
