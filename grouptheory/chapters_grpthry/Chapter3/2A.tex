@@ -66,6 +66,11 @@
     Thus, $g=ku \in Ku \implies X \subseteq Ku$. 
 \end{proof}
 
+\begin{remark}
+    Any coset(check below for the definition) is also an \textit{fiber} for some element. It is because
+    \[ uK = \varphi^{-1}(\varphi(u)) = uK\] 
+\end{remark}
+
 
 \begin{definition}
     For a $N \le G$ and any $g \in G$ let 
@@ -74,4 +79,34 @@
     coset.
 \end{definition}
 
-Another line 
+\begin{remark}
+    To verify a map is a well defined map, one can't just use the condition imposed on the map. For example,
+    the proof of the theorem below, I have said the operation is indeed well-defined but didn't prove it. You can't go about doing the 
+    following.
+
+    Let $uK=u'K$ and $vK=v'K$ thus
+    \begin{align*}
+        (uv)K &= (uK)(vK) \\
+        &= (u'K)(v'K)\\
+        &= (u'v')K
+    \end{align*}
+
+    Here, you're assuming that $a=b \implies f(a)=f(b)$ which is true if $f$ were to be a function. But to be a function, it needs to be 
+    well defined. Therefore you're assuming it's well defined to begin with.
+\end{remark}
+
+\begin{theorem}
+    Let $G$ be a group and let $K$ be the kernel of some homomorphism from $G$ to another group. Then the set whose elements are left
+    cosets of $K$ in $G$ with operation defined by
+    \[ (uK) \circ (vK) = (uv)K \]
+    forms a group, $G/K$.
+\end{theorem}
+
+\begin{proof}
+One can check that the set whose elements are left cosets of $K$ in $G$ with operation defined above, does indeed form a group. 
+Note that the operation is also well defined.
+Now, if $X$ and $Y$ are fibers then $Z=XY$ is also a fiber. Now, we can write each fiber as 
+\[ X=uK, \quad Y=vK, \quad XY = jK \]
+But we set $j=uv$ as $uv \in XY$. Thus, every element of $G/K$ is in set $\{uK \mid u \in G\}$. But we also that 
+every coset is also a fiber thus, every element of $\{uK \mid u \in G\}$ is in $G/K$.
+\end{proof}
