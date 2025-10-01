@@ -458,10 +458,86 @@ defined to mean \(AAA\)) is
 Suppose \(m\) and \(n\) are positive integers. Prove that the function \(A \mapsto A^t\) is a linear map from 
 \(\mathbf{F}^{m,n}\) to \(\mathbf{F}^{n,m}\).
 
+\vspace{4mm}
+\textit{Solution :}
+Define \(T : \mathbf{F}^{m,n} \to \mathbf{F}^{n,m}\) by \(T(A) = A^t\).  
+We must show that \(T\) is linear, i.e.
+\[
+T(A+B) = T(A) + T(B) \quad \text{and} \quad 
+T(\lambda A) = \lambda T(A),
+\]
+for all \(A,B \in \mathbf{F}^{m,n}\) and all scalars \(\lambda \in \mathbf{F}\).
+
+By definition of the transpose,
+\[
+(A^t)_{ij} = A_{ji}, \qquad (1 \leq i \leq n, \; 1 \leq j \leq m).
+\]
+
+Now let \(A,B \in \mathbf{F}^{m,n}\). Then for each \(i,j\),
+\[
+\big((A+B)^t\big)_{ij} = (A+B)_{ji} = A_{ji} + B_{ji} 
+= (A^t)_{ij} + (B^t)_{ij} = \big(A^t + B^t\big)_{ij}.
+\]
+Hence \((A+B)^t = A^t + B^t\).
+
+Similarly, for \(\lambda \in \mathbf{F}\),
+\[
+\big((\lambda A)^t\big)_{ij} = (\lambda A)_{ji} 
+= \lambda A_{ji} = \lambda (A^t)_{ij} 
+= \big(\lambda A^t\big)_{ij}.
+\]
+So \((\lambda A)^t = \lambda A^t\).
+
+Therefore \(T\) preserves both addition and scalar multiplication.  
+Thus \(T\) is a linear map from \(\mathbf{F}^{m,n}\) to \(\mathbf{F}^{n,m}\).
+
 \paragraph{Problem :}
 Prove that if \(A\) is an \(m \times n\) matrix and \(C\) is an \(n \times p\) matrix, then
 \[
 (AC)^t = C^t A^t.
+\]
+
+\vspace{4mm}
+\textit{Solution :} 
+\paragraph{Solution :}
+Let \(A \in \mathbf{F}^{m,n}\) and \(C \in \mathbf{F}^{n,p}\).  
+By definition of matrix multiplication, the \((i,j)\)-entry of \(AC\) is
+\[
+(AC)_{ij} = \sum_{k=1}^n A_{ik} C_{kj}, \qquad (1 \leq i \leq m, \; 1 \leq j \leq p).
+\]
+Taking the transpose, we get
+\[
+\big((AC)^t\big)_{ij} = (AC)_{ji} 
+= \sum_{k=1}^n A_{jk} C_{ki}.
+\]
+
+On the other hand, consider the product \(C^t A^t\).  
+Here \(C^t\) is \(p \times n\) and \(A^t\) is \(n \times m\), so \(C^t A^t\) is \(p \times m\).  
+Its \((i,j)\)-entry is
+\[
+(C^t A^t)_{ij} = \sum_{k=1}^n (C^t)_{ik} (A^t)_{kj}.
+\]
+By definition of the transpose,
+\[
+(C^t)_{ik} = C_{ki}, \qquad (A^t)_{kj} = A_{jk}.
+\]
+Hence
+\[
+(C^t A^t)_{ij} = \sum_{k=1}^n C_{ki} A_{jk}.
+\]
+
+But scalar multiplication in \(\mathbf{F}\) is commutative, so
+\[
+\sum_{k=1}^n C_{ki} A_{jk} = \sum_{k=1}^n A_{jk} C_{ki}.
+\]
+Therefore,
+\[
+(C^t A^t)_{ij} = \big((AC)^t\big)_{ij}, \qquad (1 \leq i \leq p, \; 1 \leq j \leq m).
+\]
+
+Since all entries are equal, we conclude
+\[
+(AC)^t = C^t A^t. \quad 
 \]
 
 \paragraph{Problem :}
