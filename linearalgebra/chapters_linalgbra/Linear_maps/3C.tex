@@ -416,6 +416,18 @@ A(B + C) = AB + AC
 (D + E)F = DF + EF.
 \]
 
+\vspace{4mm}
+\textit{Solution :} If $A(B+C)$ and $(D+E)F$ makes sense then $B$ and $C$ must be of the same size and $D$ and $E$ must be of the same size.
+Also, the number of rows in $A$ must be same as the number of columns in $B+C$. Let $X=B+C$ thus 
+\begin{align*}
+    (AX)_{i,j} &= \sum_{r=1}^{n} A_{i,r}X_{r,j} \\
+    &= \sum_{r=1}^{n} A_{i,r} (B_{r,j}+C_{r,j}) \\
+    &= \sum_{r=1}^{n} A_{i,r} B_{r,j} + \sum_{r=1}^{n} A_{i,r} C_{r,j} \\
+    &= (AB)_{i,j} + (AC)_{i,j} 
+\end{align*}
+Thus, $A(B+C)=AB+AC$. Similar proof works for $(D+E)F$.
+
+
 \paragraph{Problem :}
 Prove that matrix multiplication is associative. In other words, suppose \(A, B, C\) are matrices whose sizes are such that \((AB)C\) makes 
 sense. Explain why \((AB)C\) makes sense and prove that
