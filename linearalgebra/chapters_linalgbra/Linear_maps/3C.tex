@@ -189,6 +189,11 @@ A_{\cdot, 3} = \begin{pmatrix}
     Thus, from our previous theorem they're equal.   
 \end{proof}
 
+\begin{remark}
+    The row version of this is 
+    \[ (AB)_{k, \cdot} = A_{k,\cdot} B \]
+\end{remark}
+
 \begin{theorem}
     Suppose $A$ is a $m \times n$ matrix and $b = \begin{pmatrix}
         b_1 \\ \vdots \\ b_n
@@ -418,7 +423,7 @@ A(B + C) = AB + AC
 
 \vspace{4mm}
 \textit{Solution :} If $A(B+C)$ and $(D+E)F$ makes sense then $B$ and $C$ must be of the same size and $D$ and $E$ must be of the same size.
-Also, the number of rows in $A$ must be same as the number of columns in $B+C$. Let $X=B+C$ thus 
+Also, the number of columns in $A$ must be same as the number of rows in $B$ and $C$. Let $A$ be a $n \times p$ matrix and $X=B+C$ then 
 \begin{align*}
     (AX)_{i,j} &= \sum_{r=1}^{n} A_{i,r}X_{r,j} \\
     &= \sum_{r=1}^{n} A_{i,r} (B_{r,j}+C_{r,j}) \\
@@ -434,6 +439,11 @@ sense. Explain why \((AB)C\) makes sense and prove that
 \[
 (AB)C = A(BC).
 \]
+
+\vspace{4mm}
+\textit{Solution :} To make $(AB)C$ sense, we need $A$ to have same number of columns as the number of rows in $B$. Also, we need $B$ to 
+have same number of columns as number of rows in $C$. To prove the associativity, you can just definition of matrix multiplication.
+
 
 \paragraph{Problem :}
 Suppose \(A\) is an \(n \times n\) matrix and \(1 \leq j, k \leq n\). Show that the entry in row \(j\), column \(k\), of \(A^3\) (which is 

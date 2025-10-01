@@ -42,18 +42,18 @@
 \contentsline {subsubsection}{\numberline {1.3.2}Addition and Scalar Multiplication of Matrices}{15}{subsubsection.1.3.2}%
 \contentsline {subsubsection}{\numberline {1.3.3}Matrix Multiplication}{16}{subsubsection.1.3.3}%
 \contentsline {subsubsection}{\numberline {1.3.4}Column-Row Factorization and Rank of a Matrix}{18}{subsubsection.1.3.4}%
-\contentsline {subsubsection}{\numberline {1.3.5}Exercise}{19}{subsubsection.1.3.5}%
-\contentsline {paragraph}{Problem :}{19}{section*.31}%
-\contentsline {paragraph}{Problem :}{19}{section*.32}%
-\contentsline {paragraph}{Problem :}{19}{section*.33}%
-\contentsline {paragraph}{Problem :}{20}{section*.34}%
-\contentsline {paragraph}{Problem :}{20}{section*.35}%
-\contentsline {paragraph}{Problem :}{20}{section*.36}%
-\contentsline {paragraph}{Problem :}{21}{section*.37}%
-\contentsline {paragraph}{Problem :}{21}{section*.38}%
-\contentsline {paragraph}{Problem :}{21}{section*.39}%
-\contentsline {paragraph}{Problem :}{22}{section*.40}%
-\contentsline {paragraph}{Problem :}{22}{section*.41}%
-\contentsline {paragraph}{Problem :}{22}{section*.42}%
-\contentsline {paragraph}{Problem :}{22}{section*.43}%
-\contentsline {paragraph}{Problem :}{22}{section*.44}%
+\contentsline {subsubsection}{\numberline {1.3.5}Exercise}{20}{subsubsection.1.3.5}%
+\contentsline {paragraph}{Problem :}{20}{section*.31}%
+\contentsline {paragraph}{Problem :}{20}{section*.32}%
+\contentsline {paragraph}{Problem :}{20}{section*.33}%
+\contentsline {paragraph}{Problem :}{21}{section*.34}%
+\contentsline {paragraph}{Problem :}{21}{section*.35}%
+\contentsline {paragraph}{Problem :}{21}{section*.36}%
+\contentsline {paragraph}{Problem :}{22}{section*.37}%
+\contentsline {paragraph}{Problem :}{22}{section*.38}%
+\contentsline {paragraph}{Problem :}{22}{section*.39}%
+\contentsline {paragraph}{Problem :}{23}{section*.40}%
+\contentsline {paragraph}{Problem :}{23}{section*.41}%
+\contentsline {paragraph}{Problem :}{23}{section*.42}%
+\contentsline {paragraph}{Problem :}{23}{section*.43}%
+\contentsline {paragraph}{Problem :}{23}{section*.44}%

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1759289665.8843 "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" "linalgebra.pdf" "linalgebra" 1759289666.62365 0
+["pdflatex"] 1759295354.22924 "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" "linalgebra.pdf" "linalgebra" 1759295354.9306 0
   "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" 1759157822.21476 1472 cd63c22d155f5f2acb611d993f95c2d1 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -103,11 +103,11 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1757910454 7753793 e02597db98c680464a942618a7305075 ""
   "chapters_linalgbra/Linear_maps/3A.tex" 1759157822.21005 12943 552cf72bd9d2f197f68ec5b13f627122 ""
   "chapters_linalgbra/Linear_maps/3B.tex" 1759157822.21024 16045 51a3744a57f0d9b15c06f8e13a21826c ""
-  "chapters_linalgbra/Linear_maps/3C.tex" 1759289665.664 20060 997ec6f1c4ac48c85916c7bba9a5d8b0 ""
-  "linalgebra.aux" 1759289666.52376 6896 a77a1bc73a64fbcfd947c59ae5f3ec1b "pdflatex"
-  "linalgebra.out" 1759289666.52476 3155 7421bd3286d078385731105f0fe15a27 "pdflatex"
+  "chapters_linalgbra/Linear_maps/3C.tex" 1759295353.9765 20487 e07edd877d8a66585e9362bcdb4a3063 ""
+  "linalgebra.aux" 1759295354.8398 6896 f853edf35ff60eda32bcc3d32a6be429 "pdflatex"
+  "linalgebra.out" 1759295354.8408 3155 7421bd3286d078385731105f0fe15a27 "pdflatex"
   "linalgebra.tex" 1759157822.21476 1472 cd63c22d155f5f2acb611d993f95c2d1 ""
-  "linalgebra.toc" 1759289666.5263 3921 915f2fd89bc0c33522922d6780cffd5d "pdflatex"
+  "linalgebra.toc" 1759295354.8408 3921 e2c2c474e2fcf006883d5c8f74021b30 "pdflatex"
   (generated)
   "linalgebra.aux"
   "linalgebra.log"
