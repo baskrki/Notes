@@ -645,6 +645,10 @@ INPUT ./chapters_linalgbra/Linear_maps/3C.tex
 INPUT chapters_linalgbra/Linear_maps/3C.tex
 INPUT ./chapters_linalgbra/Linear_maps/3C.tex
 INPUT chapters_linalgbra/Linear_maps/3C.tex
+INPUT ./chapters_linalgbra/Linear_maps/3D.tex
+INPUT chapters_linalgbra/Linear_maps/3D.tex
+INPUT ./chapters_linalgbra/Linear_maps/3D.tex
+INPUT chapters_linalgbra/Linear_maps/3D.tex
 INPUT linalgebra.aux
 INPUT ./linalgebra.out
 INPUT ./linalgebra.out

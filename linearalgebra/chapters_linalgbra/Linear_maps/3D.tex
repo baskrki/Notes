@@ -1,0 +1,94 @@
+\subsection{Invertibility and Isomorphism}
+
+\subsubsection{Invertible Linear Maps}
+
+\begin{definition} 
+    A linear map $T \in \LL(V,W)$ is called \textit{invertible} if there exists a linear map $S \in \LL(W,V)$ such that $ST$ equals identity
+    operator on $V$ and $TS$ equals identity operator on $W$.
+\end{definition}
+
+\begin{definition}
+    A linear map $S \in \LL(V,W)$ satisfying $ST=I$ and $TS=I$ is called an \textit{inverse} of $T$.
+\end{definition}
+
+\begin{proposition}
+    An invertible map has an unique inverse.
+\end{proposition}
+
+\begin{proof}
+    Suppose $T \in \LL(V,W)$ and let $S_1$ and $S_2$ be its inverses then
+    \[ S_1 = S_1 I = S_1 (T S_2) = (S_1 T) S_2 = IS_2 = S_2 \]
+\end{proof}
+
+\begin{remark}
+    Since inverses are unique for a invertible map $T$, we will denote it by $T^{-1}$. 
+\end{remark}
+
+\begin{proposition}
+    A linear map is invertible if and only if it is injective and surjective.
+\end{proposition}
+
+\begin{proof}
+    Suppose $T \in \LL(V,W)$ is an invertible map and suppose $T(v)=T(w)$ then
+    \[ u = T^{-1}(Tu) = T^{-1}(Tv) = v\]
+    Hence, $T$ is injective. To prove surjectivity, notice that
+    \[  w = T^{-1}(Tw)\]
+    which proves $T$ is surjective.
+
+    Now, suppose $T$ is injective and surjective. Then, there exists a unique element $S(w)$ such that
+    \[  T(S(w))=w\]
+    the uniqueness is due to the injectivity of $T$. Let us show that, $S \in \LL(W,V)$
+    \begin{align*}
+        T(S(w_1)+S(w_2)) &= T(S(w_1)) + T(S(w_2)) \\
+        &= w_1+w_2 \\ 
+        &= T(S(w_1+w_2))
+    \end{align*} 
+    Thus, $S(w_1) + S(w_2) = S(w_1 + w_2)$. Also,
+    \begin{align*}
+        T(\lambda S(w)) &= \lambda T(S(w)) \\
+        &= \lambda w \\
+        &= T(S(\lambda w))
+    \end{align*}
+    Thus, $\lambda S(w)=S(\lambda w)$.
+\end{proof}
+
+Now, by how we defined $S$, it implies that $T S = I$ on $W$. Also,
+\[ T(S T) v = (T S)(T) v = Tv  \]
+\[ \implies (ST)v=v\]
+Thus, $ST$ is an identity operator on $V$.
+
+\begin{proposition}
+    Suppose that $V$ and $W$ are finite-dimensional vector spaces, such that, $\dim W = \dim V$ and $T \in \LL(V,W)$. Then
+    \[ T \text{ is invertible} \iff T \text{ is injective} \iff T \text{ is surjective} \]
+\end{proposition}
+
+\begin{proof}
+From the Fundamental theorem of linear maps,
+    \[ \dim V = \dim \operatorname{null} T + \dim \operatorname{range} T  \]
+    If $T$ is injective then $\operatorname{null} T = \{0\}$. Thus
+    \[ \dim V = \dim W = \dim \operatorname{range} T \]
+    \[ \implies \operatorname{range} T = W \]
+Now, if $T$ is surjective then $\operatorname{range} T = W$. Thus
+\[ \dim V = \dim \operatorname{null} T  + \dim W\]
+\[ \implies \dim \operatorname{range} T = 0 \]
+\[ \implies \operatorname{range} T = \{0\} \]    
+Thus, $T$ is injective $\iff$ $T$ is surjective. From \textbf{Proposition 1.13.} we get our final result.
+\end{proof}
+
+
+\begin{proposition}
+    Suppose $V$ and $W$ are finite-dimensional vector spaces of the same dimension, $S \in \LL(V,W)$, and $T \in \LL(V,W)$. Then,
+    $ST=I \iff TS=I$.
+\end{proposition}
+
+\begin{proof}
+    First $ST=I$ then take $v \in \operatorname{null} T$. Thus,
+    \[ v=STv = S(0)=0 \]
+    Thus, $\operatorname{null} T = \{0\}$ and $T$ is injective. Since $\dim V = \dim W$ , this implies $T$ is invertible.
+    Thus, there exists a $T^{-1}$. Now,
+    \[ T^{-1}=(ST)(T^{-1}) =  S\] 
+    We can now apply the same idea for $(\Leftarrow)$ of the proof. We just need to swap $V$ with $W$, and $T$ with $S$.
+\end{proof}
+
+\subsubsection{Isomorphic Vector Spaces}
+

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1759323765.30923 "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" "linalgebra.pdf" "linalgebra" 1759323766.01265 0
-  "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" 1759157822.21476 1472 cd63c22d155f5f2acb611d993f95c2d1 ""
+["pdflatex"] 1759550176.06304 "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" "linalgebra.pdf" "linalgebra" 1759550176.73429 0
+  "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" 1759543269.52203 1525 b69d48e1ea3a3787458083ef0184b9f2 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -103,11 +103,12 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1757910454 7753793 e02597db98c680464a942618a7305075 ""
   "chapters_linalgbra/Linear_maps/3A.tex" 1759157822.21005 12943 552cf72bd9d2f197f68ec5b13f627122 ""
   "chapters_linalgbra/Linear_maps/3B.tex" 1759157822.21024 16045 51a3744a57f0d9b15c06f8e13a21826c ""
-  "chapters_linalgbra/Linear_maps/3C.tex" 1759323764.96613 22958 16faa43dba54d13a2848a2f68f5039d4 ""
-  "linalgebra.aux" 1759323765.92513 6993 a48655342faf9aaeae145885f7e9a216 "pdflatex"
-  "linalgebra.out" 1759323765.92713 3155 7421bd3286d078385731105f0fe15a27 "pdflatex"
-  "linalgebra.tex" 1759157822.21476 1472 cd63c22d155f5f2acb611d993f95c2d1 ""
-  "linalgebra.toc" 1759323765.92713 3977 ac6649ec3c302dfeb5c8b1b9c3c211d0 "pdflatex"
+  "chapters_linalgbra/Linear_maps/3C.tex" 1759543269.6071 22974 ae47d2d4cc2912e501fd5fb9e08d3468 ""
+  "chapters_linalgbra/Linear_maps/3D.tex" 1759550175.85298 3516 23f815c368aa376b8eafff45d909bf25 ""
+  "linalgebra.aux" 1759550176.64978 7412 2f213e8f936c6a77352423b23cd77c08 "pdflatex"
+  "linalgebra.out" 1759550176.65078 3742 20d6c9ab371bbbfd3ce4a7237e9cb789 "pdflatex"
+  "linalgebra.tex" 1759543269.52203 1525 b69d48e1ea3a3787458083ef0184b9f2 ""
+  "linalgebra.toc" 1759550176.65221 4273 90583f0eeac8cbe92f930677457c8d42 "pdflatex"
   (generated)
   "linalgebra.aux"
   "linalgebra.log"
