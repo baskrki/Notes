@@ -61,3 +61,4 @@
 \contentsline {subsection}{\numberline {1.4}Invertibility and Isomorphism}{25}{subsection.1.4}%
 \contentsline {subsubsection}{\numberline {1.4.1}Invertible Linear Maps}{25}{subsubsection.1.4.1}%
 \contentsline {subsubsection}{\numberline {1.4.2}Isomorphic Vector Spaces}{26}{subsubsection.1.4.2}%
+\contentsline {subsubsection}{\numberline {1.4.3}Linear Map Thought of as Matrix Multiplication}{27}{subsubsection.1.4.3}%

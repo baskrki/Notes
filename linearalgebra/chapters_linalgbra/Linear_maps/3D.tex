@@ -118,3 +118,32 @@ Thus, $T$ is injective $\iff$ $T$ is surjective. From \textbf{Proposition 1.13.}
     \end{align*}
     Thus, $T$ is injective and surjective which means that $V$ and $W$ are isomorphic.
 \end{proof}
+
+\begin{proposition}
+    Suppose $v_1, \ldots, v_n$ be the basis of $V$ and $w_1, \ldots, w_m$ be the basis of $W$. Then $\MM(T)$ is a isomorphism between
+    $\LL(V,W)$ to $\mathbf{F}^{m,n}$
+\end{proposition}
+
+\begin{proof}
+    We know that $\MM(T)$ is a linear map as 
+    \[ \MM(T+S) = \MM(T) + \MM(S) \quad \text{and} \quad  \MM(\lambda T ) = \lambda \MM(T) \] 
+    
+    We need to prove that $\MM$ is injective and surjective. We know that $\MM(T)$ is injective
+    $ \iff \operatorname{null} \MM(T) = \{0\}$. And we know $\MM(T)=0 \iff T(x)=0$ for all $x \in V$. Thus, $T = 0$.
+
+    To prove $\MM(T)$ is surjective. We know that there exists a $T \in \LL(V,W)$ such that
+    \[ T(v_k) = \sum_{i=1}^{m} A_{i,j} w_j \]
+    which proves the surjectivity of $\MM(T)$.
+\end{proof}
+
+\begin{proposition}
+    Suppose $V$ and $W$ are finite-dimensional. Then $\LL(V,W)$ is finite-dimensional and
+    \[ \dim \LL(V,W) = (\dim V ) (\dim W) \]
+\end{proposition}
+
+\begin{proof}
+    Use \textbf{Proposition 1.17.} and \textbf{Proposition 1.16.} and 
+    \[ \dim \LL(V,W) = mn = (\dim V)(\dim W) \]
+\end{proof}
+
+\subsubsection{Linear Map Thought of as Matrix Multiplication}
