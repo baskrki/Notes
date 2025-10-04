@@ -92,3 +92,29 @@ Thus, $T$ is injective $\iff$ $T$ is surjective. From \textbf{Proposition 1.13.}
 
 \subsubsection{Isomorphic Vector Spaces}
 
+\begin{definition}
+    An \textit{isomorphism} is an invertible linear map and two vector spaces are isomorphic if there is an isomorphism between them.
+\end{definition}
+
+\begin{proposition}
+    Two finite-dimensional vector spaces over $\mathbf{F}$ are isomorphic if and only if they have the same dimension.
+\end{proposition}
+
+\begin{proof}
+    Suppose $V$ and $W$ are isomorphic. Then there exists a injective and surjective map $T$ from $V$ to $W$.
+    Thus, $\operatorname{null} T = \{0\}$. Then
+    \[ \dim V = \dim \operatorname{range} T  \]
+    Also, since $T$ is surjective $\operatorname{range} T = W$. Then
+    \[ \dim V = \dim W \]
+
+    Now, suppose $\dim W = \dim V$. Define $T : V \to W$ as 
+    \[ T(c_1 v_1 + \cdots + c_n v_n)=c_1 w_1 + \cdots + c_n w_n \]
+    where $v_i$'s and $w_i$'s are the basis of $V$ and $W$ respectively. One can check this is a linear map. Now,
+    this map is surjective as $\sum c_i w_i$ covers $W$. Also, $\operatorname{null} T = \{0\}$ as 
+    \begin{align*}
+        \dim W = \dim V &= \dim \operatorname{null} T + \dim \operatorname{range} T \\ 
+        &= \dim \operatorname{null} T + \dim \operatorname{range} T \\
+        &= \dim \operatorname{null} T + \dim W
+    \end{align*}
+    Thus, $T$ is injective and surjective which means that $V$ and $W$ are isomorphic.
+\end{proof}
