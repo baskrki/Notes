@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1759212945.82928 "/home/basudevkarki/Desktop/Notes/grouptheory/grouptheory.tex" "grouptheory.pdf" "grouptheory" 1759212946.62686 0
+["pdflatex"] 1759642512.26942 "/home/basudevkarki/Desktop/Notes/grouptheory/grouptheory.tex" "grouptheory.pdf" "grouptheory" 1759642513.03354 0
   "/home/basudevkarki/Desktop/Notes/grouptheory/grouptheory.tex" 1759157822.20776 1592 7edfaab8fccc94ea4df4fd2ccd9f9fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -36,6 +36,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1737590400 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -171,11 +172,11 @@
   "chapters_grpthry/Chapter2/1B.tex" 1759157822.20411 8158 845130106ae9c0e3d151819b84929a55 ""
   "chapters_grpthry/Chapter2/1C.tex" 1759157822.20411 11436 95905a1d53cc9bf9dcf5420f44284a81 ""
   "chapters_grpthry/Chapter2/1D.tex" 1759157822.20411 7928 dca32e043580ef02cbfcf2596238dcce ""
-  "chapters_grpthry/Chapter3/2A.tex" 1759212945.61164 4414 669d5be52d55dcbc38b2f7395f4239cf ""
-  "grouptheory.aux" 1759212946.51171 5234 c55d9c6e1aaff1c7d295436fde0f1e11 "pdflatex"
-  "grouptheory.out" 1759212946.51271 1479 5931baa9203626406abfb8227dc73ef8 "pdflatex"
+  "chapters_grpthry/Chapter3/2A.tex" 1759642511.2275 9061 777f5a50e3a154574effd42d827e2d62 ""
+  "grouptheory.aux" 1759642512.93049 5324 a04460cc0a04f0b818c4b6b7b33472e9 "pdflatex"
+  "grouptheory.out" 1759642512.93149 1479 5931baa9203626406abfb8227dc73ef8 "pdflatex"
   "grouptheory.tex" 1759157822.20776 1592 7edfaab8fccc94ea4df4fd2ccd9f9fc1 ""
-  "grouptheory.toc" 1759212946.51271 2752 7c4a8641b823d536b3522ab543e2971f "pdflatex"
+  "grouptheory.toc" 1759642512.93149 2801 93bbc8b01759154dd46b32e404acd077 "pdflatex"
   (generated)
   "grouptheory.aux"
   "grouptheory.log"

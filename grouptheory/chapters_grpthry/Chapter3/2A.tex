@@ -110,3 +110,114 @@ Now, if $X$ and $Y$ are fibers then $Z=XY$ is also a fiber. Now, we can write ea
 But we set $j=uv$ as $uv \in XY$. Thus, every element of $G/K$ is in set $\{uK \mid u \in G\}$. But we also that 
 every coset is also a fiber thus, every element of $\{uK \mid u \in G\}$ is in $G/K$.
 \end{proof}
+
+\begin{proposition}
+    Let $N$ be any subgroup of the group $G$. The set of left cosets of $N$ in $G$ form a partition of $G$. Furthermore, for all
+    $u,v \in G$, $uN=vN \iff v^{-1}u \in N$ and in particular, $uN=vN$ if and only if $u$ and $v$ are representative of the same coset. 
+\end{proposition}
+
+\begin{proof}
+    Since, $g \in gN$ as $1 \in N$, we can say that
+    \[ g = \bigcup_{g \in G} gN \]
+    Now, if $x \in uN \cap vN$ then 
+    \[ x = un = vm \]
+    Thus, $u=vmn^{-1} \implies ut = vmn^{-1}t \in vN$. Thus, $uN \subseteq vN$ as $ut$ covers every element of $uN$. 
+    
+    Now, one can reverse the roles and prove $vN \subseteq uN$, which altogether implies $uN=vN$. Thus, if $uN \cap vN \neq \emptyset$ then
+    $uN=vN$.
+
+    For the other part of the proposition, $uN = vN \iff u = vn \iff v^{-1}u = n \in N$.
+
+    If $uN = vN = K$ then $u,v \in K$. Thus they are the representative of the same coset. Also, if
+    $u \in tN$ and $v \in tN$ then $uN=tN=vN$.
+\end{proof}
+
+\begin{proposition}
+    Let $G$ be a group and let $N$ be a subgroup of $G$.
+    \begin{enumerate}
+        \item The operation on the set of left cosets of $N$ on $G$ defined by 
+        \[ (uN) \cdot (vN) = (uv) N \]
+        is well defined if and only if $gng^{-1} \in N$ for all $g \in G$ and for all $n \in N$.
+        \item If the above operation is well-defined then the it makes the set of left coset into a group.
+    \end{enumerate} 
+\end{proposition}
+
+\begin{proof}
+    Assume the operation is well-defined i.e $u,u_1 \in uN$, $v,v_1 \in vN \implies uv N = u_1v_1 N$.
+    Let $g$ be an arbitrary element of $G$ and let $n$ be an arbitrary element of $N$. Then, set $u=1,u_1=n$ and $v_1=v=g^{-1}$ thus
+    \[ 1 g^{-1}N =  n g^{-1} N \implies g^{-1} N = ng^{-1} N   \]
+    Thus, $ng^{-1} \in g^{-1}N \implies gng^{-1} = k \in N$.
+    
+    Now, suppose $gng^{-1} \in N$ for all $g \in G$ and $n \in N$. Let $u,u_1 \in uN$ and $v,v_1 \in vN$. We need to show
+    \[ (uv)N=(u_1 v_1)N \]
+    Since, $u_1 \in uN$ and $v_1 \in vN$ we can write them as $u_1 = un_1$ and $v_1 = vm$ for some $n,m \in N$.
+    Now, if we can prove $u_1 v_1 \in (uv)N$ then we'd be done.
+    \begin{align*}
+        u_1 v_1 &= (un)(vm) \\
+        &= u(vv^{-1})nvm \\
+        &= (uv)(v^{-1}nv)m = (un)(n_1m) \\
+    \end{align*}
+    where $n_1 = v^{-1}nv = v^{-1}n(v^{-1})^{-1} \in N$ as per the assumption. Thus, $u_1 v_1 \in uv N \implies (u_1v_1)N = (uv)N$.
+
+    For the second part, just check the group axioms.
+\end{proof}
+
+\begin{definition}
+    The element $gng^{-1}$ is called the \textit{conjugate} of $n$ by $g$. The set $gNg^{-1} = \{gng^{-1} \mid n \in N\}$ is called 
+    \textit{conjugate} of $N$ by $g$. The element $g$ is said to \textit{normalize} $N$ if $gNg^{-1}=N$. A subgroup $N$ is called 
+    normal if every element of $G$ \textit{normalizes} $N$ i.e $gNg^{-1}=N$ for all $g \in G$. If $N$ is a normal subgroup of $G$ then 
+    we write it as $N \unlhd G$.
+\end{definition}
+
+\begin{proposition}
+    Let $N$ be the subgroup of $G$. Then the following are equivalent 
+    \begin{enumerate}
+        \item $N \unlhd G$
+        \item $N_G(N)=G$
+        \item $gN=Ng$ for all $g \in G$
+        \item $gNg^{-1} \subseteq N$
+    \end{enumerate}
+\end{proposition}
+
+\begin{proof}
+    Most of them easily follow from the definition and previous propositions.
+\end{proof}
+
+\begin{definition}
+    We define $G/N=\{gN \mid g \in G\}$ for $N \le G$.
+\end{definition}
+
+\begin{proposition}
+    Let $N \le G$. Then $N$ is normal if and only if $N$ is a kernel of some homomorphism.
+\end{proposition}
+
+\begin{proof}
+    Suppose $N$ is a kernel of some homomorphism $\varphi$. Then $gN = Ng$ for all $g \in G$ and by previous proposition we can say 
+    $N \unlhd G$. Now, suppose $N \unlhd G$ then we define a map $\psi : G \to G/N$ such that $g \mapsto gN$.
+    Then,
+    \begin{align*}
+        \psi(g_1 g_2) &= (g_1 g_2)N \\
+        &= g_1 N g_2 N \\
+        &= \psi(g_1) \psi(g_2)
+    \end{align*}
+    Thus, $\psi$ is indeed a homomorphism. Now,
+    \begin{align*}
+        \ker \psi &= \{ g \mid \psi(g) = 1 N\} \\
+        &= \{ g \mid gN = N \} \\
+        &= \{ g \mid g \in N\} \\
+        &= N
+    \end{align*}
+    Thus, $N$ is the kernel of $\psi$.
+\end{proof}
+
+\begin{definition}
+    Let $N \unlhd G$. The homomorphism $\psi : G \to G/N$ defined by $\psi(g)=gN$ is called the \textit{natural projection} of $G$ onto
+    $G/N$. If $\bar{H} \le G/N$ is a subgroup of $G/N$, the \textit{complete preimage} of $\bar{H}$ in $G$ is the preimage of $\bar{H}$
+    under the natural projection.
+\end{definition}
+
+\eject
+
+\subsection*{Problems and Solutions}
+
+\paragraph{1. }

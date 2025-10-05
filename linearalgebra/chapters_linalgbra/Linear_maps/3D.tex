@@ -147,3 +147,48 @@ Thus, $T$ is injective $\iff$ $T$ is surjective. From \textbf{Proposition 1.13.}
 \end{proof}
 
 \subsubsection{Linear Map Thought of as Matrix Multiplication}
+
+\begin{definition}
+    Suppose $v \in V$ and $v_1, \ldots, v_n$ is the basis of $V$. The matrix of $v$ with respect to the basis is the $n \time 1$ matrix
+    \[ \MM(v) = \begin{pmatrix}
+        b_1 \\ 
+        \vdots \\
+        b_n
+    \end{pmatrix} \]
+    where $b_1, \ldots, b_n$ are scalar such that $v = b_1 v_1 + \cdots + b_n v_n$.
+\end{definition}
+
+\begin{proposition}
+    Suppose $T \in \LL(V,W)$ and $v_1, \ldots, v_n$ is a basis of $V$ and $w_1, \ldots, w_n$ is a basis of $W$. Let $1 \le k \le n$.
+    Then,
+    \[ \MM(T)_{\cdot, k} = \MM(Tv_k) \]
+\end{proposition}
+
+\begin{proof}
+    Immediate from the definition of $\MM(Tv_k)$.
+\end{proof}
+
+\begin{proposition}
+    Suppose $T \in \LL(V,W)$ and $v \in V$. Let $v_1, \ldots, v_n$ be the basis of $V$ and $w_1, \ldots, w_m$ be the basis of $W$. Then
+    \[ \MM(Tv) = \MM(T) \MM(v) \] 
+\end{proposition}
+
+\begin{proof}
+    Suppose $v=b_1v_1 + \cdots + b_n v_n$. Then,
+    \[ Tv = b_1 Tv_1 + \cdots + b_n Tv_n \]
+    Hence, 
+    \begin{align*}
+        \MM(Tv) &= b_1 \MM(Tv_1) + \cdots + b_n \MM(Tv_n)  & \textit{(Linearity of } \MM \textit{)} \\
+        &= b_1 \MM(T)_{\cdot,1} + \cdots + b_n \MM(T)_{\cdot, n} & \textit{(Proposition 1.19.1)} \\
+        &= \MM(T) \MM(v) & \textit{(Theorem 1.8.)}
+    \end{align*}
+\end{proof}
+
+\begin{proposition}
+    Suppose $V$ and $W$ are finite-dimensional and $T \in \LL(V,W)$. Then $\dim \operatorname{range} T$ equals the column rank of 
+    $\MM(T)$.
+\end{proposition}
+
+\begin{proof}
+    
+\end{proof}
