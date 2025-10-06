@@ -190,5 +190,10 @@ Thus, $T$ is injective $\iff$ $T$ is surjective. From \textbf{Proposition 1.13.}
 \end{proposition}
 
 \begin{proof}
-    
+    Suppose $v_1, \ldots, v_n$ be the basis of $V$ and $w_1, \ldots, w_m$ be the basis of $W$. Now, define 
+    $\varphi : W \to \mathbf{F}^{m,1}$ as $\varphi(w)=\MM(w)$. One can prove that this is an isomorphism. If we restrict our domain to just
+    $\operatorname{range} T$ we see that our co-domain is going to be $\mathcal{O}=\operatorname{span}\{\MM(Tv_1),\ldots,\MM(Tv_m)\}$. Also,
+    \[ \varphi \mid_{\operatorname{range} T} : \operatorname{range} T \to \mathcal{O} \] 
+    is a isomorphism and since isomorphism preserves dimension. We have
+    \[ \dim \operatorname{range} T = \dim \mathcal{O} = \text{column rank of } T \]
 \end{proof}
