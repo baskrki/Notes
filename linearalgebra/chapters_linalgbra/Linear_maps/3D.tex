@@ -247,3 +247,37 @@ This is just the matrix multiplication which we had defined earlier but with res
     Now interchange the roles of $u$'s and $v$'s to get
     \[ I = \MM(I,(u_1,\ldots,u_n),(v_1,\ldots,v_n)) \MM(I,(v_1,\ldots,v_n),(u_1,\ldots,u_n)) \]
 \end{proof}
+
+\begin{remark}
+    For convenience, we'll write
+    \[ \MM(T,(u_1,\ldots,u_n),(u_1,\ldots,u_n)) = \MM(T,(u_1,\ldots,u_n)) \] 
+\end{remark}
+
+\begin{proposition}
+    Suppose $T \in \LL(V)$. Let $u_1, \ldots, u_n$ and $v_1, \ldots, v_n$ be the basis of $V$. Let 
+    \[ A = \MM(T,(u_1,\ldots,u_n)) \quad \text{and} \quad B = \MM(T,(v_1, \ldots, v_n)) \]
+    and $C=\MM(I,(u_1,\ldots,u_n),(v_1,\ldots,v_n))$. Then,
+    \[ A = C^{-1} BC \]
+\end{proposition}
+
+\begin{proof}
+    Use \textbf{Definition 1.23.} and replace $w_k$ with $u_k$ and $S$ with $I$. Then, use \newline \textbf{Proposition 1.22.} to get
+    \begin{equation}
+        A = C^{-1} \MM(T,(u_1,\ldots,u_n),(v_1,\ldots,v_n))
+    \end{equation}
+    Now, again use the definition and this time replace $w_k$ with $v_k$. Then
+    \[ \MM(T,(u_1,\ldots,u_n),(v_1,\ldots,v_n)) = BC \]
+    We can now substitute this equation in equation $(1)$ to get 
+    \[ A = C^{-1}BC \]
+\end{proof}
+
+
+\begin{proposition}
+    Suppose that $v_1,\ldots,v_n$ is the basis of $V$ and $T \in \LL(V)$ is invertible. Then, 
+    $\MM(T^{-1})=(\MM(T))^{-1}$, where both matrices are with respect to basis $v_1,\ldots,v_n$.
+\end{proposition}
+
+
+\begin{proof}
+    Use \textbf{Definition 1.23.}
+\end{proof}
