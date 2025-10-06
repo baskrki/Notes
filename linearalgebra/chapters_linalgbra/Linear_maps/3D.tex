@@ -232,4 +232,18 @@ Thus, $T$ is injective $\iff$ $T$ is surjective. From \textbf{Proposition 1.13.}
     \end{align*}
 \end{definition}
 
-This is just he matrix multiplication which we had defined earlier but with respect to the basis. See \textbf{Proposition 1.11.}
+This is just the matrix multiplication which we had defined earlier but with respect to the basis. See \textbf{Proposition 1.11.}
+
+
+\begin{proposition}
+    Suppose $u_1, \ldots, u_n$ and $v_1, \ldots, v_n$ are the basis of $V$. Then the matrices 
+    \[ \MM(I,(u_1,\ldots,u_n),(v_1,\ldots,v_n)) \quad \text{and} \quad \MM(I,(v_1,\ldots,v_n),(u_1,\ldots,u_n)) \]
+    are inverses of each other. Here, $I$ is the identity operator.
+\end{proposition}
+
+\begin{proof}
+    Use \textbf{Definition 1.23.} and replace $w_k$ with $u_k$. And replace $S,T$ with the identity operator. Then
+    \[ I = \MM(I,(v_1,\ldots,v_n),(u_1,\ldots,u_n)) \MM(I,(u_1,\ldots,u_n),(v_1,\ldots,v_n)) \]
+    Now interchange the roles of $u$'s and $v$'s to get
+    \[ I = \MM(I,(u_1,\ldots,u_n),(v_1,\ldots,v_n)) \MM(I,(v_1,\ldots,v_n),(u_1,\ldots,u_n)) \]
+\end{proof}
