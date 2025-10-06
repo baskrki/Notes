@@ -197,3 +197,39 @@ Thus, $T$ is injective $\iff$ $T$ is surjective. From \textbf{Proposition 1.13.}
     is a isomorphism and since isomorphism preserves dimension. We have
     \[ \dim \operatorname{range} T = \dim \mathcal{O} = \text{column rank of } T \]
 \end{proof}
+
+\subsubsection{Change of Basis}
+
+\begin{definition}
+    We define the $n \times n$ matrix, called \textit{identity matrix}
+    by
+    \[ A_{i,j} = \begin{cases}
+        1 & i = j \\
+        0 & i \neq j
+    \end{cases} \]
+    The identity matrix is denoted by $I$.
+\end{definition}
+
+\begin{definition}
+    A square matrix is called \textit{invertible} if there is a square matrix $B$ of the same size such that
+    \[ AB = BA = I \]
+    we call the matrix $B$ the \textit{inverse} of $A$.
+\end{definition}
+
+\begin{remark}
+    The inverse of a square matrix $A$ is unique and therefore will be denoted by $A^{-1}$. Here, is a short proof of the uniqueness of the 
+    inverse. Suppose $A$ has two inverses $B_1 $ and $B_2$. Thus, 
+    \[ B_1 = I B_1 = (B_2A)B_1 = B_2 (AB_1) = B_2I = B_2  \]
+    Also, $(A^{-1})^{-1}=I$ and $(AC)^{-1}=C^{-1}A^{-1}$. You can verify these.
+\end{remark}
+
+\begin{definition}
+    Suppose $T \in \LL(U,V)$ and $S \in \LL(V,W)$. If $u_1, \ldots, u_m$ is a basis of $U$, $v_1, \ldots, v_n$ is a basis of $V$, and 
+    $w_1, \ldots, w_p$ is the basis of $W$ then
+    \begin{align*}
+        \MM(ST,(u_1, \ldots, u_m),(w_1, \ldots, w_p)) = \MM(S,(v_1,\ldots,v_n),&(w_1, \ldots, w_p)) \\
+        &\MM(T,(u_1,\ldots,u_m),(v_1, \ldots, v_n) ) 
+    \end{align*}
+\end{definition}
+
+This is just he matrix multiplication which we had defined earlier but with respect to the basis. See \textbf{Proposition 1.11.}
