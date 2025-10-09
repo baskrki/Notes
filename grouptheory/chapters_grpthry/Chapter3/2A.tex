@@ -233,3 +233,24 @@ $\varphi^{-1}(E) \le G$.
 If $E \normal H$ then take any arbitrary element $g$ of $G$ and take any arbitrary element of $n$ of $\varphi^{-1}(E)$.
 Thus, $\varphi(gng^{-1}) = \varphi(g)\varphi(n) \varphi(g)^{-1} \in E$ as $\varphi(n) \in E$ and $\varphi(g) \in H$ and $E$ is normal.
 Thus, $gng^{-1} \in \varphi^{-1}(E)$ which implies $g\varphi^{-1}(E)g \subseteq \varphi^{-1}(E) \implies \varphi^{-1}(E) \normal G$.
+For kernel part, take $E = \{1\} \normal H$
+
+\paragraph{Problem :} Let $\varphi : G \to H$ be a homomorphism of groups with kernel $K$ and let $a,b \in \varphi(G)$. Let $X \in G/K$ be
+the the fiber above $a$ and let $Y$ be the fiber above $b$, i.e, $X = \varphi^{-1}(a)$ and $Y = \varphi^{-1}(b)$. Fix an element of $X$.
+Prove that if $XY=Z$ in the quotient group $G/K$ and $w$ is any member of $Z$, the there is some $v \in Y$ such that $uv=w$.
+
+\vspace{4mm}
+\textit{Solution :} First part follows immediately from \textbf{Definition 1.2.} and for the second part look at $\varphi(u^{-1}w)$ where 
+$w$ is an arbitrary member of $Z$. Thus,
+\begin{align*}
+    \varphi(u^{-1}w) &= a^{-1} (ab) \\
+    &= b 
+\end{align*}
+Thus, $u^{-1}w \in Y \implies w = uv$ for some $v \in Y$.
+
+\paragraph{Problem :} Let $A$ be an abelian group and let $B$ be an subgroup of $A$. Prove that $A/B$ is abelian.
+Give an example of a non-abelian of a non-abelian group $G$ containing a proper normal subgroup $N$ such that $G/N$ is abelian. 
+
+\vspace{4mm}
+\textit{Solution :} Any subgroup of a abelian group is a normal subgroup. Notice that, 
+\[ (uB) \circ (vB) = (uv)B = (vu)B = (uB) \circ (vB) \]

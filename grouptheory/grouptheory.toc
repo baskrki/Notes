@@ -46,3 +46,5 @@
 \contentsline {section}{\numberline {2}Quotients Groups and Homomorphism}{18}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Definition and Examples}{18}{subsection.2.1}%
 \contentsline {paragraph}{Problem :}{22}{section*.48}%
+\contentsline {paragraph}{Problem :}{22}{section*.49}%
+\contentsline {paragraph}{Problem :}{22}{section*.50}%
