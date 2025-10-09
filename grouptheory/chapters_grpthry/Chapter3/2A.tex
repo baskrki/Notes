@@ -166,13 +166,13 @@ every coset is also a fiber thus, every element of $\{uK \mid u \in G\}$ is in $
     The element $gng^{-1}$ is called the \textit{conjugate} of $n$ by $g$. The set $gNg^{-1} = \{gng^{-1} \mid n \in N\}$ is called 
     \textit{conjugate} of $N$ by $g$. The element $g$ is said to \textit{normalize} $N$ if $gNg^{-1}=N$. A subgroup $N$ is called 
     normal if every element of $G$ \textit{normalizes} $N$ i.e $gNg^{-1}=N$ for all $g \in G$. If $N$ is a normal subgroup of $G$ then 
-    we write it as $N \unlhd G$.
+    we write it as $N \normal G$.
 \end{definition}
 
 \begin{proposition}
     Let $N$ be the subgroup of $G$. Then the following are equivalent 
     \begin{enumerate}
-        \item $N \unlhd G$
+        \item $N \normal G$
         \item $N_G(N)=G$
         \item $gN=Ng$ for all $g \in G$
         \item $gNg^{-1} \subseteq N$
@@ -193,7 +193,7 @@ every coset is also a fiber thus, every element of $\{uK \mid u \in G\}$ is in $
 
 \begin{proof}
     Suppose $N$ is a kernel of some homomorphism $\varphi$. Then $gN = Ng$ for all $g \in G$ and by previous proposition we can say 
-    $N \unlhd G$. Now, suppose $N \unlhd G$ then we define a map $\psi : G \to G/N$ such that $g \mapsto gN$.
+    $N \normal G$. Now, suppose $N \normal G$ then we define a map $\psi : G \to G/N$ such that $g \mapsto gN$.
     Then,
     \begin{align*}
         \psi(g_1 g_2) &= (g_1 g_2)N \\
@@ -211,7 +211,7 @@ every coset is also a fiber thus, every element of $\{uK \mid u \in G\}$ is in $
 \end{proof}
 
 \begin{definition}
-    Let $N \unlhd G$. The homomorphism $\psi : G \to G/N$ defined by $\psi(g)=gN$ is called the \textit{natural projection} of $G$ onto
+    Let $N \normal G$. The homomorphism $\psi : G \to G/N$ defined by $\psi(g)=gN$ is called the \textit{natural projection} of $G$ onto
     $G/N$. If $\bar{H} \le G/N$ is a subgroup of $G/N$, the \textit{complete preimage} of $\bar{H}$ in $G$ is the preimage of $\bar{H}$
     under the natural projection.
 \end{definition}
@@ -220,4 +220,8 @@ every coset is also a fiber thus, every element of $\{uK \mid u \in G\}$ is in $
 
 \subsection*{Problems and Solutions}
 
-\paragraph{1. }
+\paragraph{Problem :} Let $\varphi : G \to H$ be an homomorphism and Let $E$ be a subgroup of $H$. Prove that $\varphi^{-1}(E) \le G$.
+If $E \normal H$, prove that $\varphi^{-1}(E) \normal G$. Deduce that $\ker \varphi \normal G$.
+
+\vspace{4mm}
+\textit{Solution :}
