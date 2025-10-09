@@ -220,8 +220,16 @@ every coset is also a fiber thus, every element of $\{uK \mid u \in G\}$ is in $
 
 \subsection*{Problems and Solutions}
 
-\paragraph{Problem :} Let $\varphi : G \to H$ be an homomorphism and Let $E$ be a subgroup of $H$. Prove that $\varphi^{-1}(E) \le G$.
-If $E \normal H$, prove that $\varphi^{-1}(E) \normal G$. Deduce that $\ker \varphi \normal G$.
+\paragraph{Problem :} Let $\varphi : G \to H$ be an homomorphism and Let $E$ be a subgroup of $H$. Prove that $\varphi^{-1}(E) \le G$, where
+$\varphi^{-1}(E) = \{x \mid \varphi(x) \in E\}$. If $E \normal H$, prove that $\varphi^{-1}(E) \normal G$. Deduce that $\ker \varphi 
+\normal G$. 
 
 \vspace{4mm}
-\textit{Solution :} From the definition, we know $\varphi^{-1}(E) = \{x \mid \varphi(x) = g\}$. 
+\textit{Solution :} Since, $\varphi^{-1}(E) = \{x \mid \varphi(x) \in E\}$. This subset of $G$ is clearly not empty and
+if $x,y \in \varphi^{-1}(E)$ then $\varphi(xy^{-1})=\varphi(x) \varphi(y)^{-1} \in E$ as $E$ is a subgroup and 
+$\varphi(x), \varphi(y) \in E$. Thus, $xy^{-1} \in \varphi^{-1}(E)$ for all $x,y \in \varphi^{-1}(E)$ which implies that 
+$\varphi^{-1}(E) \le G$.
+
+If $E \normal H$ then take any arbitrary element $g$ of $G$ and take any arbitrary element of $n$ of $\varphi^{-1}(E)$.
+Thus, $\varphi(gng^{-1}) = \varphi(g)\varphi(n) \varphi(g)^{-1} \in E$ as $\varphi(n) \in E$ and $\varphi(g) \in H$ and $E$ is normal.
+Thus, $gng^{-1} \in \varphi^{-1}(E)$ which implies $g\varphi^{-1}(E)g \subseteq \varphi^{-1}(E) \implies \varphi^{-1}(E) \normal G$.
