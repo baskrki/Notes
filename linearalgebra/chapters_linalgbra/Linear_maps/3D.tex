@@ -307,6 +307,36 @@ Thus,
     &= SS^{-1} \\
     &= I
 \end{align*}
-One can do the same thing for $(T^{-1}S^{-1})(ST)$. Thus, $ST$ is invertible and from the above calculation we can say $(ST)^{-1}=T^{-1}S^{-1}$.
+One can do the same thing for $(T^{-1}S^{-1})(ST)$. Thus, $ST$ is invertible and from the above calculation so 
+we can say $(ST)^{-1}=T^{-1}S^{-1}$.
 
-\paragraph{Problem :}
+\paragraph{Problem :} Suppose $V$ is finite-dimensional and $V \in \LL(V)$. Prove that the following are equivalent.
+\begin{enumerate}
+    \item[(a)] $T$ is invertible
+    \item[(b)] $Tv_1,\ldots,Tv_n$ is a basis of $V$ for every basis $v_1,\ldots,v_n$ of $V$.
+    \item[(c)] $Tv_1,\ldots,Tv_n$ is a basis of $V$ for some basis $v_1, \ldots,v_n$ of $V$.
+\end{enumerate}
+
+\vspace{4mm}
+\textit{Solution :} Suppose $T$ is invertible then it is also injective and surjective. Let $v_1, \ldots, v_n$ be a basis of $V$.
+Then, we know that $\operatorname{span}\{Tv_1,\ldots,Tv_n\} = V$ because of the surjectivity. Also, if 
+\begin{align*}
+    a_1 Tv_1 + \cdots + a_n Tv_n &= 0 \\
+    \implies T(a_1v_1 + \cdots + a_n v_n) &= 0 \\
+    \implies a_1 v_1 + \cdots + a_n v_n &= 0 \\
+    \implies a_1=a_2=\cdots=a_n&=0
+\end{align*}
+The last line is from injectivity of $T$. Thus, $Tv_1, \ldots, Tv_n$ is a basis of $V$ for any basis of $V$.
+
+Now, suppose $Tv_1,\ldots,Tv_n$ is a basis of $V$ for every basis $v_1,\ldots,v_n$ of $V$. Then, (c) automatically holds. Also,
+\[ a_1 Tv_1 + \ldots + a_n Tv_n = 0 \]
+\[ \implies a_1 = a_2 = \cdots = a_n = 0 \]
+Thus, $\operatorname{null} T = \{0\}$ which implies $T$ is injective. Now, since $Tv_1,\ldots,Tv_n$ is a basis, every element of $V$ can 
+be written as some combination of $V$. Thus,
+\[ a_1 Tv_1 + \cdots + a_n Tv_n = y \]
+\[ \implies T(a_1 v_1 + \cdots + a_n v_n) = y \]
+Thus, for every $y \in V$ there exists some element which gets mapped to $y$. Thus, $T$ is surjective. Thus, from \textbf{Proposition 1.13.}
+we get that $T$ is invertible.
+
+Now, suppose $Tv_1,\ldots,Tv_n$ is a basis of $V$ for some basis $v_1, \ldots,v_n$ of $V$. Then we can apply the same argument as we did 
+for above to get to $T$ is invertible. Since, $T$ is invertible we get (b).
