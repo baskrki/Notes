@@ -63,4 +63,6 @@
 \contentsline {subsubsection}{\numberline {1.4.2}Isomorphic Vector Spaces}{26}{subsubsection.1.4.2}%
 \contentsline {subsubsection}{\numberline {1.4.3}Linear Map Thought of as Matrix Multiplication}{27}{subsubsection.1.4.3}%
 \contentsline {subsubsection}{\numberline {1.4.4}Change of Basis}{28}{subsubsection.1.4.4}%
-\contentsline {subsubsection}{\numberline {1.4.5}Exercise}{31}{subsubsection.1.4.5}%
+\contentsline {subsubsection}{\numberline {1.4.5}Exercise}{30}{subsubsection.1.4.5}%
+\contentsline {paragraph}{Problem :}{30}{section*.46}%
+\contentsline {paragraph}{Problem :}{30}{section*.47}%
