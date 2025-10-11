@@ -340,3 +340,23 @@ we get that $T$ is invertible.
 
 Now, suppose $Tv_1,\ldots,Tv_n$ is a basis of $V$ for some basis $v_1, \ldots,v_n$ of $V$. Then we can apply the same argument as we did 
 for above to get to $T$ is invertible. Since, $T$ is invertible we get (b).
+
+\paragraph{Problem :} Suppose $V$ is finite-dimensional and $\dim V > 1$. Prove that the set of non-invertible linear maps from $V$ to 
+itself is not a subspace of $\LL(V)$.
+
+\vspace{4mm}
+\textit{Solution :} We can construct two non-invertible linear maps which form a invertible map when added.
+Suppose $v_1, \ldots, v_n$ is a basis of $V$. 
+\[ T(a_1 v_1 + \cdots + a_n v_n ) = a_2 v_2 + \cdots + a_n v_n \]
+\[ S(a_1 v_1 + \cdots + a_n v_n ) = a_1 v_1 \]
+One can check that both of them are linear maps and both of them lack injectivity property so they're not invertible.
+But 
+\[ (S+T)(a_1 v_1 + \cdots + a_n v_n ) = a_1 v_1 + a_2 v_2 + \cdots + a_n v_n \]
+\[ (S+T)(x)=I(x) \]
+which is a invertible linear map. Thus, set of non-invertible linear maps from $V$ to itself is not a subspace of $\LL(V)$.
+
+\begin{remark}
+    We used the $\dim V > 1$ when we defined $T$ and $S$.
+\end{remark}
+
+\paragraph{Problem :}
