@@ -295,8 +295,18 @@ If we switch our perspective from $T$ to $T^{-1}$, we get that $T$ is invertible
 \textbf{Proposition 1.12.} we have 
 \[ (T^{-1})^{-1} = T \]
 
-\paragraph{Problem :} Suppose $T \in \LL(U,V)$ and $S \in \LL(V,W)$ are both invertible linear maps. Prove that $ST \in \LL(U,V)$ is 
+\paragraph{Problem :} Suppose $T \in \LL(U,V)$ and $S \in \LL(V,W)$ are both invertible linear maps. Prove that $ST \in \LL(U,W)$ is 
 invertible and that $(ST)^{-1} = T^{-1} S^{-1}$.
 
 \vspace{4mm}
-\textit{Solution :} 
+\textit{Solution :} Since, $S$ and $T$ are both invertible then $S^{-1}$ and $T^{-1}$ both exist. Also, $T^{-1} S^{-1} \in \LL(W,U)$.
+Thus,
+\begin{align*}
+    (ST)(T^{-1} S^{-1}) &= S(TT^{-1})S^{-1} \\
+    &= S(I)S^{-1} \\
+    &= SS^{-1} \\
+    &= I
+\end{align*}
+One can do the same thing for $(T^{-1}S^{-1})(ST)$. Thus, $ST$ is invertible and from the above calculation we can say $(ST)^{-1}=T^{-1}S^{-1}$.
+
+\paragraph{Problem :}
