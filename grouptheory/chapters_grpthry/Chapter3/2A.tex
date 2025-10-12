@@ -260,4 +260,11 @@ For the example part, take $G= S_3$ and $N = \{e,(123),(132)\}$.
 \paragraph{Problem :} Prove that in quotient group $G/N$, $(gN)^{\alpha} = g^{\alpha} N$ for all $\alpha \in \mathbb{Z}$.
 
 \vspace{4mm}
-\textit{Solution :} 
+\textit{Solution :} If we let $(gN)^{\alpha} := \underbrace{(gN) \cdot (gN) \cdots (gN)}_{\alpha}$ for $\alpha \ge 0$ then 
+\begin{align*}
+    (gN) \cdot (gN) \cdots (gN) &= \{(gN) \cdot (gN) \} \cdots (gN) \\
+    &= (g^2N) \cdot (gN) \cdots (gN)  \quad \text{(\textbf{Proposition 2.4.})} \\
+    &= g^\alpha N
+\end{align*}
+
+\paragraph{Problem :}
