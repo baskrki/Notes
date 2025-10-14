@@ -2,3 +2,5 @@
 Here, I'll be uploading my notes as I study mathematics along.
 
 The notes might not be completed and will be updated along the way.
+
+Let me know if you spot any typo or error. :)
