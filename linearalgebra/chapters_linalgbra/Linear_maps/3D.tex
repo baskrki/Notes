@@ -373,3 +373,10 @@ be the basis of $V$. Define $T : V \to V$ as following
 
 One can check this is a invertible linear map.
 
+\paragraph{Problem :} Suppose $W$ is finite-dimensional and $S,T \in \LL(V,W)$. Prove that $\operatorname{null} S = \operatorname{null} T$
+if and only if there exists an invertible $E \in \LL(W)$ such that $S = E T$.
+
+\vspace{4mm}
+\textit{Solution :} For $(\Leftarrow)$, take $x \in \operatorname{null} T$ then $S(x) = E(T(x))= 0$ thus $x \in \operatorname{null} S$.
+Now, if $x \in \operatorname{null} S$ then $0=S(x)=ET(x) \implies T(x)=0$ thus $x \in \operatorname{null} T$. Thus,
+$\operatorname{null} T = \operatorname{null} S$. I'll do the $\Leftarrow$ later.
