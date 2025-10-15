@@ -363,4 +363,13 @@ which is a invertible linear map. Thus, set of non-invertible linear maps from $
 linear map $T$ from $V$ to itself such that $Tu=Su$ for every $u \in U$ if and only if $S$ is injective.
 
 \vspace{4mm}
-\textit{Solution :}
+\textit{Solution :} For $(\Rightarrow)$, if $S(x)=S(y)$ then $T(x)=T(y)$ which implies $x=y$ because $T$ is invertible. 
+Now, for $(\Leftarrow)$ choose a basis of $U$ and extend it to the basis of $V$ say $\mathcal{B}=(u_1,\ldots,u_k,v_{k+1},\ldots,v_n)$, 
+here $n = \dim V$. Now since $S$ is injective, the list $(Su_1 , \ldots, S u_k)$ is linearly independent and can be extended to a basis of $V$.
+Let 
+\[ \mathcal{C}=\{Su_1,\ldots,Su_k,w_{k+1},\ldots,w_n\} \] 
+be the basis of $V$. Define $T : V \to V$ as following 
+\[ T(u_i) = S(u_i) \text{ for } 1 \le i \le k \quad \text{and} \quad T(v_j)=w_j  \text{ for } k+1 \le j \le n \]
+
+One can check this is a invertible linear map.
+
