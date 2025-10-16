@@ -70,3 +70,5 @@
 \contentsline {paragraph}{Problem :}{31}{section*.49}%
 \contentsline {paragraph}{Problem :}{31}{section*.50}%
 \contentsline {paragraph}{Problem :}{32}{section*.51}%
+\contentsline {subsection}{\numberline {1.5}Product and Quotients of Vector Spaces}{33}{subsection.1.5}%
+\contentsline {subsubsection}{\numberline {1.5.1}Products of Vector Spaces}{33}{subsubsection.1.5.1}%
