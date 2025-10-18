@@ -21,3 +21,31 @@
 \begin{proof}
     Just check the vector axioms.
 \end{proof}
+
+\begin{proposition}
+    Suppose $V_1, \ldots, V_m$ are finite-dimensional vector spaces. Then $V_1 \times \cdots \times V_m$ is finite-dimensional and
+    \[ \dim (V_1 \times \cdots V_m) = \dim V_1 + \cdots + \dim V_m \]
+\end{proposition}
+
+\begin{proof}
+    Choose a basis of $V_k$ and consider every element of $V_1 \times \cdots \times V_k$ that equals a element from the basis of the vector
+    $V_k$ in the $k$-th sloth and $0$ in others. The list of vector spans $V_1 \times \cdots \times V_m$ and is linearly independent. 
+    Thus, it is the basis of $V_1 \times \cdots \times V_m$. The length of the basis is $\dim V_1 + \cdots + \dim V_m$.
+\end{proof}
+
+\begin{proposition}
+    Suppose that $V_1, \ldots, V_m$ are subspaces of $V$. Define a linear map $\Gamma : V_1 \times \cdots \times V_m \to V_1 + \cdots + V_m$
+    by
+    \[ \Gamma(v_1, \cdots, v_m) = v_1 + \cdots + v_m \]
+    Then $V_1 + \cdots + V_m$ is a direct sum if and only if  $\Gamma$ is injective.
+\end{proposition}
+
+\begin{proof}
+    If $V_1 + \cdots + V_m$ is a direct sum then the only way we can write $0$ is by choosing $0$ from each $V_i$. Thus,
+    \[ \Gamma(v_1, \ldots, v_m) = 0 \iff v_1 = v_2 = \cdots = v_m = 0 \]
+    Thus, $\operatorname{null} \Gamma = \{0\}$ which implies $\Gamma$ is injective.
+    
+    Now, suppose $\Gamma$ is injective then $\operatorname{null} \Gamma = \{0\}$, which means that the only element that gets mapped to $0$
+    is $(0,\ldots,0)$. Thus, the only way to write $0$ is by choosing $0$ from each $V_i$. Thus, $V_1 + \cdots + V_m$ is a direct sum. 
+\end{proof}
+
