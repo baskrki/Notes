@@ -53,3 +53,13 @@
     Suppose $V$ is finite-dimensional and $V_1, \ldots, V_m$ are subspaces of $V$. Then $V_1 + \cdots + V_m$ is direct sum if and only if
     \[ \dim (V_1 + \cdots V_m) = \dim V_1 + \cdots \dim V_m \]
 \end{proposition}
+
+\begin{proof}
+    The map $\Gamma$ is surjective. And $V_1 + \cdots + V_m$ \text{ is a direct sum} 
+    \begin{align*}
+        & \iff \Gamma \text{ is injective} \\
+        & \iff \operatorname{null} \Gamma = \{0\} \\
+        & \iff \dim (V_1 \times \cdots \times V_m) = \dim(V_1 + \cdots + V_m)
+    \end{align*}
+    Combining the result of \textbf{Proposition 1.26.} we get our desired result.
+\end{proof}
