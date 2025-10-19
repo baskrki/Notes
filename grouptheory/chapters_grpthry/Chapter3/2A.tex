@@ -277,3 +277,13 @@ Now, if there exists a $s < n$ s.t $g^s \in N$, then it would contradict our ass
 Now, Suppose $g^n \not \in N$ for any $n > 0$ then $g^nN \neq N$ for any $n > 0$. Thus the order is infinite if no such $n$ exists.
 
 An example of $g^sN = N$ and $s < |g|$ is $N=\{1,r,r^2\} \normal D_6$, $g=r$.
+
+\paragraph{Problem :} Define $\varphi : \mathbb{R}^{\times} \to \{\pm 1\}$ by letting $\varphi(x)$ be $x$ divided by the absolute value of $x$.
+Describe the fiber of $\varphi$ and prove that $\varphi$ is a homomorphism.
+
+\vspace{4mm}
+\textit{Solution :} The fiber over $-1$ is $X_{-1} = \{ x \mid \varphi(x) = -1\}$. Since $\varphi(x)= \frac{x}{|x|}=-1$, the only numbers
+that get mapped to $-1$ are $x < 0$. Similarly, the only number that get mapped to $1$ are $x > 0$. Thus the fiber over $1$ and $-1$ are the 
+positive and negative reals.
+
+Now, $\varphi(x \cdot y) = \frac{xy}{|xy|} =\frac{x}{|x|} \frac{y}{|y|} = \varphi(x) \varphi(y)$.
