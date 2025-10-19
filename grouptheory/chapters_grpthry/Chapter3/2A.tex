@@ -279,7 +279,7 @@ Now, Suppose $g^n \not \in N$ for any $n > 0$ then $g^nN \neq N$ for any $n > 0$
 An example of $g^sN = N$ and $s < |g|$ is $N=\{1,r,r^2\} \normal D_6$, $g=r$.
 
 \paragraph{Problem :} Define $\varphi : \mathbb{R}^{\times} \to \{\pm 1\}$ by letting $\varphi(x)$ be $x$ divided by the absolute value of $x$.
-Describe the fiber of $\varphi$ and prove that $\varphi$ is a homomorphism.
+Describe the fibers of $\varphi$ and prove that $\varphi$ is a homomorphism.
 
 \vspace{4mm}
 \textit{Solution :} The fiber over $-1$ is $X_{-1} = \{ x \mid \varphi(x) = -1\}$. Since $\varphi(x)= \frac{x}{|x|}=-1$, the only numbers
@@ -287,3 +287,20 @@ that get mapped to $-1$ are $x < 0$. Similarly, the only number that get mapped 
 positive and negative reals.
 
 Now, $\varphi(x \cdot y) = \frac{xy}{|xy|} =\frac{x}{|x|} \frac{y}{|y|} = \varphi(x) \varphi(y)$.
+
+\paragraph{Problem :} Define $\pi : \mathbb{R}^{2} \to \mathbb{R}$ by $\pi(x,y) = x+y$. Prove that $\pi$ is a surjective homomorphism and
+describe the kernel and fibers of $\pi$ geometrically.
+
+\vspace{4mm}
+\textit{Solution :} To prove its a homomorphism, take 
+\[ \pi((x,y)+(a,b))=\pi(x+a,y+b)=x+y+a+b = \pi(x,y) + \pi(a,b) \]
+To prove its surjectivity , notice that for a real number $x$ there are always two real numbers that add up to $x$.
+
+The $\ker \pi$ is the set of solution to the equation $x+y=0$ and the fiber over $a$ of $\varphi$ is the set of solution to the equation
+$x+y=a$.
+
+\paragraph{Problem :} Let $\varphi : \mathbb{R}^{\times} \to \mathbb{R}^{\times}$ be a map sending $x$ to $|x|$. Prove it is a homomorphism and 
+find the image of $\varphi$. Describe the kernel and the fibers of $\varphi$.
+
+\vspace{4mm}
+\textit{Solution :}

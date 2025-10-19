@@ -3,7 +3,10 @@
         "abelian",
         "Basu",
         "injective",
+        "injectivity",
         "Karki",
-        "preimage"
+        "preimage",
+        "surjective",
+        "surjectivity"
     ]
 }
