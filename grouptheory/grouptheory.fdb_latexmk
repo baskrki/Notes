@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1760925586.96466 "/home/basudevkarki/Desktop/Notes/grouptheory/grouptheory.tex" "grouptheory.pdf" "grouptheory" 1760925587.71058 0
-  "/home/basudevkarki/Desktop/Notes/grouptheory/grouptheory.tex" 1760925586.62846 1610 7a925770c07262777156f51dbfb139db ""
+["pdflatex"] 1760928252.08599 "/home/basudevkarki/Desktop/Notes/grouptheory/grouptheory.tex" "grouptheory.pdf" "grouptheory" 1760928252.81164 0
+  "/home/basudevkarki/Desktop/Notes/grouptheory/grouptheory.tex" 1760925618.52443 1610 7a925770c07262777156f51dbfb139db ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -173,11 +173,11 @@
   "chapters_grpthry/Chapter2/1C.tex" 1760613016.891 11436 95905a1d53cc9bf9dcf5420f44284a81 ""
   "chapters_grpthry/Chapter2/1D.tex" 1760613016.891 7928 dca32e043580ef02cbfcf2596238dcce ""
   "chapters_grpthry/Chapter3/2A.tex" 1760847861.37204 14965 8f696e43ec85511f4ed85235b5afd86c ""
-  "chapters_grpthry/Chapter3/2B.tex" 1760925556.88885 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "grouptheory.aux" 1760925587.61276 6098 4132c469aa3a2222bc36b51712d3fd92 "pdflatex"
-  "grouptheory.out" 1760925587.6137 1479 5931baa9203626406abfb8227dc73ef8 "pdflatex"
-  "grouptheory.tex" 1760925586.62846 1610 7a925770c07262777156f51dbfb139db ""
-  "grouptheory.toc" 1760925587.6137 3247 938b2f7ed18610dc5185f59f46f82270 "pdflatex"
+  "chapters_grpthry/Chapter3/2B.tex" 1760928251.89174 801 bd30b1a90c8a5b9f46b5447cb93e2625 ""
+  "grouptheory.aux" 1760928252.68671 6243 78b36c461c1f1de76a84881cb6858b97 "pdflatex"
+  "grouptheory.out" 1760928252.68771 1736 dff4f8f3793febbfd3fe2187960b8501 "pdflatex"
+  "grouptheory.tex" 1760925618.52443 1610 7a925770c07262777156f51dbfb139db ""
+  "grouptheory.toc" 1760928252.68771 3351 7c537965229a41b2ff54de1103a2e2c6 "pdflatex"
   (generated)
   "grouptheory.aux"
   "grouptheory.log"

@@ -1,0 +1,17 @@
+\subsection{More on Cosets and Lagrange's Theorem}
+
+\begin{proposition}
+    If $G$ is a finite subgroup and $H$ be its subgroup then order of $H$ divides order of $G$ and the number of left cosets of $H$ in $G$
+    is exactly $\frac{|G|}{|H|}$.  
+\end{proposition}
+
+\begin{proof}
+    Let $|H|=n$ and let $k$ be the number of left cosets of $H$ in $G$. By definition of a left coset the map
+    \[ \Psi : H \to gH \quad \text{defined by} \quad h \to gh \] 
+    is a surjection from $H$ to left coset  $gH$. Also, if $\Psi(h_1)=\Psi(h_2)$ then $gh_1 = gh_2 \implies h_1=h_2$. Thus,
+    the map $\Psi$ is a bijection and 
+    \[ |H|=|gH| \]
+    Since, $G$ is partitioned into $k$ disjoint cosets of $H$ which have the same order as $H$, we have 
+    \[ |G|=nk \implies \frac{|G|}{|H|}=k \] 
+\end{proof}
+
