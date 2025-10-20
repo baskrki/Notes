@@ -1,9 +1,9 @@
 \subsection{More on Cosets and Lagrange's Theorem}
 
-\begin{proposition}
+\begin{theorem}[Lagrange's Theorem]
     If $G$ is a finite subgroup and $H$ be its subgroup then order of $H$ divides order of $G$ and the number of left cosets of $H$ in $G$
     is exactly $\frac{|G|}{|H|}$.  
-\end{proposition}
+\end{theorem}
 
 \begin{proof}
     Let $|H|=n$ and let $k$ be the number of left cosets of $H$ in $G$. By definition of a left coset the map
@@ -15,6 +15,10 @@
     \[ |G|=nk \implies \frac{|G|}{|H|}=k \] 
 \end{proof}
 
+\begin{remark}
+    We could add a similar proof for $gH$ and conclude number of left cosets = number of right cosets for any finite group $G$.
+\end{remark}
+
 \begin{definition}
     If $G$ is a group (possibly infinite) and $H \le G$, then the number of left cosets of $H$ in $G$ is called the \textit{index} of $H$
     in $G$ and is denoted by $|G:H|$.
@@ -23,4 +27,45 @@
 \begin{proposition}
     If $G$ is a finite group and $x \in G$, then order of $x$ divides the order of $G$. In particular $x^{|G|}=1$ for all $x \in G$.
 \end{proposition}
+
+\begin{proof}
+    Apply lagrange's theorem on $H=\langle x \rangle$.
+\end{proof}
+
+\begin{proposition}
+    If $G$ is a group of prime order $p$, then $G$ is cyclic, hence $G \cong \mathbf{Z}_{p}$.
+\end{proposition}
+
+\begin{proof}
+    Take any $x \in G$ such that $x \neq 1$ then $|\langle x \rangle|$ divides $p$ which implies  $\langle x \rangle = G$. 
+\end{proof}
+
+\begin{proposition}
+    Let $G$ be a group and $H$ be a subgroup of $G$ with $|G:H|=2$. Then $H \normal G$. 
+\end{proposition}
+
+\begin{proof}
+Let \( g \in G \) be arbitrary. If \( g \in H \), then clearly
+\[
+gH = H = Hg.
+\]
+If \( g \notin H \), then since there are exactly two left cosets of \( H \) in \( G \)
+and \( g \notin H \), these must be \( H \) and \( gH \).
+Because left cosets are disjoint, we have
+\[
+gH = G \setminus H.
+\]
+Similarly, the right cosets of \( H \) in \( G \) are also disjoint, 
+so the two right cosets must be \( H \) and \( Hg \),
+and therefore
+\[
+Hg = G \setminus H.
+\]
+Thus,
+\[
+Hg = G \setminus H = gH.
+\]
+Hence \( gH = Hg \) for all \( g \in G \),
+and therefore \( H \trianglelefteq G \).
+\end{proof}
 
