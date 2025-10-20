@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1760847777.25728 "/home/basudevkarki/Desktop/Notes/grouptheory/grouptheory.tex" "grouptheory.pdf" "grouptheory" 1760847778.11887 0
-  "/home/basudevkarki/Desktop/Notes/grouptheory/grouptheory.tex" 1760614435.24736 1562 2f59d0e79c06c54b1f2ee067f998efeb ""
+["pdflatex"] 1760925586.96466 "/home/basudevkarki/Desktop/Notes/grouptheory/grouptheory.tex" "grouptheory.pdf" "grouptheory" 1760925587.71058 0
+  "/home/basudevkarki/Desktop/Notes/grouptheory/grouptheory.tex" 1760925586.62846 1610 7a925770c07262777156f51dbfb139db ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -172,11 +172,12 @@
   "chapters_grpthry/Chapter2/1B.tex" 1760613016.891 8158 845130106ae9c0e3d151819b84929a55 ""
   "chapters_grpthry/Chapter2/1C.tex" 1760613016.891 11436 95905a1d53cc9bf9dcf5420f44284a81 ""
   "chapters_grpthry/Chapter2/1D.tex" 1760613016.891 7928 dca32e043580ef02cbfcf2596238dcce ""
-  "chapters_grpthry/Chapter3/2A.tex" 1760847777.02903 14965 8f696e43ec85511f4ed85235b5afd86c ""
-  "grouptheory.aux" 1760847778.00902 6098 4132c469aa3a2222bc36b51712d3fd92 "pdflatex"
-  "grouptheory.out" 1760847778.01002 1479 5931baa9203626406abfb8227dc73ef8 "pdflatex"
-  "grouptheory.tex" 1760614435.24736 1562 2f59d0e79c06c54b1f2ee067f998efeb ""
-  "grouptheory.toc" 1760847778.01002 3247 938b2f7ed18610dc5185f59f46f82270 "pdflatex"
+  "chapters_grpthry/Chapter3/2A.tex" 1760847861.37204 14965 8f696e43ec85511f4ed85235b5afd86c ""
+  "chapters_grpthry/Chapter3/2B.tex" 1760925556.88885 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "grouptheory.aux" 1760925587.61276 6098 4132c469aa3a2222bc36b51712d3fd92 "pdflatex"
+  "grouptheory.out" 1760925587.6137 1479 5931baa9203626406abfb8227dc73ef8 "pdflatex"
+  "grouptheory.tex" 1760925586.62846 1610 7a925770c07262777156f51dbfb139db ""
+  "grouptheory.toc" 1760925587.6137 3247 938b2f7ed18610dc5185f59f46f82270 "pdflatex"
   (generated)
   "grouptheory.aux"
   "grouptheory.log"
