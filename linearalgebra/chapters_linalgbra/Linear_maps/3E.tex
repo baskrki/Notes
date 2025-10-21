@@ -63,3 +63,33 @@
     \end{align*}
     Combining the result of \textbf{Proposition 1.26.} we get our desired result.
 \end{proof}
+
+
+\subsubsection{Quotients Spaces}
+
+\begin{definition}
+    Suppose $v \in V$ and $U \subseteq V$. Then $v+U$ is a subset of $V$ defined by
+    \[ v+U = \{v+u \mid u \in U\} \]
+\end{definition}
+
+\begin{definition}
+    For $v \in V$ and $U$ a subset of $V$, the set $v+U$ is said to be a \textit{translate} of $U$.
+\end{definition}
+
+\begin{definition}
+    Suppose $U$ is a subspace of $V$. Then the \textit{quotient space} $V/U$ is the set of all translate of $U$,
+    \[ V/U = \{ v+ U \mid v \in V \} \]
+\end{definition}
+
+\begin{proposition}
+    Suppose $U$ is a subspace of $V$ and $v,w \in V$ then
+    \[ v-w \in U \iff v+U = w + U \iff (v+U) \cap (u+V) \neq \emptyset \] 
+\end{proposition}
+
+\begin{proof}
+    Suppose $v-w \in U$ then $v=w+u'$ for some $u \in U$ thus, $v+u = w+(u'+u) \in w + U$ which implies $v+U \subseteq w+U$.
+    Thus, similarly $w+U \subseteq v+U \implies v+U = w+U \implies (v+U) \cap (w+U) \neq \emptyset$.
+
+    Now, suppose $(v+U) \cap (w+U) \neq \emptyset$ then $v+u_1 = w+u_2$ for some $u_1,u_2 \in U$ which implies $v-w \in U$, which implies 
+    $v+U=w+U$. And $v+U = w+U \implies v-w \in U$. Thus, we proved every direction of the proof.
+\end{proof}
