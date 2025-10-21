@@ -110,9 +110,31 @@
     Just use previous definitions and check the vector axioms. 
 \end{proof}
 
-\begin{definition}
-    Suppose $U$ is a subspace of $V$. The quotient map $\pi : V \to V/U$ is a linear map defined by 
+\begin{proposition}
+    Suppose $U$ is a subspace of $V$. The \textit{quotient map} $\pi : V \to V/U$ is a linear map defined by 
     \[ \pi(v) = v+U \]
     for each $v \in V$.
+\end{proposition}
+
+\begin{proof}
+    Note that $\pi(a+b)=(a+b)+U=(a+U)+(b+U)=\pi(a)+\pi(b)$ and $\pi(\lambda a) = (\lambda a) + U = \lambda(a+U) = \lambda \pi(a)$. 
+\end{proof}
+
+\begin{proposition}
+    Suppose $V$ is finite-dimensional vector space and $U$ is a subspace of $V$ then
+    \[ \dim V/U  = \dim V - \dim U\]
+\end{proposition}
+
+\begin{proof}
+    We use the map quotient map $\pi$ introduced before. We know that $a+U = 0+U \iff a \in U$ this $\operatorname{null} \pi = U$ and 
+    $\operatorname{range} \pi = V/U$ as the map is surjective. Thus, using the fundamental theorem of linear map we get our desired result. 
+\end{proof}
+
+\begin{definition}
+    Suppose $T \in \LL(V,W)$. Define $\widetilde{T} : V/(\operatorname{null} T) \to W$ by
+    \[ \widetilde{T}(v+\operatorname{null} T) = Tv \]
 \end{definition}
+
+This map indeed is well-defined as $u+\operatorname{null} T = v + \operatorname{null} T \implies v-u \in \operatorname{null} T$ and thus
+$T(v-u) = 0 \implies Tv=Tu$. Also, the map is a linear map.
 
