@@ -138,3 +138,23 @@
 This map indeed is well-defined as $u+\operatorname{null} T = v + \operatorname{null} T \implies v-u \in \operatorname{null} T$ and thus
 $T(v-u) = 0 \implies Tv=Tu$. Also, the map is a linear map.
 
+
+\begin{proposition}
+    Suppose $T \in \LL(V,W)$ then
+    \begin{enumerate}
+        \item[(a)] $\widetilde{T} \circ \pi = T$ where $\pi$ is the quotient map with $U=\operatorname{null} T$
+        \item[(b)] $\widetilde{T}$ is injective
+        \item[(c)] $\operatorname{range} T = \operatorname{range} \widetilde{T}$
+        \item[(d)] $V/(\operatorname{null} T)$ and $\operatorname{range} T $ are isomorphic vector spaces.   
+    \end{enumerate}
+\end{proposition}
+
+\begin{proof} We prove each point individually 
+    \begin{enumerate}
+        \item[(a)] If $v \in V$ then $\widetilde{T} \circ \pi (v) = \widetilde{T}(v+\operatorname{null} T) = Tv$ as desired.
+        \item[(b)] If $\widetilde{T}(v+\operatorname{null} T )=0$ then $Tv=0$ thus $v \in \operatorname{null} T $. Thus,
+            $v+\operatorname{null} T = 0 + \operatorname{null} T \implies \operatorname{null} \widetilde{T} = \{0+\operatorname{null} T\}$.
+        \item[(c)] By definition of $\widetilde{T}$.
+        \item[(d)] From (b) and (c).  
+    \end{enumerate}
+\end{proof}
