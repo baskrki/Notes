@@ -106,3 +106,37 @@ and therefore \( H \trianglelefteq G \).
     Thus, by lagrange's theorem we've the number of distinct left cosets of $H \cap K$ in $H$ equal to $\frac{|H|}{|H\cap K|}$.
     Since, there are $\frac{|H|}{|H\cap K|}$ distinct cosets and each coset has a size of $|K|$ we get our desired formula.
 \end{proof}
+
+\begin{proposition}
+    If $H$ and $K$ are subgroups of a group, $HK$ is a subgroup if and only if $HK=KH$.
+\end{proposition}
+
+\begin{proof}
+Assume first that \( HK = KH \) and let \( a, b \in HK \). We prove \( ab^{-1} \in HK \), so \( HK \) is a subgroup by the subgroup criterion.
+Let
+\[
+a = h_1 k_1 \quad \text{and} \quad b = h_2 k_2,
+\]
+for some \( h_1, h_2 \in H \) and \( k_1, k_2 \in K \). Then \( b^{-1} = k_2^{-1} h_2^{-1} \), so 
+\[
+ab^{-1} = h_1 k_1 k_2^{-1} h_2^{-1}.
+\]
+Let \( k_3 = k_1 k_2^{-1} \in K \) and \( h_3 = h_2^{-1} \). Thus \( ab^{-1} = h_1 k_3 h_3 \). Since \( HK = KH \),
+\[
+k_3 h_3 = h_4 k_4 \quad \text{for some } h_4 \in H, \ k_4 \in K.
+\]
+Therefore,
+\[
+ab^{-1} = h_1 (h_4 k_4) = (h_1 h_4) k_4,
+\]
+and since \( h_1 h_4 \in H \), \( k_4 \in K \), we obtain \( ab^{-1} \in HK \), as desired.
+
+Conversely, assume that \( HK \) is a subgroup of \( G \). Since \( K \leq HK \) and \( H \leq HK \), by the closure property of subgroups,
+ \( KH \subseteq HK \). To show the reverse containment, let \( hk \in HK \). Since \( HK \) is a subgroup, \( hk = a^{-1} \) for some
+  \( a \in HK \). If \( a = h_1 k_1 \), then
+\[
+hk = (h_1 k_1)^{-1} = k_1^{-1} h_1^{-1} \in KH,
+\]
+so \( HK \subseteq KH \). Hence \( HK = KH \), completing the proof.
+    
+\end{proof}
