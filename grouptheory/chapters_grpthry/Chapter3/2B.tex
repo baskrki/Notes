@@ -96,3 +96,13 @@ and therefore \( H \trianglelefteq G \).
     \[ |HK| = \frac{|HK|}{|H \cap K|} \]
 \end{proposition}
 
+\begin{proof}
+    Notice that 
+    \[ HK = \bigcup_{h \in H} hK \]
+    Since, each coset has size $|K|$ it is enough to find the number of left cosets of form $hK$ where $h \in H$. But $h_1 K = h_2 K$ where
+    $h_1,h_2 \in H$ if and only if $h_2^{-1}h_1 \in K$. Thus,
+    \[ h_1 K = h_2 K \iff h_2^{-1}h_1 \in (H \cap K) \iff h_1 (H \cap K) = h_2 (H \cap K) \]
+    Thus the number of distinct cosets of the form $hK$ where $h \in H$ is the number of distinct left cosets of $H \cap K$ in $H$.
+    Thus, by lagrange's theorem we've the number of distinct left cosets of $H \cap K$ in $H$ equal to $\frac{|H|}{|H\cap K|}$.
+    Since, there are $\frac{|H|}{|H\cap K|}$ distinct cosets and each coset has a size of $|K|$ we get our desired formula.
+\end{proof}
