@@ -140,3 +140,23 @@ hk = (h_1 k_1)^{-1} = k_1^{-1} h_1^{-1} \in KH,
 so \( HK \subseteq KH \). Hence \( HK = KH \), completing the proof.
     
 \end{proof}
+
+\begin{proposition}
+    If \( H \) and \( K \) are subgroups of \( G \) and \( H \leq N_G(K) \), then \( HK \) is a subgroup of \( G \). 
+    In particular, if \( K \trianglelefteq G \) then \( HK \leq G \) for any \( H \leq G \).
+\end{proposition}
+
+\begin{proof}
+    We prove \( HK = KH \). Let \( h \in H \), \( k \in K \). By assumption, \( hkh^{-1} \in K \), hence
+    \[
+    hk = (hkh^{-1})h \in KH.
+    \]
+    This proves \( HK \subseteq KH \). Similarly, \( kh = h(h^{-1}kh) \in HK \), proving the reverse containment. 
+    
+    For the second statement: if \( K \trianglelefteq G \), then \( N_G(K) = G \), so in particular \( H \leq N_G(K) \)
+    for any subgroup \( H \leq G \). The result then follows from the first part.
+\end{proof}
+
+\begin{definition}
+    If $A$ is any subset of $N_G(K)$(or $C_G(K)$), we shall say $A$ \textit{normalizes} $K$(\textit{centralizes} $K$, respectively). 
+\end{definition}
