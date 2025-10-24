@@ -158,3 +158,26 @@ $T(v-u) = 0 \implies Tv=Tu$. Also, the map is a linear map.
         \item[(d)] From (b) and (c).  
     \end{enumerate}
 \end{proof}
+
+\subsubsection{Exercise}
+
+\paragraph{Problem :} Suppose $T$ is a function from $V$ to $W$. The graph of $T$ is the subset of $V \times W$ defined by
+\[ \text{graph of } T = \{(v,Tv) \in V \times W \mid v \in V\} \]
+Prove that $T$ is a linear map if and only if graph of $T$ is a subspace of $V \times W$.
+
+\vspace{4mm}
+\textit{Solution :} For $(\Rightarrow)$, you just need to check the vector axioms and just the definition of a linear map.
+For the $(\Leftarrow)$, consider 
+\[ (v,Tv) + (w,Tw) = (v+w,Tv+Tw) \]
+Since, graph of $T$ is a subspace and all of its element is of the form $(v,Tv)$ for any $v$, it must be that $(v+w,T(v+w))=(v+w,Tv+Tw)$.
+Similarly, $\lambda(v,Tv) = (\lambda v , \lambda Tv) = (\lambda v, T (\lambda v))$. And we're done.
+
+\paragraph{Problem :} Suppose $V_1, \ldots, V_m$ are vector spaces such that $V_1 \times \cdots \times V_m$ is finite-dimensional. Prove that
+$V_k$ is finite-dimensional for each $k=1,\cdots,m$.
+
+\vspace{4mm}
+\textit{Solution :} Let $\dim (V_1 \times \cdots \times V_m)=k$ and suppose $e_1,\ldots,e_k$ are the basis of $V_1 \times \cdots \times V_m$.
+Let $e_i=(e_{1i},e_{2i},\ldots,e_{mi})$ for $1 \le i \le k$. Notice that to cover elements of $V_j$, only the $j$-th component of $e_i$'s 
+play a role. Thus,
+\[ \operatorname{span}\{e_{j1},e_{j2},\ldots,e_{jm}\} = V_k \]
+Since, every span can be reduced to a basis we get that each $V_k$ are finite-dimensional.
