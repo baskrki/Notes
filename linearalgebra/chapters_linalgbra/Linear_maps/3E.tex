@@ -186,4 +186,43 @@ Since, every span can be reduced to a basis we get that each $V_k$ are finite-di
 $\LL(V_1,W)\times \cdots \times \LL(V_m,W)$ are isomorphic vector spaces.
 
 \vspace{4mm}
-\textit{Solution :}
+\textit{Solution :} \paragraph{Solution.}
+Let $U = V_1 \times \cdots \times V_m$.  
+We want to prove that 
+\[
+\mathcal{L}(U, W) \cong \mathcal{L}(V_1, W) \times \cdots \times \mathcal{L}(V_m, W).
+\]
+
+\noindent Define a map
+\[
+\Phi : \mathcal{L}(U, W) \to \mathcal{L}(V_1, W) \times \cdots \times \mathcal{L}(V_m, W)
+\]
+by
+\[
+T \mapsto (T \circ i_1, \, T \circ i_2, \, \ldots, \, T \circ i_m),
+\]
+where for each $j = 1, \dots, m$, the map $i_j : V_j \to U$ is defined by
+\[
+i_j(v) = (0, \ldots, 0, v, 0, \ldots, 0),
+\]
+with $v$ in the $j$-th position.
+
+Now, for $T, T' \in \mathcal{L}(U, W)$ and scalars $\alpha, \beta \in \mathbf{F}$,
+\[
+\Phi(\alpha T + \beta T') = ((\alpha T + \beta T') \circ i_1, \ldots, (\alpha T + \beta T') \circ i_m)
+= \alpha \Phi(T) + \beta \Phi(T').
+\]
+Hence, $\Phi$ is linear.
+
+\noindent
+For invertibility of the map, define
+\[
+\Psi: U \to W
+\]
+by
+\[
+\Psi(S_1, \ldots, S_m)(v_1, \ldots, v_m)
+= S_1(v_1) + \cdots + S_m(v_m).
+\]
+where $S_j \in \mathcal{L}(V_j, W)$. Now, one can check that $\Psi \circ \Phi (T) = T$ and 
+$\Phi \circ \Psi (S_1,\cdots,S_2)= (S_1,\cdots,S_2)$. Thus, the map is invertible. 
