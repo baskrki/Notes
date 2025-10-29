@@ -235,3 +235,10 @@ Prove that $V^m$ and $\LL(\mathbf{F}^m,V)$ are isomorphic vector spaces.
 \textit{Solution :} Define a map from $\Phi : V^m \to \LL(\mathbf{F}^m,V)$ by 
 \[ (v_1,\cdots,v_m) \mapsto (a_1,\ldots,a_m) \mapsto a_1 v_1 + \cdots + a_m v_m \]
 One can check that this is linear as well as invertible.
+
+\paragraph{Problem :} Suppose $x,v$ are vectors in $V$ and $U,W$ are subspaces of $V$ such that $v+U=x+W$. Prove that $U=W$.
+
+\vspace{4mm}
+\textit{Solution :} Suppose $u$ is a arbitrary vector in $U$, then $v+u=x+w$ for some $w \in W$. Thus, setting $u=0$ gives $x-v=-w \in W$.
+Thus, for all $u \in U$, $u=x-v+w$ for some $w\in W$ since $W$ is a subspace $x-v + w \in W$. Thus, $U \subseteq W$ and repeating a similar
+argument for $U$ gives $W \subseteq W$.
