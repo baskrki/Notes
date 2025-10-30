@@ -55,3 +55,4 @@
 \contentsline {paragraph}{Problem :}{23}{section*.55}%
 \contentsline {paragraph}{Problem :}{23}{section*.56}%
 \contentsline {subsection}{\numberline {2.2}More on Cosets and Lagrange's Theorem}{24}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}The Isomorphism Theorems}{28}{subsection.2.3}%
