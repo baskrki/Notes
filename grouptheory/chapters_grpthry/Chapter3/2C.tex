@@ -6,5 +6,30 @@
 \end{theorem}
 
 \begin{proof}
-    we have already shown the first part of the theorem, which is $\ker \varphi \normal G$.
+    we have already shown the first part of the theorem, which is $\ker \varphi \normal G$. For the second part, define a map
+    \begin{align*}
+        \Phi : G/\ker \varphi \to \varphi(G) \\ 
+        g \ker \varphi \mapsto \varphi(g) 
+    \end{align*}
+    This map is well-defined as 
+    \begin{align*}
+        g \ker \varphi &= h \ker \varphi \\
+        \implies gh^{-1} &\in \ker \varphi \\
+        \implies \varphi(g) &=\varphi(h) \\
+        \implies \Phi(g \ker \varphi) &= \Phi(h \ker \varphi)
+    \end{align*}
+
+    This map is also a homomorphism as
+    \begin{align*}
+        \Phi((g \ker \varphi) \cdot (h \ker \varphi)) &= \Phi((gh)\ker \varphi)  \\
+        &= \varphi(gh) \\
+        &= \varphi(g) \varphi(h) \\
+        &= \Phi(g \ker \varphi) \Phi(h \ker \varphi)
+    \end{align*}
+    This map is trivially surjective and for the injective part, suppose 
+    \[ \Phi(g \ker \varphi) = \Phi(h \ker \varphi) \]
+    \[ \implies \varphi(g) = \varphi(h) \]
+    \[ \implies \varphi(gh^{-1})=e \]
+    \[ \implies gh^{-1} \in \ker \varphi \]
+    Thus, $g \in (\ker \varphi)h  = h (\ker \varphi)$, which implies $g \ker \varphi = h \ker \varphi$.
 \end{proof}
