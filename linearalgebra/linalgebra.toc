@@ -81,4 +81,4 @@
 \contentsline {paragraph}{Problem :}{36}{section*.56}%
 \contentsline {paragraph}{Problem :}{36}{section*.57}%
 \contentsline {paragraph}{Problem :}{37}{section*.58}%
-\contentsline {paragraph}{Problem :}{37}{section*.59}%
+\contentsline {subsection}{\numberline {1.6}Duality}{38}{subsection.1.6}%

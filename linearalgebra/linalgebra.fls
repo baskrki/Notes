@@ -655,6 +655,10 @@ INPUT ./chapters_linalgbra/Linear_maps/3E.tex
 INPUT chapters_linalgbra/Linear_maps/3E.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT ./chapters_linalgbra/Linear_maps/3F.tex
+INPUT chapters_linalgbra/Linear_maps/3F.tex
+INPUT ./chapters_linalgbra/Linear_maps/3F.tex
+INPUT chapters_linalgbra/Linear_maps/3F.tex
 INPUT linalgebra.aux
 INPUT ./linalgebra.out
 INPUT ./linalgebra.out
