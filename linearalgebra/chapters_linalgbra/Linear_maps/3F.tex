@@ -31,3 +31,39 @@
         0 & \text{if } k \neq j.
     \end{cases} \]
 \end{definition}
+
+\begin{proposition}
+    Suppose $v_1, \ldots, v_n$ is a basis of $V$ and $\varphi_1, \ldots, \varphi_n$ is the dual basis. Then
+    \[ v = \varphi_1(v) v_1 + \cdots + \varphi_n(v) v_n  \]
+    for each $v \in V$.
+\end{proposition}
+
+\begin{proof}
+    Let 
+    \[ v= c_1 v_1 + \cdots + c_n v_n \]
+    Then, $\varphi_n(v) = c_n$ thus 
+    \[ v = \varphi_1(v) v_1 + \cdots + \varphi_n(v) v_n \]
+    as desired.
+\end{proof}
+
+\begin{proposition}
+    Suppose $V$ is a finite-dimensional. Then the dual basis of a basis of $V$ is a basis of $V'$. 
+\end{proposition}
+
+\begin{proof}
+    Suppose $v_1, \ldots, v_n$ is a basis of $V$ and let $\varphi_1 , \ldots, \varphi_n$ be the dual basis. To show 
+    $\varphi_1 , \ldots, \varphi_n$ is linearly independent, suppose there exists $a_1,\ldots,a_n \in \mathbf{F}$ such that
+    \[ a_1 \varphi_1 + \cdots + a_n \varphi_n =0 \]
+    Then, $(a_1 \varphi_1 + \cdots + a_n \varphi_n)(v_k) =a_k$ for $1 \le k \le n$. Thus, $a_1=a_2=\cdots=a_n=0$.
+    And since the list is of the length $\dim V'$, we can conclude that the list is the basis of $V'$.
+\end{proof}
+
+\begin{definition}
+    Suppose $T \in \LL(W,V)$. The \textit{dual map} of $T$ is the linear map $T' \in \LL(W',V')$ defined for each $\varphi \in W'$ by
+    \[ T'(\varphi) = \varphi \circ T \]
+\end{definition}
+
+\begin{remark}
+    Since $T'$ is a composition of linear maps $\varphi$ and $T$, it is a linear map as well. Also, $T'(\varphi) \in V'$ as $T'$ as it takes
+    an element from $V$ to $\mathbf{F}$. Also, one can verify $T' \in \LL(W',V')$.
+\end{remark}
