@@ -1,1 +1,33 @@
 \subsection{Duality}
+
+
+\subsubsection{Dual Space and Dual Map}
+
+\begin{definition}
+    A \textit{linear functional} on $V$ is a linear map from $V$ to $\mathbf{F}$. In other words, a linear functional is an element of
+    $\LL(V,\mathbf{F})$.
+\end{definition}
+
+\begin{definition}
+    The \textit{dual space} of $V$, denoted $V'$, is the vector space of all linear functional on $V$. In other words, $V=\LL(V,\mathbf{F})$. 
+\end{definition}
+
+\begin{proposition}
+    Suppose $V$ is a finite-dimensional vector space. Then $V'$ is also finite-dimensional and 
+    \[ \dim V' = \dim V \]
+\end{proposition}
+
+\begin{proof}
+    From \textbf{Proposition 1.18.} we have
+    \[ \dim V' = \dim \LL(V,\mathbf{F}) = (\dim V) (\dim \mathbf{F}) = \dim V \]
+    as desired.
+\end{proof}
+
+\begin{definition}
+    If $v_1, \ldots, v_n$ is a basis of $V$, then the \textit{dual space} of $v_1,\ldots,v_n$ is the list $\varphi_1 , \ldots, \varphi_n$ of 
+    elements in $V'$ such that 
+    \[ \varphi_j (k) = \begin{cases}
+        1 & \text{if } k=j, \\
+        0 & \text{if } k \neq j.
+    \end{cases} \]
+\end{definition}
