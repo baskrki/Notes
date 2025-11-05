@@ -67,3 +67,19 @@
     Since $T'$ is a composition of linear maps $\varphi$ and $T$, it is a linear map as well. Also, $T'(\varphi) \in V'$ as $T'$ as it takes
     an element from $V$ to $\mathbf{F}$. Also, one can verify $T' \in \LL(W',V')$.
 \end{remark}
+
+\begin{proposition}
+    Suppose $T \in \LL(V,W)$. Then
+    \begin{enumerate}
+        \item[(a)] $(S+T)' = S'+T'$ for all $S \in \LL(V,W)$, 
+        \item[(b)] $(\lambda T)' = \lambda T'$ for all $\lambda \in \mathbf{F}$,
+        \item[(c)] $(ST)'=T'S'$ for all $S \in \LL(W,U)$.
+    \end{enumerate}    
+\end{proposition}
+
+\begin{proof}
+    The proofs of (a) and (b) directly follow from the definitions.
+    For (c),
+    \[ (ST)'(\varphi) = \varphi \circ (ST) = (\varphi \circ S) \circ T = T'(\varphi \circ S) = T'(S'(\varphi)) = T'S' \]
+    The fourth equation is due to $\varphi \circ S \in W'$.
+\end{proof}
