@@ -9,7 +9,7 @@
 \end{definition}
 
 \begin{definition}
-    The \textit{dual space} of $V$, denoted $V'$, is the vector space of all linear functional on $V$. In other words, $V=\LL(V,\mathbf{F})$. 
+    The \textit{dual space} of $V$, denoted $V'$, is the vector space of all linear functional on $V$. In other words, $V'=\LL(V,\mathbf{F})$. 
 \end{definition}
 
 \begin{proposition}
@@ -59,7 +59,7 @@
 \end{proof}
 
 \begin{definition}
-    Suppose $T \in \LL(W,V)$. The \textit{dual map} of $T$ is the linear map $T' \in \LL(W',V')$ defined for each $\varphi \in W'$ by
+    Suppose $T \in \LL(V,W)$. The \textit{dual map} of $T$ is the linear map $T' \in \LL(W',V')$ defined for each $\varphi \in W'$ by
     \[ T'(\varphi) = \varphi \circ T \]
 \end{definition}
 
@@ -82,4 +82,37 @@
     For (c),
     \[ (ST)'(\varphi) = \varphi \circ (ST) = (\varphi \circ S) \circ T = T'(\varphi \circ S) = T'(S'(\varphi)) = T'S' \]
     The fourth equation is due to $\varphi \circ S \in W'$.
+\end{proof}
+
+\subsubsection{Null Space and Range of Linear Map}
+
+\begin{definition}
+    For $U \subseteq V$, the annihilator of $U$, denoted by $U^0$, is defined by 
+    \[ U^0 = \{ \varphi \in V' \mid \varphi(u)=0 \text{ for all } u \in U \} \]
+\end{definition}
+
+\begin{proposition}
+    Suppose $U \subseteq V$. Then $U^0$ is a subspace of $V'$.
+\end{proposition}
+
+\begin{proof}
+    One can just check the vector axioms.
+\end{proof}
+
+\begin{proposition}
+    Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$. Then
+    \[ \dim U^0 = \dim V - \dim U \]
+\end{proposition}
+
+\begin{proof}
+    Let $i \in \LL(U,V)$ be the linear map such that $i(u)=u$ for each $u \in U$. Thus, $i' \in \LL(V',U')$ and from fundamental theorem of
+    linear maps we have,
+    \[ \dim \operatorname{range} i' + \dim \operatorname{null} i' = \dim V' = \dim V \] 
+    Also, $\operatorname{null} i' = \{ \varphi \in V' \mid i'(\varphi) = 0\} = \{ \varphi \in V' \mid \varphi \circ i = 0 \} =
+    \{ \varphi \in V' \mid \varphi(x) = 0\}=U^0$. Thus, $\dim \operatorname{null} i' = \dim U^0$ and the equation above becomes
+    \[ \dim \operatorname{range} i' + \dim U^0 = \dim V \]
+    If $\varphi \in U'$, then $\varphi$ can be extended to a linear functional $\phi$ on $V$ (\textbf{Exercise 10} of the first section).
+    Thus, $i'(\phi)=\varphi$ and $\operatorname{range} i' = U'$. Hence
+    \[ \dim \operatorname{range} i' = \dim U' = \dim U \]
+    And thus $\dim U + \dim U^0 = \dim V$ as desired.
 \end{proof}
