@@ -169,3 +169,50 @@
         &= \dim \operatorname{null} T + \dim W - \dim V
     \end{align*}
 \end{proof}
+
+\begin{proposition}
+    Suppose $V$ and $W$ are finite-dimensional and $T \in \LL(V,W)$. Then
+    \[ T \text{ is surjective} \iff T' \text{ is injective} \]
+\end{proposition}
+
+\begin{proof}
+    To prove this, we have
+    \begin{align*}
+        T \text{ is surjective} &\iff \operatorname{range} T = W \\
+        &\iff (\operatorname{range}T)^0 = \{0\} \\
+        &\iff \operatorname{null} T'=\{0\} \\
+        &\iff T' \text{ is injective}
+    \end{align*}
+    as desired.
+\end{proof}
+
+\begin{proposition}
+    Suppose $V$ and $W$ are finite-dimensional and $T \in \LL(V,W)$. Then
+    \begin{enumerate}
+        \item[(a)] $\dim \operatorname{range} T' = \dim \operatorname{range} T$,
+        \item[(b)] $\operatorname{range} T' = (\operatorname{null} T)^0$  
+    \end{enumerate}
+\end{proposition}
+
+\begin{proof}
+    For (a) we have,
+        \begin{align*}
+            \dim \operatorname{range} T' &= \dim W' - \dim \operatorname{null} T' \\
+            &= \dim W - (\dim \operatorname{null} T + \dim W - \dim V) \\
+            &= \dim V- \dim \operatorname{null} T \\
+            &= \dim \operatorname{range} T
+        \end{align*}
+        
+    For (b), suppose $\varphi \in \operatorname{range} T'$ then there exists a $\phi \in W'$ such that $T'(\phi)=\varphi$. Thus, for 
+    all $v \in \operatorname{null} T$ we have 
+    \[ \varphi(v) = T'(\phi)v = (\phi \circ T)(v) = \phi(0)=0 \]
+    Thus, $\varphi \in (\operatorname{null} T)^0$. Thus, $\operatorname{range} T' \subseteq (\operatorname{null}T)^0$.
+    Now, we'll complete the proof by showing $\dim \operatorname{range} T' = \dim (\operatorname{null}T)^0$.
+    Note, that 
+    \begin{align*}
+        \dim \operatorname{range} T' &= \dim \operatorname{range} T \\
+        &= \dim V - \dim \operatorname{null} T \\
+        &= \dim (\operatorname{null} T)^0
+    \end{align*}
+    where the last equation is from \textbf{Proposition 1.39}.
+\end{proof}
