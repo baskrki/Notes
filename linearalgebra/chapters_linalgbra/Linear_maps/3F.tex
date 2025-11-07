@@ -116,3 +116,28 @@
     \[ \dim \operatorname{range} i' = \dim U' = \dim U \]
     And thus $\dim U + \dim U^0 = \dim V$ as desired.
 \end{proof}
+
+\begin{proposition}
+    Suppose $V$ is finite-dimensional and $U$ is a subspace of $V$. Then
+    \begin{enumerate}
+        \item[(a)] $U^0=\{0\} \iff U=V$,
+        \item[(b)] $U^0=V' \iff U=\{0\}$ 
+    \end{enumerate}
+\end{proposition}
+
+\begin{proof}
+    For (a) we have,
+    \begin{align*}
+        U^0 = \{0\} &\iff \dim U^0 = 0 \\
+        &\iff \dim U = \dim V \\
+        &\iff U=V
+    \end{align*}
+    Similarly, to prove (b) we have
+    \begin{align*}
+        U^0=V' &\iff \dim U^0 = \dim V' \\
+        &\iff \dim U^0 = \dim V \\
+        &\iff \dim U = 0 \\
+        &\iff U=\{0\}
+    \end{align*}
+    And we're done.
+\end{proof}
