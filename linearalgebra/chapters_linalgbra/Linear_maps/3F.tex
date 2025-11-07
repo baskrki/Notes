@@ -141,3 +141,31 @@
     \end{align*}
     And we're done.
 \end{proof}
+
+\begin{proposition}
+    Let $V$ and $W$ be vector spaces and let $T \in \LL(V,W)$. Then
+    \[ \operatorname{null} T' =(\operatorname{range} T)^0 \]
+\end{proposition}
+
+\begin{proof}
+    First suppose $\varphi \in \operatorname{null} T'$, then $T'(\varphi)=(\varphi \circ T)(x) = 0$ for every $x \in V$. Since,
+    $\varphi(Tx)=0$ we have $\varphi \in (\operatorname{range} T)^0$ and thus $\operatorname{null} T' \subseteq (\operatorname{range}T)^0$.
+
+    Now, suppose $\varphi \in (\operatorname{range} T)^0$ then $\varphi(Tv)=0$ for all $v\in V$ which implies $T'(\varphi)=0$. Thus, 
+    $\varphi \in \operatorname{null} T'$ and $(\operatorname{range} T)^0 \subseteq \operatorname{null} T'$ as desired.
+\end{proof}
+
+\begin{proposition}
+    Suppose $V$ and $W$ are finite-dimensional and $T \in \LL(V,W)$ then 
+    \[ \dim \operatorname{null} T' = \dim \operatorname{null} T + \dim W - \dim V \]
+\end{proposition}
+
+\begin{proof}
+    We have 
+    \begin{align*}
+        \dim \operatorname{null} T' &= \dim (\operatorname{range}T)^0 \\
+        &= \dim W - \dim \operatorname{range} T \\
+        &= \dim W - (\dim V-\dim \operatorname{null} T) \\
+        &= \dim \operatorname{null} T + \dim W - \dim V
+    \end{align*}
+\end{proof}
