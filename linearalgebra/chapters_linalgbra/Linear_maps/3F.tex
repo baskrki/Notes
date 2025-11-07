@@ -216,3 +216,18 @@
     \end{align*}
     where the last equation is from \textbf{Proposition 1.39}.
 \end{proof}
+
+\begin{proposition}
+    Suppose $V$ and $W$ are finite-dimensional and $T \in \LL(V,W)$. Then,
+    \[ T \text{ is injective} \iff T' \text{ is surjective} \]
+\end{proposition}
+
+\begin{proof}
+    We have
+    \begin{align*}
+        T \text{ is injective} &\iff \operatorname{null} T= \{0\} \\
+        &\iff (\operatorname{null} T)^0 = V' \\
+        &\iff \operatorname{range} T'=V'
+    \end{align*}
+    as desired.
+\end{proof}
