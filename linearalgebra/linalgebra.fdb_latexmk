@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1762482734.15688 "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" "linalgebra.pdf" "linalgebra" 1762482734.82462 0
+["pdflatex"] 1762658817.38068 "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" "linalgebra.pdf" "linalgebra" 1762658818.04572 0
   "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" 1762232808.51376 1632 ce5cc44aaa5d4b7d34dc5bac4f50c3f6 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -22,6 +22,8 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss12.tfm" 1136768653 1324 37b971caf729d7edd9cbb9f9b0ea76eb ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm" 1136768653 1296 d77f431d10d47c8ea2cc18cf45346274 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
@@ -37,6 +39,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb" 1248133631 24420 52dbb8e8aa0069a1b987309557f8d303 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
@@ -110,11 +113,11 @@
   "chapters_linalgbra/Linear_maps/3C.tex" 1762232764.31926 22974 ae47d2d4cc2912e501fd5fb9e08d3468 ""
   "chapters_linalgbra/Linear_maps/3D.tex" 1762232764.31926 16781 ff1c5b37119b6d26dbd3192d9ae58377 ""
   "chapters_linalgbra/Linear_maps/3E.tex" 1762232764.31926 11593 80a881d9ca5765811c0d4862df5c7825 ""
-  "chapters_linalgbra/Linear_maps/3F.tex" 1762482733.95639 8952 5714c64e59a751a207befecaad4deffb ""
-  "linalgebra.aux" 1762482734.74336 10040 77c448473becf716ae1f45968945f7e8 "pdflatex"
-  "linalgebra.out" 1762482734.74436 5583 970e9aca363b868f8fe54b4607237b22 "pdflatex"
+  "chapters_linalgbra/Linear_maps/3F.tex" 1762658817.17971 10134 ae0ffa3b7b1a9c0bf0b5502f3e49df59 ""
+  "linalgebra.aux" 1762658817.96397 10183 d192c0eb0bf30b52c91315d5ba48a353 "pdflatex"
+  "linalgebra.out" 1762658817.96497 5788 927a978b163d0c7110923869d8404c85 "pdflatex"
   "linalgebra.tex" 1762232808.51376 1632 ce5cc44aaa5d4b7d34dc5bac4f50c3f6 ""
-  "linalgebra.toc" 1762482734.74536 5958 92633c3011bc8d828e729488a9a20271 "pdflatex"
+  "linalgebra.toc" 1762658817.96597 6060 19abda3b44114db664df18ac00da0c24 "pdflatex"
   (generated)
   "linalgebra.aux"
   "linalgebra.log"
