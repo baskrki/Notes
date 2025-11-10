@@ -43,5 +43,45 @@
 \end{corollary}
 
 \begin{theorem}(Second Isomorphism Theorem)
-    Let $G$ be a group and 
+    Let $G$ be a group and let $A$ and $B$ be subgroups of $G$ and assume $A \le N_G(B)$. Then $AB$ is a subgroup, $B \normal AB$,
+    $A \cap B \normal A$ and $AB/B \cong  A/A \cap B$.
 \end{theorem}
+
+\begin{proof}
+    Since $A \le N_G(B)$, every element of $A$ normalizes $B$; that is,
+\[
+aBa^{-1} = B \qquad \text{for all } a \in A.
+\]
+
+Also, $B \le N_G(B)$ trivially, because for any $b \in B$,
+\[
+bBb^{-1} = B.
+\]
+
+Now consider an arbitrary element of $AB$. Every element of $AB$ can be written as $ab$ for some $a \in A$ and $b \in B$.
+ We compute the conjugate of $B$ by such an element:
+\[
+(ab)B(ab)^{-1}
+    = a \bigl( b B b^{-1} \bigr) a^{-1}
+    = a B a^{-1}
+    = B,
+\]
+since $bBb^{-1} = B$ and $aBa^{-1} = B$.
+
+Thus every element of $AB$ normalizes $B$, so
+\[
+AB \le N_G(B).
+\]
+
+Since $kBk^{-1}=B$ for any $k \in AB$ , it follows that
+\[
+B \normal AB.
+\]
+
+Since, $B$ is normal in $AB$ the quotient group $AB/B$ is well defined. Define the map $\varphi : A \to AB/B$ by 
+\[\varphi(a)=aB\]
+One can check that this map is a homomorphism. Also, it is clear that this map is surjective from the definition. The identity in $AB/B$ is 
+$1B$ so 
+\[\ker \varphi = \{a \in A \mid aB=1B\}= \{ a \in A \mid a \in B\} = A \cap B\]
+By the first isomorphism theorem, $A \cap B \normal A$ and $A / A \cap B \cong AB/B$.
+\end{proof}
