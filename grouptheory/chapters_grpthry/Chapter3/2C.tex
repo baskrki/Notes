@@ -85,3 +85,22 @@ $1B$ so
 \[\ker \varphi = \{a \in A \mid aB=1B\}= \{ a \in A \mid a \in B\} = A \cap B\]
 By the first isomorphism theorem, $A \cap B \normal A$ and $A / A \cap B \cong AB/B$.
 \end{proof}
+
+\begin{theorem}(The Thrid Isomorphism Theorem) Let $G$ be a group and $H,K \normal G$ with $H \le K$. Then, $K/H \normal G/H$ and 
+\[ (G/H)/(K/H) \cong (G/K) \]
+\end{theorem}
+
+\begin{proof}
+    First of all notice that $H \normal K$. Thus, $K/H$ is well-defined. Now, let $g H \in G/H$ and $kH \in K/H$ be arbitrary element.
+    Then, $(gH)(kH)(gH)^{-1} = (gkg^{-1})H$, since $gkg^{-1} \in K$ it implies that $(gkg^{-1})H \in K/H$. Thus, $K/H \normal G/H$.
+
+    Now, define $\varphi : G/H \to G/K$ by $gH \mapsto gK$. One can check this is a well-defined map. Also, 
+    \[ \varphi((aH) (bH)) = (ab)K = (aK) (bK) = \varphi(aH) \varphi(bH) \]
+    Thus, it a homomorphism as well. Now,
+    \begin{align*}
+        \ker \varphi &= \{ gH \in G/H \mid \varphi(gH) = K \} \\
+        \ker \varphi &= \{ gH \in G/H \mid gK=K \} \\
+        \ker \varphi &= \{ gH \in G/H \mid g \in K \} \\
+        \ker \varphi &= K/H 
+    \end{align*}
+\end{proof}
