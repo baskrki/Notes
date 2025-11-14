@@ -885,6 +885,8 @@ INPUT ./chapters_grpthry/Chapter3/2C.tex
 INPUT chapters_grpthry/Chapter3/2C.tex
 INPUT ./chapters_grpthry/Chapter3/2C.tex
 INPUT chapters_grpthry/Chapter3/2C.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT grouptheory.aux
 INPUT ./grouptheory.out
 INPUT ./grouptheory.out

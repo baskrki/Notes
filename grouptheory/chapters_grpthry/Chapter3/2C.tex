@@ -104,3 +104,22 @@ By the first isomorphism theorem, $A \cap B \normal A$ and $A / A \cap B \cong A
         \ker \varphi &= K/H 
     \end{align*}
 \end{proof}
+
+\begin{theorem}(The Fourth or Lattice Isomorphism Theorem)
+Let $G$ be a group and let $N$ be a normal subgroup of $G$. Then there is a bijection
+from the set of subgroups $A$ of $G$ which contain $N$ onto the set of subgroups $\overline{A} = A/N \quad \text{of } G/N$.
+In particular, every subgroup of $\overline{G}$ is of the form $A/N$ for some subgroup
+$A$ of $G$ containing $N$ (namely, its preimage in $G$ under the natural projection
+homomorphism from $G$ to $G/N$).
+
+This bijection has the following properties: for all $A, B \le G$ with
+$N \le A$ and $N \le B$,
+
+\begin{enumerate}
+    \item $A \le B$ if and only if $\overline{A} \le \overline{B}$,
+    \item if $A \le B$, then $|B : A| = |\overline{B} : \overline{A}|$,
+    \item $\langle A, B \rangle = \langle \overline{A}, \overline{B} \rangle$,
+    \item $A \cap B = \overline{A} \cap \overline{B}$, and
+    \item $A \trianglelefteq G$ if and only if $\overline{A} \trianglelefteq \overline{G}$.
+\end{enumerate}
+\end{theorem}
