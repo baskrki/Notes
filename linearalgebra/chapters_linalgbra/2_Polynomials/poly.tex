@@ -1,0 +1,34 @@
+\subsection{Zeros of Polynomials}
+
+\begin{definition}
+    A number $\lambda \in \mathbf{F}$ is called a \textit{zero}(or \textit{root}) of a polynomial $p \in \mathcal{P}(\mathbf{F})$ if
+    \[ p(\lambda) = 0 \]
+\end{definition}
+
+\begin{proposition}
+Suppose $m$ is a positive integer and $p \in \mathcal{P}(\mathbf{F})$ is a polynomial of degree $m$.
+Suppose $\lambda \in \mathbf{F}$. Then $p(\lambda) = 0$ if and only if there exists a polynomial
+$q \in \mathcal{P}(\mathbf{F})$ of degree $m-1$ such that
+\[
+    p(z) = (z - \lambda) q(z)
+\]
+for every $z \in \mathbf{F}$.
+\end{proposition}
+
+\begin{proof}
+    Not so hard.
+\end{proof}
+
+\begin{proposition}
+    Suppose $m$ is a positive integer and $p \in \mathcal{P}(\mathbf{F})$ is a polynomial of degree $m$. Then $p$ has at most $m$ roots in
+    $\mathbf{F}$.
+\end{proposition}
+
+\begin{proof}
+    We'll use induction. For $m=1$, it is quite straight forward, as the polynomial $a_0 + a_1z$ only has one zero which is $-a_0/a_1$.
+    Now, suppose the assumption holds for all polynomial with degree $m-1$. 
+    Let $p$ be a polynomial of degree $m$, then if $p$ has no zeros then we're done. Suppose $\lambda \in \mathbb{F}$ such that
+    $p(\lambda)=0$, then using our previous proposition we get
+    \[ p(z)=(z-\lambda)q(z) \]
+    where $q(z)$ has degree $m-1$. This shows that zeros of $p$ are exactly the zeros of $q(z)$ and $\lambda$, which is at most $m$.  
+\end{proof}
