@@ -32,3 +32,29 @@ for every $z \in \mathbf{F}$.
     \[ p(z)=(z-\lambda)q(z) \]
     where $q(z)$ has degree $m-1$. This shows that zeros of $p$ are exactly the zeros of $q(z)$ and $\lambda$, which is at most $m$.  
 \end{proof}
+
+\begin{remark}
+    The result above implies that, coefficients of a polynomial are uniquely determined
+\end{remark}
+
+\subsubsection{Division Algorithm for Polynomials}
+
+\begin{proposition}
+    Suppose that $p,s \in \mathcal{P}(\mathbf{F})$ with $s \neq 0$. Then there exists a unique polynomials $q,r \in \mathcal{P}(\mathbf{F})$
+    such that 
+    \[ p=sq+r \]
+    and $\deg r < \deg s$.
+\end{proposition}
+
+\begin{proof}
+    Suppose $\deg p = n$ and $\deg s = m$. If $n < m$ then, $q=0$ and $r=p$. Thus assume that $n \ge m$. Then, take the list 
+    \[ 1,z,z^2,\ldots,z^m-1,s,sz,\ldots,sz^{n-m} \]
+    this list is linearly independent in $\mathcal{P}_{n}(\mathbf{F})$ as every element has a different degree. 
+    Also, the length of the list is $n+1$, thus this list is a basis of $\mathcal{P}_{n}(\mathbf{F})$. But since 
+    $p \in \mathcal{P}_{n}(\mathbf{F})$, we can write $p$ as 
+    \begin{align*}
+        p &= a_0 + a_1 z + \cdots + a_{m-1}z^{m-1} + b_0s+b_1zs + \cdots + b_{n-m}sz^{n-m} \\
+        &= \underbrace{a_0 + a_1 z + \cdots + a_{m-1}z^{m-1}}_{r}+ s\underbrace{(b_0+b_1z + \cdots + b_{n-m}z^{n-m})}_{q}
+    \end{align*}
+    as desired.
+\end{proof}
