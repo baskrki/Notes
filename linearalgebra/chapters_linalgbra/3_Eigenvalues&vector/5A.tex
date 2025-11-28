@@ -22,3 +22,19 @@ From our definition, $U$ is invariant under $T$ if $T|_{U}$ is an operator on $U
     then $Tv = \lambda v$ for some $\lambda \in \mathbf{F}$. Conversely, if $Tv = \lambda v$ for some $\lambda \in \mathbf{F}$ then 
     $\operatorname{span}{v}$ is one-dimensional subspace $V$ invariant under $T$.
 \end{remark}
+
+\begin{proposition}
+    Suppose $V$ is finite-dimensional, $T \in \LL(V)$, and $\lambda \in F$. Then the following are equivalent.
+    \begin{enumerate}
+        \item $\lambda$ is an eigenvalue of $T$.
+        \item $T-\lambda I$ is not injective.
+        \item $T-\lambda I$ is not surjective.
+        \item $T-\lambda I$ is not invertible.
+    \end{enumerate}
+    where $I$ is the identity operator on $V$. 
+\end{proposition}
+
+\begin{proof}
+    Condition $1.$ and $2.$ are equivalent because of $Tv = \lambda v \iff (T-\lambda I)v = 0$ and if it was injective then $v=0$.
+    And $2.$, $3.$ and $4.$ are equivalent from $\textbf{Proposition 1.14.}$
+\end{proof}
