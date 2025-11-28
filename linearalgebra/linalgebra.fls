@@ -666,6 +666,10 @@ INPUT ./chapters_linalgbra/2_Polynomials/poly.tex
 INPUT chapters_linalgbra/2_Polynomials/poly.tex
 INPUT ./chapters_linalgbra/2_Polynomials/poly.tex
 INPUT chapters_linalgbra/2_Polynomials/poly.tex
+INPUT ./chapters_linalgbra/3_Eigenvalues&vector/5A.tex
+INPUT chapters_linalgbra/3_Eigenvalues&vector/5A.tex
+INPUT ./chapters_linalgbra/3_Eigenvalues&vector/5A.tex
+INPUT chapters_linalgbra/3_Eigenvalues&vector/5A.tex
 INPUT linalgebra.aux
 INPUT ./linalgebra.out
 INPUT ./linalgebra.out

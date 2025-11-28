@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1764296317.93963 "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" "linalgebra.pdf" "linalgebra" 1764296319.33617 0
-  "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" 1764296232.38638 1731 afcae98acac6bb3d2cc580d3f0732631 ""
+["pdflatex"] 1764296803.67636 "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" "linalgebra.pdf" "linalgebra" 1764296805.02421 0
+  "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" 1764296714.89473 1832 c091f41b19216c3ffd5c45a3b9772328 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -115,10 +115,11 @@
   "chapters_linalgbra/1_Linear_Maps/3E.tex" 1762232764.31926 11593 80a881d9ca5765811c0d4862df5c7825 ""
   "chapters_linalgbra/1_Linear_Maps/3F.tex" 1763180440.18291 10134 ae0ffa3b7b1a9c0bf0b5502f3e49df59 ""
   "chapters_linalgbra/2_Polynomials/poly.tex" 1764296316.28247 2596 0030937fa0962e32f66c43f03082a413 ""
-  "linalgebra.aux" 1764296319.19144 10562 fe20c7b56cb8f6212b9375766de44fc7 "pdflatex"
-  "linalgebra.out" 1764296319.19344 6288 3bb6458b443024d5cf9ede24cb740c66 "pdflatex"
-  "linalgebra.tex" 1764296232.38638 1731 afcae98acac6bb3d2cc580d3f0732631 ""
-  "linalgebra.toc" 1764296319.19344 6316 2ac1e28e7a631ee34cbdfb219c8716de "pdflatex"
+  "chapters_linalgbra/3_Eigenvalues&vector/5A.tex" 1764296801.9549 61 06ad50c4d706786a160baa6678a680e8 ""
+  "linalgebra.aux" 1764296804.86588 10943 4b8322481f54a53b946dc9e187cb7f2e "pdflatex"
+  "linalgebra.out" 1764296804.86788 6750 2b0d799509a8906399aea1962dceae70 "pdflatex"
+  "linalgebra.tex" 1764296714.89473 1832 c091f41b19216c3ffd5c45a3b9772328 ""
+  "linalgebra.toc" 1764296804.86888 6574 4faf135c9b4b070ddfb60d5c3094a01c "pdflatex"
   (generated)
   "linalgebra.aux"
   "linalgebra.log"
