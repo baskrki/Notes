@@ -56,3 +56,4 @@
 \contentsline {paragraph}{Problem :}{23}{section*.56}%
 \contentsline {subsection}{\numberline {2.2}More on Cosets and Lagrange's Theorem}{24}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}The Isomorphism Theorems}{28}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Composition Series and H\"older Program}{32}{subsection.2.4}%

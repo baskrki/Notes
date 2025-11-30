@@ -1,0 +1,33 @@
+\subsection{Composition Series and H\"older Program}
+
+\begin{proposition}
+    If $G$ is a finite abelian group and $p$ is a prime dividing $|G|$, then $G$ contains and element of order $p$.
+\end{proposition}
+
+\begin{proof}
+    We'll use induction to prove the result.
+
+    \vspace{4mm}
+    \textbf{Base case:} $|G|=p$ 
+    If $|G| = p$ then $x$ has order $p$ by Lagrange's Theorem and we are done. 
+    
+    \vspace{4mm}
+    \textbf{Inductive Hypothesis:} Suppose for every abelian group $H$ such that $p \mid |H|$ and $|H| < |G|$, there exists a element with 
+    order $p$. 
+    
+    \vspace{4mm}
+    Suppose $x \in G$ with $x \neq 1$ and $p$ divides $|x|$ and write $|x| = pn $. By \textbf{Proposition 1.11}($2$), 
+    $ |x^n| = p $, and again we have an element of 
+    order $ p $. We may therefore assume $ p $ does not divide $ |x| $.
+    Let $ N = \langle x \rangle $. Since $ G $ is abelian, $ N \trianglelefteq G $. By Lagrange's Theorem, 
+    $ |G/N| = \frac{|G|}{|N|} $ and since $ N \neq 1 $, $ |G/N| < |G| $. Since $ p $ does not divide $ |N| $, we must have 
+    $ p \mid |G/N| $. We can now apply the induction assumption to the smaller group $ G/N $ to conclude it contains an element, 
+    $ \bar{y} = yN $, of order $ p $. Thus, we get $ y \notin N $ ($ \bar{y} \neq \bar{1} $) but $ y^p \in N $. Now, suppose $|y^p|=|y|$
+    then $(|y|,p)=1$ but $|y^p|=|y|$ we have $\langle y^p \rangle=\langle y \rangle$, thus $y=y^{pz} \in N$ 
+    a contradiction.
+    
+    Thus, $|y^p| \neq |y|$ and from \textbf{Proposition 1.11.}($2$) we have $|y^p| = \frac{|y|}{(|y|,m)}$ which implies $(|y|,p) > 1$. 
+    Thus, $p \mid |y|$.
+     We are now in the situation described in the preceding paragraph, so that argument again produces an element of order $ p $. 
+     The induction is complete.
+\end{proof}
