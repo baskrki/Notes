@@ -45,5 +45,27 @@ From our definition, $U$ is invariant under $T$ if $T|_{U}$ is an operator on $U
 \end{definition}
 
 \begin{proposition}
+    Suppose $T \in \LL(V)$. Then every list of eigenvectors of $T$ corresponding to distinct eigenvalues of $T$ is linearly independent.
+\end{proposition}
+
+\begin{proof}
+    For the sake of contradiction, suppose the result is false. Then there exists a smallest positive integer $m>1$ such that there exists a 
+    list $v_1,\ldots,v_m$ of linearly dependent eigenvectors $\lambda_1,\ldots,\lambda_m$ of $T$, corresponding to distinct eigenvalues.
+    Due to the minimality of $m$, there exists $a_1,\ldots,a_m \in \mathbf{F}$ such that
+    \[ a_1 v_1 + \ldots + a_m v_m =0 \] 
+    Applying $T-\lambda I$ we get
+    \[ a_1(\lambda_1 - \lambda_m)v_1 + \cdots + a_m(\lambda_{m-1}-\lambda_{m})v_{m-1}=0 \]
+    Since, all the eigenvalues are different, none of the coefficient above is $0$. Thus, we get a new list of linearly dependent vector with
+    length $m-1$, which contradicts the minimality of $m$. 
+\end{proof}
+
+\begin{proposition}
     Suppose $V$ is a finite-dimensional. Then each operator of $V$ has at most $\dim V$ distinct eigenvalue. 
 \end{proposition}
+
+\begin{proof}
+    Since, every list of eigenvectors of $T$ corresponding to distinct eigenvalues is linearly independent by above proposition, we get the
+    bound immediately.
+\end{proof}
+
+\subsubsection{Polynomials Applied to Operatos}

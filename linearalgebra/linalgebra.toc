@@ -91,3 +91,4 @@
 \contentsline {section}{\numberline {3}Eigenvalues \& Eigenvectors}{44}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Invariant Subspaces}{44}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Eigenvalues}{44}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Polynomials Applied to Operatos}{45}{subsubsection.3.1.2}%
