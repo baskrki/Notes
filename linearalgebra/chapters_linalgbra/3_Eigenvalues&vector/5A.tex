@@ -80,5 +80,47 @@ From our definition, $U$ is invariant under $T$ if $T|_{U}$ is an operator on $U
     \end{itemize}
 \end{definition}
 
+\begin{definition}
+    Suppose $T \in \LL(V)$ and $p \in \mathcal{P}(\mathbf{F})$ is a polynomial given by 
+    \[ p(z) = a_0 + a_1 z + \cdots + a_m z^m \]
+    for all $z \in \mathbf{F}$. Then $p(T)$ is the operator on $V$ defined by 
+    \[ p(T) = a_0 I + a_1 T + a_2 T^2 + \cdots + a_m T^m \]
+\end{definition}
 
+\begin{proposition}
+    Let $T \in \LL(V)$, then the function $f : \mathcal{P}(\mathbf{F}) \to \LL(V)$ given by $p \mapsto p(T)$ is linear.
+\end{proposition}
 
+\begin{proof}
+    Left for future me as a exercise.
+\end{proof}
+
+\begin{proposition}
+    Suppose $p,q \in \mathcal{P}(\mathbf{F})$ and $T \in \LL(V)$
+    Then 
+    \begin{enumerate}
+        \item $(pq)(T) = p(T) q(T)$
+        \item $p(T)q(T)=q(T)p(T)$
+    \end{enumerate}
+\end{proposition}
+
+\begin{proof}
+    Just define the polynomials and plug $T$.
+\end{proof}
+
+\begin{proposition}
+    Suppose $T \in \LL(V)$ and $p \in \mathcal{P}(\mathbf{F})$. Then $\operatorname{null} p(T)$ and $\operatorname{range} p(T)$ are invariant 
+    under $T$.
+\end{proposition}
+
+\begin{proof}
+    Suppose $u \in \operatorname{null} p(T)$ then $p(T)u=0$
+    \[ p(T)(Tu) = T(p(T)u) = T(0)=0 \]
+    Hence, $Tu \in \operatorname{null} p(Tu)$. Thus, $\operatorname{null}p(T)$ is invariant under $T$ 
+
+    Suppose, $u \in \operatorname{range} p(T)$. Then,
+    \[ p(T)v=u  \] 
+    \[ \implies T(p(T)v)=Tu \]
+    \[ \implies p(T)(Tv)=Tu \]
+    Hence, $Tu \in \operatorname{range} p(T)$. Thus, $\operatorname{range} p(T)$ is invariant under $T$, as desired.
+\end{proof}
