@@ -1,0 +1,126 @@
+% bryan.sty
+% Author: Basu (Bryan) 
+% --------------------------------------------------------------
+
+% Load required packages
+\RequirePackage{amsmath, amssymb, amsthm}
+\RequirePackage{graphicx}
+\RequirePackage[a4paper, margin=1in]{geometry}
+\RequirePackage{xcolor}
+\RequirePackage{fancyhdr}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{enumitem} 
+\RequirePackage{tcolorbox}
+\RequirePackage{titling} % For the title ..... 555
+
+
+
+% Also I use \setlength{\headheight}{15pt} if I am using 12pt article document class.
+
+% --------------------------------------------------------------
+% Page Setup
+\setlength{\parindent}{0pt} % I don't like indentation
+\setlength{\parskip}{6pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\renewcommand{\familydefault}{\sfdefault} % For the Font.
+\renewcommand{\footrulewidth}{0.4pt}  % This is the line on the end of the paper
+\renewcommand{\contentsname}{\centering\Huge Content} % This is title for. I made it to be huge.
+% \renewcommand{\familydefault}{\sfdefault}
+
+\fancyhead[L]{\thetitle}
+\fancyhead[R]{\thepage}
+\fancyfoot[L]{}
+\fancyfoot[R]{}
+
+
+
+
+% --------------------------------------------------------------
+
+% Theorem Styles (For Fancy Style)
+% ---- Bright Color Definitions ----   
+
+\newcounter{definition}[section]
+\renewcommand{\thedefinition}{\thesection.\arabic{definition}}
+
+\newenvironment{definition}{%
+    \refstepcounter{definition}%
+    \begin{tcolorbox}[colback=orange!3, colframe=orange!80, arc=0mm, boxrule=0.8pt, left=6pt, right=6pt]
+    \textbf{\color{orange!80}\sffamily Definition \thedefinition}\vspace{6pt}\\
+}{%
+    \end{tcolorbox}
+}
+
+
+\newcounter{proposition}[section]
+\renewcommand{\theproposition}{\thesection.\arabic{proposition}}
+
+\newenvironment{proposition}{%
+    \refstepcounter{proposition}%
+    \begin{tcolorbox}[colback=blue!3, colframe=blue!80, arc=0mm, boxrule=0.8pt, left=6pt, right=6pt]
+    \textbf{\color{blue!80}\sffamily Proposition \theproposition}\vspace{6pt}\\
+}{%
+    \end{tcolorbox}
+}
+
+\newcounter{theorem}[section]
+\renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
+
+\newenvironment{theorem}{%
+    \refstepcounter{theorem}%
+    \begin{tcolorbox}[colback=blue!3, colframe=blue!80, arc=0mm, boxrule=0.8pt, left=6pt, right=6pt]
+    \textbf{\color{blue!80}\sffamily Theorem \thetheorem}\vspace{6pt}\\
+}{%
+    \end{tcolorbox}
+}
+
+\newcounter{remark}[section]
+\renewcommand{\theremark}{\thesection.\arabic{remark}}
+
+\newenvironment{remark}{%
+    \refstepcounter{remark}%
+    \begin{tcolorbox}[colback=black!3, colframe=black!80, arc=0mm, boxrule=0.8pt, left=6pt, right=6pt]
+    \textbf{\color{black!80}\sffamily Remark \theremark}\vspace{6pt}\\
+}{%
+    \end{tcolorbox}
+}
+
+
+
+% --------------------------------------------------------------
+% Custom Commands
+
+\newcommand{\RR}{\mathbf{R}}
+\newcommand{\ZZ}{\mathbf{Z}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbf{Q}}
+\newcommand{\CC}{\mathbf{C}}
+\newcommand{\FF}{\mathbf{F}}
+\newcommand{\LL}{\mathcal{L}} % For set of all linear maps.
+\newcommand{\MM}{\mathcal{M}} % For matrix in linear algebra.
+\newcommand{\eps}{\varepsilon}
+
+% Operators
+\DeclareMathOperator{\Null}{null}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\range}{range}
+\DeclareMathOperator{\normal}{\unlhd}
+\DeclareMathOperator{\Img}{Im}
+\DeclareMathOperator{\rank}{rank}
+
+% Shortened Command
+\newcommand{\ol}{\overline}
+\newcommand{\ul}{\underline}
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\set}[1]{\left\{ #1 \right\}}
+
+
+
+
+% --------------------------------------------------------------
+% END OF FILE
