@@ -88,6 +88,17 @@
     \end{tcolorbox}
 }
 
+\newcounter{example}[section]
+\renewcommand{\theexample}{\thesection.\arabic{example}}
+
+\newenvironment{example}{%
+    \refstepcounter{example}%
+    \begin{tcolorbox}[colback=red!3, colframe=red!80, arc=0mm, boxrule=0.8pt, left=6pt, right=6pt]
+    \textbf{\color{black!80}\sffamily Example \theexample}\vspace{6pt}\\
+}{%
+    \end{tcolorbox}
+}
+
 
 
 % --------------------------------------------------------------
