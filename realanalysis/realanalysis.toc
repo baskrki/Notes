@@ -1,2 +1,1 @@
 \contentsline {section}{\numberline {1}Real Numbers}{3}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Cuts}{3}{subsection.1.1}%
