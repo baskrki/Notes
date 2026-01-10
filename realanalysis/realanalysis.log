@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.12.5)  10 JAN 2026 19:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.12.5)  10 JAN 2026 19:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -461,9 +461,10 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 \c@theorem=\count305
 \c@remark=\count306
 \c@example=\count307
+\c@problem=\count308
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count308
+\l__color_backend_stack_int=\count309
 \l__pdf_internal_box=\box69
 ) (./realanalysis.aux)
 \openout1 = `realanalysis.aux'.
@@ -488,16 +489,16 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count309
+\scratchcounter=\count310
 \scratchdimen=\dimen260
 \scratchbox=\box70
-\nofMPsegments=\count310
-\nofMParguments=\count311
+\nofMPsegments=\count311
+\nofMParguments=\count312
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count312
+\MPscratchCnt=\count313
 \MPscratchDim=\dimen261
-\MPnumerator=\count313
-\makeMPintoPDFobject=\count314
+\MPnumerator=\count314
+\makeMPintoPDFobject=\count315
 \everyMPtoPDFconversion=\toks43
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -560,23 +561,28 @@ LaTeX Font Info:    Font shape `OT1/cmss/m/it' in size <10.95> not available
 \tf@toc=\write5
 \openout5 = `realanalysis.toc'.
 
- [2] (./chapters_realanalysis/1_basic_topology/1A.tex) [3] (./realanalysis.aux)
+ [2] (./chapters_realanalysis/1_basic_topology/1A.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+) [3] (./realanalysis.aux)
 Package rerunfilecheck Info: File `realanalysis.out' has not changed.
 (rerunfilecheck)             Checksum: 07F1A2C4BCDDE01B3A2CB6719414B476;116.
  ) 
 Here is how much of TeX's memory you used:
- 20831 strings out of 476041
- 385897 string characters out of 5793174
+ 20876 strings out of 476041
+ 386824 string characters out of 5793174
  1853388 words of memory out of 6000000
- 40948 multiletter control sequences out of 15000+600000
+ 40992 multiletter control sequences out of 15000+600000
  518541 words of font info for 55 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 98i,11n,94p,522b,460s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,11n,94p,522b,483s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
-Output written on realanalysis.pdf (3 pages, 44820 bytes).
+Output written on realanalysis.pdf (3 pages, 45490 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
+ 54 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
