@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1767068741.36151 "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" "realanalysis.pdf" "realanalysis" 1767068742.45936 0
-  "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" 1767068741.05278 645 1953b759ec0a5c6f4b508fa172f34b43 ""
+["pdflatex"] 1768052568.46949 "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" "realanalysis.pdf" "realanalysis" 1768052569.10079 0
+  "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" 1768052567.54796 659 4a7295715ecff554a9896355456f294b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -141,11 +141,11 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1764928491.2011 4602002 62dba5fc29055c16380d7393a2adb07a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1764928115 7753926 d4a752fbe691d54f3bd8078f726b00bd ""
   "bryan.sty" 1767067232.87881 3981 173a7b82bd0c62e66a55d796c70cce1b ""
-  "chapters_realanalysis/1_real_numbers/1A.tex" 1767068480.093 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "realanalysis.aux" 1767068742.31172 663 b470dc7d3d86fe8e894fea36cd692cff "pdflatex"
-  "realanalysis.out" 1767068742.31172 106 3ba1f66f7e797e367ada57a39f60fd4a "pdflatex"
-  "realanalysis.tex" 1767068741.05278 645 1953b759ec0a5c6f4b508fa172f34b43 ""
-  "realanalysis.toc" 1767068742.31284 68 340518f62ceddc3be0564ac474c53700 "pdflatex"
+  "chapters_realanalysis/1_basic_topology/1A.tex" 1767068480.093 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "realanalysis.aux" 1768052569.01221 665 2310c9d9edb85d95957e1f4e61bd9bff "pdflatex"
+  "realanalysis.out" 1768052569.01321 116 07f1a2c4bcdde01b3a2cb6719414b476 "pdflatex"
+  "realanalysis.tex" 1768052567.54796 659 4a7295715ecff554a9896355456f294b ""
+  "realanalysis.toc" 1768052569.01406 70 0339f0a8982bebcfbb5d9b1273c6e8b0 "pdflatex"
   (generated)
   "realanalysis.aux"
   "realanalysis.log"

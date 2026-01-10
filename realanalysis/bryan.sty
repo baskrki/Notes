@@ -99,6 +99,16 @@
     \end{tcolorbox}
 }
 
+\newcounter{problem}[section]
+\renewcommand{\theproblem}{\thesection.\arabic{example}}
+
+\newenvironment{problem}{%
+    \refstepcounter{problem}%
+    \begin{tcolorbox}[colback=black!3, colframe=black!80, arc=0mm, boxrule=0.8pt, left=6pt, right=6pt]
+    \textbf{\color{black!80}\sffamily Problem \theproblem}\vspace{6pt}\\
+}{%
+    \end{tcolorbox}
+}
 
 
 % --------------------------------------------------------------

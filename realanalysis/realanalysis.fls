@@ -833,10 +833,10 @@ INPUT realanalysis.toc
 INPUT realanalysis.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 OUTPUT realanalysis.toc
-INPUT ./chapters_realanalysis/1_real_numbers/1A.tex
-INPUT chapters_realanalysis/1_real_numbers/1A.tex
-INPUT ./chapters_realanalysis/1_real_numbers/1A.tex
-INPUT chapters_realanalysis/1_real_numbers/1A.tex
+INPUT ./chapters_realanalysis/1_basic_topology/1A.tex
+INPUT chapters_realanalysis/1_basic_topology/1A.tex
+INPUT ./chapters_realanalysis/1_basic_topology/1A.tex
+INPUT chapters_realanalysis/1_basic_topology/1A.tex
 INPUT realanalysis.aux
 INPUT ./realanalysis.out
 INPUT ./realanalysis.out
