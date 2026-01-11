@@ -1,3 +1,22 @@
 \begin{problem}
-    
+    A complex number $z$ is said to be algebraic if there exists integers $a_0,\ldots ,a_n$ not all zero such that
+    \[ a_0 z^n + a_1 z^{n-1} + \cdots + a_{n-1} z + a_n = 0  \]  
+    Prove that all the algebraic numbers are countable.
 \end{problem}
+
+\vspace{4mm}
+\textit{Solution}
+
+For a given positive integer $N$, we know that there are finitely many tuples $(n,a_0,\ldots,a_n)$ that satisfy,
+\[ n + \abs{a_0}+\abs{a_1} + \cdots + \abs{a_n} = N\]
+
+Let $Q_N$ be the set of polynomials with degree $n$ and coefficient $a_0, \ldots, a_n$ such that they satisfy the above condition, i.end
+\[ Q_N = \{ P \in \mathbb{Z}[x] \mid \deg(P)=n \text{ and } n + \abs{a_0}+\abs{a_1} + \cdots + \abs{a_n} = N \} \] 
+Then define 
+\[ A_N = \{ \text{\#all the algebraic solutions to the polynomials in }Q_N \} \]
+
+Since $Q_N$ is finite and each polynomial has at most $n$ roots,  $A_N$ is also finite. Since $A_N$ is finite we know its countable as well.
+Define
+\[A=\bigcup_{i=1}^{\infty} A_i\]
+
+Thus $A$ is the set of all algebraic numbers. Since $A$ is the union of countable sets, $A$ is also countable.
