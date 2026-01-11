@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1768103917.41738 "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" "realanalysis.pdf" "realanalysis" 1768103918.169 0
+["pdflatex"] 1768106040.94233 "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" "realanalysis.pdf" "realanalysis" 1768106041.6615 0
   "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" 1768052567.54796 659 4a7295715ecff554a9896355456f294b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -8,6 +8,9 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm" 1136768653 1344 8a0be4fe4d376203000810ad4dc81558 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm" 1136768653 1332 1fde11373e221473104d6cc5993f046e ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -25,6 +28,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
@@ -37,7 +41,6 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb" 1248133631 25095 0ff1f6d531b320ecbbd6ea84d875816c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
-  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1764115200 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -159,11 +162,11 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1764928491.2011 4602002 62dba5fc29055c16380d7393a2adb07a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1764928115 7753926 d4a752fbe691d54f3bd8078f726b00bd ""
   "bryan.sty" 1768052789.61335 4325 4b17dd92644626e8af2b8d17dc22b8fa ""
-  "chapters_realanalysis/1_basic_topology/1A.tex" 1768103917.21483 1108 705a11d50d2d482fc0c5432cce8f9640 ""
-  "realanalysis.aux" 1768103918.07116 665 2310c9d9edb85d95957e1f4e61bd9bff "pdflatex"
-  "realanalysis.out" 1768103918.07116 116 07f1a2c4bcdde01b3a2cb6719414b476 "pdflatex"
+  "chapters_realanalysis/1_basic_topology/1A.tex" 1768106040.74018 1601 32d2e75fc30025058e09d36b7b54b83d ""
+  "realanalysis.aux" 1768106041.55906 665 2310c9d9edb85d95957e1f4e61bd9bff "pdflatex"
+  "realanalysis.out" 1768106041.55906 116 07f1a2c4bcdde01b3a2cb6719414b476 "pdflatex"
   "realanalysis.tex" 1768052567.54796 659 4a7295715ecff554a9896355456f294b ""
-  "realanalysis.toc" 1768103918.07216 70 0339f0a8982bebcfbb5d9b1273c6e8b0 "pdflatex"
+  "realanalysis.toc" 1768106041.55991 70 0339f0a8982bebcfbb5d9b1273c6e8b0 "pdflatex"
   (generated)
   "realanalysis.aux"
   "realanalysis.log"
