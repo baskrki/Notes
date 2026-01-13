@@ -20,7 +20,7 @@
 % --------------------------------------------------------------
 % Page Setup
 \setlength{\parindent}{0pt} % I don't like indentation
-\setlength{\parskip}{6pt}
+% \setlength{\parskip}{6pt}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -100,7 +100,7 @@
 }
 
 \newcounter{problem}[section]
-\renewcommand{\theproblem}{\thesection.\arabic{example}}
+\renewcommand{\theproblem}{\thesection.\arabic{problem}}
 
 \newenvironment{problem}{%
     \refstepcounter{problem}%
