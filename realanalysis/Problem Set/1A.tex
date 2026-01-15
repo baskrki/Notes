@@ -55,3 +55,23 @@ Thus, $\frac{n}{m}+\frac{p}{q} = \frac{n_1}{m_1} + \frac{p_1}{q_1}$.
     \item $\inf E = 1$ but $\sup E$ doesn't exist.
 \end{enumerate}
 
+\begin{problem}
+    Let $\mathbb{M}$ be the set of polynomials with integer coefficients i.e,
+    \[ \mathbb{M} := \set{ f(x)=a_0+a_1x+ \cdots + a_n x^n \mid a_i \in \ZZ} \]
+    Define the relation $0 \prec f$ if $0 < f(x)$ for $x$ large enough. More precisely, we say
+\[
+0 \prec f \quad \text{if there exists } M > 0 \text{ such that } f(x) > 0 \text{ for all } x > M.
+\]
+Then define
+\[
+f \prec g \quad \text{if } 0 \prec (g - f).
+\]
+
+Show that $(M, \prec)$ is an ordered set.
+\end{problem}
+
+\vspace{4mm}
+\textit{Solution.}
+
+We'll use the fact that for large enough $x$, $f(x)>0$ for $a_n >0$. Let $f,g \in \mathbb{M}$ such that
+\[ f(x)=a_0+a_1x+ \cdots + a_n x^n \quad \text{and} \quad g(x)=b_0+b_1x+ \cdots + b_n x^n \] 
