@@ -73,5 +73,14 @@ Show that $(M, \prec)$ is an ordered set.
 \vspace{4mm}
 \textit{Solution.}
 
-We'll use the fact that for large enough $x$, $f(x)>0$ for $a_n >0$. Let $f,g \in \mathbb{M}$ such that
+We'll use the fact that for large enough $x$, $f(x)>0$ for $a_n >0$. Let $f,g \in \mathbb{M}$ such that $f \neq g$ and 
 \[ f(x)=a_0+a_1x+ \cdots + a_n x^n \quad \text{and} \quad g(x)=b_0+b_1x+ \cdots + b_n x^n \] 
+Define $h(x)=g(x)-f(x)=(b_0-a_0) + (b_1-a_1)x + \cdots + (b_n-a_n)x^n$ and let $c_i=b_i-a_i$.
+Suppose $c_k$ is the highest degree non zero coefficient, then if
+\begin{enumerate}
+    \item $c_k > 0$ then $f \prec g$
+    \item $c_k < 0$ then $g \prec f$
+\end{enumerate}
+
+Suppose $f \prec g$ and $g \prec h$. Then, $f(x) < g(x)$ and $g(x) < h(x)$ for large $x$ and hence $f(x) < h(x)$ for large $x$.
+Thus, $0 \prec (h-f)$ which means $f \prec h$.
