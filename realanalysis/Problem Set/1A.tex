@@ -38,9 +38,19 @@ Thus, $\frac{n}{m}+\frac{p}{q} = \frac{n_1}{m_1} + \frac{p_1}{q_1}$.
 \begin{problem}
     Find the $\sup E$ and $\inf E$ for the following set $E$.
     \begin{enumerate}
-        \item $E = \set{n \in \ZZ \mid n \le \sqrt{12}}$
-        \item $E = \set{r \in \QQ \mid r \le \sqrt{12}}$
+        \item $E = \set{n \in \ZZ \mid n < \sqrt{12}}$
+        \item $E = \set{r \in \QQ \mid r < \sqrt{12}}$
         \item $E = \set{x \in \RR \mid x^2-x-1 < 0}$
-        \item $E = \set{\frac{n^2+n}{n+1} \mid n \in \mathbf{N}}$
+        \item $E = \set{\frac{n^2+n}{n+1} \mid n \in \NN}$
     \end{enumerate}
 \end{problem}
+
+\vspace{4mm}
+\textit{Solution.}
+
+\begin{enumerate}
+    \item $\sup E = 3$ but $inf E$ doesn't exist.
+    \item $\sup E = \sqrt{12}$ but $inf E$ doesn't exist.
+    \item $\sup E = \frac{1+\sqrt{5}}{2}$ and $\inf E = \frac{1-\sqrt{5}}{2}$.
+    \item $\inf E = 1$ but $\sup E$ doesn't exist.
+\end{enumerate}
