@@ -96,3 +96,17 @@ To show that it doesn't satisfy the archimedean property, we need to show that $
 \[ \forall n \in \NN, g \not \prec nf \]
 If we choose $g(x)=x^2$ and $f(x)=x$ and assume $g \prec nf$ then , $0 \prec x(n-x)$ which means
 that $0 < x(n-x)$ which we know is false for large $x$. Thus, $g \not \prec nf$.
+
+\begin{problem}
+    Show that for any non-empty set $E \subset R$ which is bounded from below, $E$ has the greatest lower bound.
+\end{problem}
+
+\vspace{4mm}
+\textit{Solution.}
+
+To show that $E$ has greatest lower bound define 
+\[ -E = \set{-x \mid x \in E} \]
+If $\alpha$ is any lower bound of $E$ then $x \ge \alpha \Rightarrow -x \le -\alpha$. That means that $-E$ is bounded above by $-\alpha$.
+Since $-E$ is bounded above by $-\alpha$, it must have the least upper bound property. Let 
+\[ \sup -E = \beta \]
+Thus, $\beta \ge -x \Rightarrow x \ge -\beta$ and $\beta \le - \alpha$ for any lower bound $\alpha$ of $E$. Thus, $\alpha \le -\beta$.
