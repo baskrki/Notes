@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.12.5)  16 JAN 2026 16:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.12.5)  16 JAN 2026 16:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -554,23 +554,28 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Problem Set/Set1.tex [2] [3] [4]) [5] (./Problem Set/Set2.tex) [6] (./realanalysis.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Problem Set/Set1.tex [2] [3] [4]) [5] (./Problem Set/Set2.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+) [6] (./realanalysis.aux)
 Package rerunfilecheck Info: File `realanalysis.out' has not changed.
 (rerunfilecheck)             Checksum: F45CEE7EE60CC6940710FAC6B97EC2CB;228.
  ) 
 Here is how much of TeX's memory you used:
- 20930 strings out of 476041
- 387342 string characters out of 5793174
+ 20935 strings out of 476041
+ 387439 string characters out of 5793174
  1865388 words of memory out of 6000000
- 41019 multiletter control sequences out of 15000+600000
+ 41023 multiletter control sequences out of 15000+600000
  522299 words of font info for 70 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  98i,12n,94p,543b,540s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on realanalysis.pdf (6 pages, 168088 bytes).
+Output written on realanalysis.pdf (6 pages, 168406 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
+ 141 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
