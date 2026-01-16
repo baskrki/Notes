@@ -118,3 +118,26 @@ Hence, $-\beta = \inf E$.
 
 \vspace{4mm}
 \textit{Solution.}
+
+Let us define 
+\[ A = \set{a \mid a > 0 \text{ and } a^3 \le x} \]
+for $x>0$. Let $y = \sup A$. We will show that $y^3=x$.
+
+\vspace{6pt}
+Suppose $x > y^3$. Let $h=\min\{\frac{1}{2}, \frac{x-y^3}{3y^2+3y+1}\}$ then,
+\begin{align*}
+    (y+h)^3 &= y^3 + h^3 + 3yh^2 + 3y^2h \\
+    &< y^3 + h(1+3y+3y^2) \\
+    &\le y^3 +   \frac{x-y^3}{3y^2+3y+1} \cdot (1+3y+3y^2) \\
+    &\le x
+\end{align*}
+Thus, $y+h \in A$ but since $y$ is the least upper bound of $A$ we have, $y+h \le y \Rightarrow h \le 0$. This is a contradiction.
+
+\vspace{6pt}
+Suppose $x < y^3$. Let $h =\frac{y^3-x}{3y^2}$ then
+\begin{align*}
+    (y-h)^3 &= y^3-h^3 - 3y^2h + 3yh^2 \\
+    &= y^3 - h^3 -3y^2 \cdot \frac{(y^3-x)}{3y^2} + 3yh^2 \\
+    &= x-h^3 + 3yh^2
+\end{align*}
+Since $3yh^2-h^3 > 0$ we have $(y-h)^3 > x$. Thus $(y-h)$ is an upper bound for $A$. Thus $y \le y-h \Rightarrow h \le 0$. Contradiction!!
