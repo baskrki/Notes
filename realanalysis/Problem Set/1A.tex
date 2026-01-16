@@ -84,3 +84,15 @@ Suppose $c_k$ is the highest degree non zero coefficient, then if
 
 Suppose $f \prec g$ and $g \prec h$. Then, $f(x) < g(x)$ and $g(x) < h(x)$ for large $x$ and hence $f(x) < h(x)$ for large $x$.
 Thus, $0 \prec (h-f)$ which means $f \prec h$.
+
+\begin{problem}
+    Prove that $(\mathbb{M},\prec)$ \textbf{doesn't} satisfy the archimedean property.
+\end{problem}
+
+\vspace{4mm}
+\textit{Solution.}
+
+To show that it doesn't satisfy the archimedean property, we need to show that $\exists f,g \in \mathbb{M}$ such that
+\[ \forall n \in \NN, g \not \prec nf \]
+If we choose $g(x)=x^2$ and $f(x)=x$ and assume $g \prec nf$ then , $0 \prec x(n-x)$ which means
+that $0 < x(n-x)$ which we know is false for large $x$. Thus, $g \not \prec nf$.
