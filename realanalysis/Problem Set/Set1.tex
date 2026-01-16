@@ -119,9 +119,9 @@ Hence, $-\beta = \inf E$.
 \vspace{4mm}
 \textit{Solution.}
 
-Let us define 
+If $x=0$ then $y=0^3=0$. Let us define 
 \[ A = \set{a \mid a > 0 \text{ and } a^3 \le x} \]
-for $x>0$. Let $y = \sup A$. We will show that $y^3=x$.
+for $x>0$. Since $A$ is non-empty and bounded, let $y = \sup A$. We will show that $y^3=x$.
 
 \vspace{6pt}
 Suppose $x > y^3$. Let $h=\min\{\frac{1}{2}, \frac{x-y^3}{3y^2+3y+1}\}$ then,
@@ -140,4 +140,13 @@ Suppose $x < y^3$. Let $h =\frac{y^3-x}{3y^2}$ then
     &= y^3 - h^3 -3y^2 \cdot \frac{(y^3-x)}{3y^2} + 3yh^2 \\
     &= x-h^3 + 3yh^2
 \end{align*}
-Since $3yh^2-h^3 > 0$ we have $(y-h)^3 > x$. Thus $(y-h)$ is an upper bound for $A$. Thus $y \le y-h \Rightarrow h \le 0$. Contradiction!!
+Since $3yh^2-h^3 > 0$ we have $(y-h)^3 > x$. Let $q \in A$ then 
+\[ q^3 \le x < (y-h)^3 \]
+Thus, $(y-h)^3 - q^3 > 0 \Rightarrow (y-h-q)\left((y-h)^2+(y-h)q+q^3\right)>0$.
+Since, $(y-h)^2+(y-h)q+q^3 > 0$ we have $y-h > q$. Thus $(y-h)$ is an upper bound for $A$. Thus $y \le y-h \Rightarrow h \le 0$.
+Contradiction!!
+
+\vspace{6pt} 
+The proof also works for $x < 0$ as $-x > 0$. Thus,
+\[ \exists k \in \RR \text{ s.t } k^3 = -x \]
+Let $z := -k$ then $z^3 = (-k)^3 = -k^3 = -(-x)=x$.
