@@ -64,4 +64,12 @@ Thus, for any $N > \frac{1}{\eps}$ we have
 \[ \abs{\frac{\sin(n)}{n}} \le \frac{1}{|n|} < \frac{1}{N} < \eps \] 
 
 \vspace{6pt}
-For the third part
+For the third part, we will use \textbf{squeeze theorem} to show that the the limit is $1$. Notice that,
+\[ \frac{n^2}{\sqrt{n^6+n}} < \frac{n^2}{\sqrt{n^6+i}} < \frac{n^2}{\sqrt{n^6}} \]
+for $i=1,2,\ldots,n$.
+Thus,
+\[ n \cdot \frac{n^2}{\sqrt{n^6+n}} \le \sum_{i=1}^{n} \frac{n^2}{\sqrt{n^6+i}} \le  n \cdot \frac{n^2}{\sqrt{n^6}} \]
+\[ \implies \frac{1}{\sqrt{1+\frac{1}{n^5}}} \le \sum_{i=1}^{n} \frac{n^2}{\sqrt{n^6+i}} \le 1 \]
+\[ \implies \lim_{n \to \infty} \frac{1}{\sqrt{1+\frac{1}{n^5}}} \le \lim_{n \to \infty} \sum_{i=1}^{n} \frac{n^2}{\sqrt{n^6+i}} \le 
+\lim_{n \to \infty}1  \]
+\[ \implies 1 \le \lim_{n \to \infty} \sum_{i=1}^{n} \frac{n^2}{\sqrt{n^6+i}} \le 1 \]
