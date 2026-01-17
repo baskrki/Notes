@@ -25,9 +25,13 @@ Since $\set{a_n}$ is convergent, we know that it is bounded above. Suppose $|a_n
 \[ |a_n||b_n-b| + |b| |a_n-a| < |C| |b_n-b| + |b||a_n-a| \]
 Also let $N_1 \in \NN$ such that $\dps |b_n-b| < \frac{\eps}{2(|C|+1)}$ for all $n \ge N_1$
 and let $N_2 \in \NN$ such that $\dps |a_n - a| < \frac{\eps}{2(|b|+1)}$ for all $n \ge N_2$. Thus for $n \ge \max\{N_1,N_2\}$ we have,
-\begin{align*}
+\begin{align*}2
     |a_n||b_n-b| + |b| |a_n-a| &< |C| |b_n-b| + |b||a_n-a| \\
     &< |C| \cdot \frac{\eps}{2(|C|+1)} + |b| \cdot \frac{\eps}{2(|b|+1)} \\
     &< \frac{\eps}{2} + \frac{\eps}{2} \\
     &< \eps 
 \end{align*}
+
+\vspace{6pt}
+For the second part just take $a_n=(-1)^n$ and $b_n=(-1)^n$. We know that $\dps \lim_{n \to \infty} a_n b_n =1$ but 
+$\dps \lim_{n \to \infty} a_n$ and $\dps \lim_{n \to \infty} b_n$ doesn't exist.
