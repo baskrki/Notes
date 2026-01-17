@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1768632685.69196 "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" "realanalysis.pdf" "realanalysis" 1768632686.38842 0
+["pdflatex"] 1768635652.88018 "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" "realanalysis.pdf" "realanalysis" 1768635653.61474 0
   "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" 1768559824.5617 676 9c04ef60edcd92b987f7934eb26f6391 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -28,6 +28,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1248133631 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
@@ -159,10 +160,10 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1764928491.2011 4602002 62dba5fc29055c16380d7393a2adb07a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1764928115 7753926 d4a752fbe691d54f3bd8078f726b00bd ""
   "Problem Set/Set1.tex" 1768619320.03266 5834 47a8d9d764056aa3b1b380da3f0c4d14 ""
-  "Problem Set/Set2.tex" 1768632685.48949 3526 47b3755001db1146771790e4f4267161 ""
+  "Problem Set/Set2.tex" 1768635652.65576 4163 c97fca90424806ab5357e14e55bbebaf ""
   "bryan.sty" 1768619186.30944 4318 309b9a90d00d7fc54c80523ea3e20e62 ""
-  "realanalysis.aux" 1768632686.29433 774 dc30324b38c42def4ca24f117311a2a4 "pdflatex"
-  "realanalysis.out" 1768632686.29533 228 f45cee7ee60cc6940710fac6b97ec2cb "pdflatex"
+  "realanalysis.aux" 1768635653.51839 774 2806696dcc215e32d8c267feaffee974 "pdflatex"
+  "realanalysis.out" 1768635653.51939 228 f45cee7ee60cc6940710fac6b97ec2cb "pdflatex"
   "realanalysis.tex" 1768559824.5617 676 9c04ef60edcd92b987f7934eb26f6391 ""
   (generated)
   "realanalysis.aux"
