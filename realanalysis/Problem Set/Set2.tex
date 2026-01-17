@@ -84,6 +84,24 @@ Let $a_n$ be a sequence of real numbers and $L$ be a real number. Show that the 
 \end{enumerate}
 \end{problem}
 
+\textit{Solution.}
+
+Suppose $(1.)$ holds then there exists a $N \in \NN$ such that for all $k \ge N$ we have,
+\[ |a_{n_k} - L| < \eps \Longrightarrow L - \eps < a_{n_k} < L + \eps \]
+Thus, there are infinitely many $a_i$ in the interval $(L-\eps,L+\eps)$.
+
+\vspace{6pt}
+Suppose $(2.)$ holds then for any $\eps > 0$ there are infinitely many $a_n$ such that
+\[ L-\eps < a_n < L+\eps \]
+
+Since there are infinitely many terms in $(L-1,L+1)$ choose $n_1$ such that 
+\[ |a_{n_1}-L|<1 \]
+Since there are infinitely many terms in $(L-\frac{1}{2},L+\frac{1}{2})$ choose $n_2$ such that 
+\[ n_2 > n_1 \text{ and }|a_{n_1}-L|<\frac{1}{2} \]
+Continuing inductively we can produce a sequence such that $\{a_{n_i}\}$ 
+\[ |a_{n_k}-L|<\frac{1}{k} \]
+Hence, $a_{n_k} \to L$.
+
 \begin{problem}
 Where possible, find a subsequence that is monotone and a subsequence that is convergent for the following sequences.
 \begin{enumerate}
