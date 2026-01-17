@@ -35,3 +35,23 @@ and let $N_2 \in \NN$ such that $\dps |a_n - a| < \frac{\eps}{2(|b|+1)}$ for all
 \vspace{6pt}
 For the second part just take $a_n=(-1)^n$ and $b_n=(-1)^n$. We know that $\dps \lim_{n \to \infty} a_n b_n =1$ but 
 $\dps \lim_{n \to \infty} a_n$ and $\dps \lim_{n \to \infty} b_n$ doesn't exist.
+
+\begin{problem}
+    Find the limit of the following sequence if it exists or show that the limit doesn't exists.
+    \begin{enumerate}
+        \item $a_n = \frac{n^2}{n+1} - \frac{n^2+1}{n}$
+        \item $a_n = \frac{\sin(n)}{n}$
+        \item $\dps a_n = \sum_{i=1}^{n} \frac{n^2}{\sqrt{n^6+i}}$
+    \end{enumerate}
+\end{problem}
+
+\textit{Solution.}
+
+For the first part we know that $a_n = \frac{1}{n+1}-\frac{1}{n}-1$.
+Thus,
+\begin{align*}
+    \lim_{n \to \infty} \frac{1}{n+1}-\frac{1}{n}-1 &= \lim_{n \to \infty} \frac{1}{n+1} - \lim_{n \to \infty} \frac{1}{n} - \lim_{n \to \infty} 1 \\
+    &= 0-0-1 \\
+    &=-1
+\end{align*}
+The first equation is due to the algebraic property of of limit.
