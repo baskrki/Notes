@@ -11,6 +11,23 @@
     \end{enumerate} 
 \end{problem}
 
-
 \textit{Solutions.}
 
+To show that $\dps \lim_{n \to \infty} a_n b_n= ab$ we need to show $\exists N \in \NN$ such that for all $\eps > 0$ we have
+\[ |a_nb_n-ab| < \eps \]
+for $n \ge N$. Now,
+\begin{align*}
+    |a_nb_n - ab | &= |a_nb_n - a_n b + a_n b - ab| \\
+    &\le |a_n(b_n-b)| + |b(a_n-a)|\\
+    &= |a_n||b_n-b| + |b| |a_n-a|
+\end{align*}
+Since $\set{a_n}$ is convergent, we know that it is bounded above. Suppose $|a_n| < C$ then
+\[ |a_n||b_n-b| + |b| |a_n-a| < |C| |b_n-b| + |b||a_n-a| \]
+Also let $N_1 \in \NN$ such that $\dps |b_n-b| < \frac{\eps}{2(|C|+1)}$ for all $n \ge N_1$
+and let $N_2 \in \NN$ such that $\dps |a_n - a| < \frac{\eps}{2(|b|+1)}$ for all $n \ge N_2$. Thus for $n \ge \max\{N_1,N_2\}$ we have,
+\begin{align*}
+    |a_n||b_n-b| + |b| |a_n-a| &< |C| |b_n-b| + |b||a_n-a| \\
+    &< |C| \cdot \frac{\eps}{2(|C|+1)} + |b| \cdot \frac{\eps}{2(|b|+1)} \\
+    &< \frac{\eps}{2} + \frac{\eps}{2} \\
+    &< \eps 
+\end{align*}
