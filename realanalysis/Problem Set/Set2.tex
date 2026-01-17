@@ -109,3 +109,23 @@ Where possible, find a subsequence that is monotone and a subsequence that is co
     \item $a_n = (-1)^n n$
 \end{enumerate}
 \end{problem}
+
+\textit{Solution.}
+
+Notice that
+\[ \sin\left(\frac{n \pi}{8}\right) = \begin{cases}
+    0 & \text{ if } n = 8k \\
+    1 & \text{ if } n = 4(4k+1) \\
+    -1 & \text{ if } n = 4(4k-1)
+\end{cases} \]
+
+So a monotone subsequence would me $a_{n_k} = 1$. And the same example works for convergent subsequence.
+
+\vspace{6pt}
+For the second part, notice that
+\[ a_{n}= \begin{cases}
+    2k & \text{ if } n=2k \\
+    -2k-1 & \text{ if } n=2k+1
+\end{cases} \]
+
+So a monotone subsequence would me $a_{n_k} = 2k$. But there is no convergent subsequence.
