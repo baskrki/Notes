@@ -1,1 +1,21 @@
 \section{Problem Set 3}
+
+\begin{problem}
+    Prove that for reals $x<y$, there exists a $r \in \QQ$ such that $x<r<y$.
+\end{problem}
+
+\textit{Solution.}
+Using the archimedean property of $\RR$
+\[ \exists n \in \NN, \text{ s.t } \frac{1}{n} < y-x \]
+\[ \implies n(y-x)>1 \]
+Since the difference is greater than $1$, there exists a integer $m$ such that
+\[ nx < m < ny \Longrightarrow x < \frac{m}{n} < y  \]
+Hence we are done.
+
+\begin{problem}
+    Let $E$ be an non-empty subset of $\RR$ which is bounded. Define
+    \[ F := \set{x^2 \mid x \in E} \]
+    Show that $\sup F$ exists and that $\sup F=\max\{(\sup E)^2,(\inf E)^2\}$.
+\end{problem}
+
+\textit{Solution.}
