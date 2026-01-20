@@ -119,3 +119,19 @@ converges. This is called the \emph{alternating series test}. Let
 
 \textit{Solution.}
 
+For the first part notice that
+\[ a_{2k}+a_{2k+1} = b_{2k+1}-b_{2k} \le 0 \]
+Thus $s_{2k+1}=s_{2k-1}+a_{2k}+a_{2k+1} \le s_{2k-1}$.
+
+\vspace{6pt}
+Similarly, 
+\[ a_{2k+1}+a_{2k+2} = b_{2k+1}-b_{2k+2} \ge 0 \]
+Thus, $s_{2k+2} = a_{2k+1}+a_{2k+2} + s_{2k} \ge s_{2k}$.
+
+\vspace{6pt}
+To show that $\dps \{s_{2k+1}\}_{k=0}^{\infty}$ is bounded from below, we will show that $s_{2k+1} \ge 0$.
+\begin{align*}
+    s_{2k+1}&=\underbrace{b_1-b_2}_{\ge0}+\underbrace{b_3-b_4}_{\ge0}+\cdots+\underbrace{b_{2k-1}-b_{2k}}_{\ge0}+b_{2k+1} \\
+    &\ge b_{2k+1} \\
+    &\ge 0
+\end{align*}
