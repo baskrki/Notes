@@ -61,3 +61,24 @@ Define a sequence $a_n$ by requiring $a_1 = x$ and $a_{n+1} = T(a_n)$.
     \item Show that $a_n$ is a Cauchy sequence.
 \end{enumerate}
 \end{problem}
+
+\textit{Solution.}
+
+Notice that,
+\begin{align*}
+    |a_n-a_{n+1}| &\le c|a_{n-1}-a_{n}| \\
+    &\le c^2 |a_{n-2}-a_{n-1}| \\
+    &\le \hspace{10mm}\vdots \\
+    &\le c^{n-1} |a_1-a_2|
+\end{align*}
+
+Therefore,
+\begin{align*}
+    |a_1-a_m| &\le |a_1-a_{m-1}| + |a_{m-1}-a_{m}| \\
+    &\le |a_1 - a_{m-2}| + |a_{m-2}-a_{m-1}| + |a_{m-1}-a_{m}| \\  
+    &\le \hspace{10mm} \vdots \\
+    &\le |a_1-a_2| + \sum_{i=2}^{m-1} |a_i - a_{i+1}| \\
+    &\le |a_1-a_2| + \sum_{i=2}^{m-1} c^{i} |a_1-a_2| \\
+    &\le |a_1-a_2| \left( \sum_{i=1}^{m-1} c^i \right) \\
+    &\le |a_1-a_2| \left(\frac{1-c^{m}}{1-c}\right) \le \left(\frac{1}{1-c}\right)|a_1-a_2|
+\end{align*}
