@@ -66,10 +66,10 @@ Define a sequence $a_n$ by requiring $a_1 = x$ and $a_{n+1} = T(a_n)$.
 
 Notice that,
 \begin{align*}
-    |a_n-a_{n+1}| &\le c|a_{n-1}-a_{n}| \\
-    &\le c^2 |a_{n-2}-a_{n-1}| \\
+    |a_n-a_{n+1}| &\le \lambda|a_{n-1}-a_{n}| \\
+    &\le \lambda^2 |a_{n-2}-a_{n-1}| \\
     &\le \hspace{10mm}\vdots \\
-    &\le c^{n-1} |a_1-a_2|
+    &\le \lambda^{n-1} |a_1-a_2|
 \end{align*}
 
 Therefore,
@@ -78,7 +78,12 @@ Therefore,
     &\le |a_1 - a_{m-2}| + |a_{m-2}-a_{m-1}| + |a_{m-1}-a_{m}| \\  
     &\le \hspace{10mm} \vdots \\
     &\le |a_1-a_2| + \sum_{i=2}^{m-1} |a_i - a_{i+1}| \\
-    &\le |a_1-a_2| + \sum_{i=2}^{m-1} c^{i} |a_1-a_2| \\
-    &\le |a_1-a_2| \left( \sum_{i=1}^{m-1} c^i \right) \\
-    &\le |a_1-a_2| \left(\frac{1-c^{m}}{1-c}\right) \le \left(\frac{1}{1-c}\right)|a_1-a_2|
+    &\le |a_1-a_2| + \sum_{i=2}^{m-1} \lambda^{i} |a_1-a_2| \\
+    &\le |a_1-a_2| \left( \sum_{i=1}^{m-1} \lambda^i \right) \\
+    &\le |a_1-a_2| \left(\frac{1-\lambda^{m}}{1-\lambda}\right) \le \left(\frac{1}{1-\lambda}\right)|a_1-a_2|
+\end{align*}
+
+To show that $\{a_n\}$ is a cauchy sequence,
+\begin{align*}
+    |a_n-a_m| \le 
 \end{align*}
