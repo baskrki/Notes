@@ -1,5 +1,60 @@
 \section{Problem Set 4}
 
 \begin{problem}
-    
+    Give an example of a sequence $a_n$ that satisfies the following two conditions.
+\begin{itemize}
+    \item $a_n$ is divergent.
+    \item For any $\varepsilon > 0$, there exists $N \in \mathbb{N}$ such that
+    \[
+        |a_{n+1} - a_n| < \varepsilon \quad \text{for all } n \ge N.
+    \]
+\end{itemize}
+\end{problem}
+
+\begin{problem}
+     Let $p > 0$ be a positive number. Consider the $p$-series
+\[
+    \sum_{n=1}^{\infty} \frac{1}{n^p}.
+\]
+In the lecture we proved that the series diverges for $p = 1$ and converges for $p = 2$.
+Show that the series converges for $p > 1$ and diverges for $0 < p \le 1$.
+\end{problem}
+
+\begin{problem}
+Let $r > 0$ be a positive number. Determine whether the series
+\[
+    \sum_{n=1}^{\infty} a_n
+\]
+converges or diverges for the following cases.
+\begin{enumerate}
+    \item $a_n = \sqrt{n+r} - \sqrt{n}$
+    \item $a_n = n^3 r^n$
+    \item $a_n = \dfrac{1}{n!} r^n$
+\end{enumerate}
+The answer may depend on the value of $r$.
+\end{problem}
+
+\begin{problem}
+    Let $b_n$ be a sequence of non-negative numbers which decreases to zero. That is,
+\[
+    b_1 \ge b_2 \ge b_3 \ge \cdots \ge 0
+    \quad \text{and} \quad
+    \lim_{n \to \infty} b_n = 0.
+\]
+
+Let $a_n = (-1)^{n-1} b_n$. The purpose of this problem is to show that
+\[
+    \sum_{n=1}^{\infty} a_n
+\]
+converges. This is called the \emph{alternating series test}. Let
+\[
+    s_n = \sum_{k=1}^{n} a_k.
+\]
+
+\begin{enumerate}
+    \item Show that $s_{2k+1}$ is decreasing and that $s_{2k}$ is increasing.
+    \item Show that $s_{2k+1}$ is bounded from below and that $s_{2k}$ is bounded from above.
+    \item Show that both $\lim_{k \to \infty} s_{2k+1}$ and $\lim_{k \to \infty} s_{2k}$ exist and are identical.
+    \item Show that $\displaystyle \sum_{n=1}^{\infty} a_n$ converges.
+\end{enumerate}
 \end{problem}
