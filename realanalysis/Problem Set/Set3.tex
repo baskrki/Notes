@@ -39,3 +39,25 @@ Similarly if $\max\{(\sup E)^2,(\inf E)^2\}=(\inf E)^2$ then $\sup F= (\inf E)^2
 We know that for each $\eps > 0$ there exists at least one $a \in E$ such that $a > \sup E-\eps$. Let $a_k \in E$ such that 
 $\dps a_k > \sup E - \frac{1}{k}$. Thus, $\dps \frac{1}{k} > \sup E - a_k \ge 0$.
 Thus the sequence $\{a_n\}$ converges to $\sup E$ and $\dps \lim_{n \to \infty} a_n = \sup E$.
+
+\begin{problem}
+    Let $a_1=4$ and define $a_n$ inductively by
+    \[ a_n = 4 - \frac{4}{a_{n-1}} \text{ for } n \ge 2 \]
+    Show that $\dps \lim_{n \to \infty} a_n = 2$.
+\end{problem}
+
+\textit{Solution.}
+Using induction one can prove that
+\[ a_n = 2+\frac{2}{n}, \text{ for } n \ge 1 \]
+
+Thus, $\dps \lim_{n \to \infty} a_n = 2$.
+
+\begin{problem}
+Let $T : \mathbb{R} \to \mathbb{R}$ be a contraction map and $x \in \mathbb{R}$ be a number.
+Define a sequence $a_n$ by requiring $a_1 = x$ and $a_{n+1} = T(a_n)$.
+
+\begin{enumerate}
+    \item Show that for any $m \in \mathbb{N}$, $|a_1 - a_m| \le \frac{1}{1-\lambda}|a_1 - a_2|$
+    \item Show that $a_n$ is a Cauchy sequence.
+\end{enumerate}
+\end{problem}
