@@ -11,6 +11,10 @@
 \end{itemize}
 \end{problem}
 
+\textit{Solution.} 
+
+Take $\dps a_n=\sum_{i=1}^{n}\frac{1}{i}$.
+
 \begin{problem}
      Let $p > 0$ be a positive number. Consider the $p$-series
 \[
@@ -19,6 +23,15 @@
 In the lecture we proved that the series diverges for $p = 1$ and converges for $p = 2$.
 Show that the series converges for $p > 1$ and diverges for $0 < p \le 1$.
 \end{problem}
+
+\textit{Solution.}
+
+For $0<p\le 1$ it is easy to see that $\dps \frac{1}{n^p} \ge \frac{1}{n}$. From the comparison test the series 
+$\dps \sum_{n=1}^{\infty} \frac{1}{n^p}$ diverges. 
+
+\vspace{6pt}
+For $p>1$ we can use the same argument like we did for $p=2$. We can group the terms and use the comparison test.
+I am skipping the details.
 
 \begin{problem}
 Let $r > 0$ be a positive number. Determine whether the series
@@ -33,6 +46,51 @@ converges or diverges for the following cases.
 \end{enumerate}
 The answer may depend on the value of $r$.
 \end{problem}
+
+\textit{Solution.}
+
+For $(1.)$, 
+Let $r>0$. Consider the series
+\[
+\sum_{n=1}^{\infty} \bigl( \sqrt{n+r} - \sqrt{n} \bigr).
+\]
+
+Rationalizing the terms, we have
+\[
+\sqrt{n+r} - \sqrt{n} = \frac{r}{\sqrt{n+r} + \sqrt{n}}.
+\]
+
+Since $\sqrt{n+r} \le \sqrt{n} + \sqrt{r}$, it follows that
+\[
+\sqrt{n+r} + \sqrt{n} \le 2\sqrt{n} + \sqrt{r}.
+\]
+
+Hence,
+\[
+\sqrt{n+r} - \sqrt{n} = \frac{r}{\sqrt{n+r} + \sqrt{n}} \ge \frac{r}{2\sqrt{n} + \sqrt{r}}.
+\]
+
+Choose $N$ such that $2\sqrt{n} \ge \sqrt{r}$ for all $n \ge N$. Then for $n \ge N$,
+\[
+2\sqrt{n} + \sqrt{r} \le 3\sqrt{n},
+\]
+and therefore
+\[
+\sqrt{n+r} - \sqrt{n} \ge \frac{r}{3\sqrt{n}}.
+\]
+
+Since
+\[
+\sum_{n=1}^{\infty} \frac{1}{\sqrt{n}}
+\]
+diverges, the comparison test implies that
+\[
+\sum_{n=1}^{\infty} \bigl( \sqrt{n+r} - \sqrt{n} \bigr)
+\]
+also diverges.
+
+\vspace{6pt}
+For $(2.)$ we have and $(3.)$ just do the ratio test.
 
 \begin{problem}
     Let $b_n$ be a sequence of non-negative numbers which decreases to zero. That is,
