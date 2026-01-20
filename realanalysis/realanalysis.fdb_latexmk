@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1768880335.37789 "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" "realanalysis.pdf" "realanalysis" 1768880336.88744 0
-  "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" 1768658834.50321 718 8a5dcfed60e8b5f43a6f74ee68739dad ""
+["pdflatex"] 1768880451.01855 "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" "realanalysis.pdf" "realanalysis" 1768880452.52891 0
+  "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" 1768880403.80638 754 0b51797607fdbc5045666e2403ed440c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -161,11 +161,12 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1764928115 7753926 d4a752fbe691d54f3bd8078f726b00bd ""
   "Problem Set/Set1.tex" 1768619320.03266 5834 47a8d9d764056aa3b1b380da3f0c4d14 ""
   "Problem Set/Set2.tex" 1768658318.4974 5616 6e13c2f2ec651d76345a2ce7185a4050 ""
-  "Problem Set/Set3.tex" 1768880334.8981 3732 c7a1558e75dcacd193e4931905af22b3 ""
+  "Problem Set/Set3.tex" 1768880377.56463 3732 c7a1558e75dcacd193e4931905af22b3 ""
+  "Problem Set/Set4.tex" 1768880450.66759 59 45db156cd768d1b9340af62a10cf786c ""
   "bryan.sty" 1768619186.30944 4318 309b9a90d00d7fc54c80523ea3e20e62 ""
-  "realanalysis.aux" 1768880336.70208 885 8ffbcd9d250aa35a5fc04cb2f0ed250a "pdflatex"
-  "realanalysis.out" 1768880336.70308 342 b59d81b705e28a087ebe0aaf513accc5 "pdflatex"
-  "realanalysis.tex" 1768658834.50321 718 8a5dcfed60e8b5f43a6f74ee68739dad ""
+  "realanalysis.aux" 1768880452.33305 996 75ef7062d6ba9c43f67e4e202489e9ff "pdflatex"
+  "realanalysis.out" 1768880452.33493 456 f0abe56905d1080a4a3a07c5901a7ce4 "pdflatex"
+  "realanalysis.tex" 1768880403.80638 754 0b51797607fdbc5045666e2403ed440c ""
   (generated)
   "realanalysis.aux"
   "realanalysis.log"
