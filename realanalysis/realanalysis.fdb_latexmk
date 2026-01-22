@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1769080391.6573 "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" "realanalysis.pdf" "realanalysis" 1769080392.78829 0
+["pdflatex"] 1769082189.61832 "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" "realanalysis.pdf" "realanalysis" 1769082190.76669 0
   "/home/basudevkarki/Desktop/Notes/realanalysis/realanalysis.tex" 1768880403.80638 754 0b51797607fdbc5045666e2403ed440c ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -165,10 +165,10 @@
   "Problem Set/Set1.tex" 1768619320.03266 5834 47a8d9d764056aa3b1b380da3f0c4d14 ""
   "Problem Set/Set2.tex" 1768658318.4974 5616 6e13c2f2ec651d76345a2ce7185a4050 ""
   "Problem Set/Set3.tex" 1768880377.56463 3732 c7a1558e75dcacd193e4931905af22b3 ""
-  "Problem Set/Set4.tex" 1769080391.39178 4310 e7b0eaedc4dc6d9c95d4393f87bf2e5f ""
+  "Problem Set/Set4.tex" 1769082189.40071 4392 d793d90a7d55a18ceb84adf2912d9573 ""
   "bryan.sty" 1768619186.30944 4318 309b9a90d00d7fc54c80523ea3e20e62 ""
-  "realanalysis.aux" 1769080392.64588 996 a18c61cf9865e6aa248d4e027ea67b4d "pdflatex"
-  "realanalysis.out" 1769080392.64688 456 f0abe56905d1080a4a3a07c5901a7ce4 "pdflatex"
+  "realanalysis.aux" 1769082190.61462 996 a18c61cf9865e6aa248d4e027ea67b4d "pdflatex"
+  "realanalysis.out" 1769082190.61562 456 f0abe56905d1080a4a3a07c5901a7ce4 "pdflatex"
   "realanalysis.tex" 1768880403.80638 754 0b51797607fdbc5045666e2403ed440c ""
   (generated)
   "realanalysis.aux"
