@@ -863,6 +863,10 @@ INPUT ./Problem Set/Set4.tex
 INPUT Problem Set/Set4.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT ./Problem Set/Set5.tex
+INPUT Problem Set/Set5.tex
+INPUT ./Problem Set/Set5.tex
+INPUT Problem Set/Set5.tex
 INPUT realanalysis.aux
 INPUT ./realanalysis.out
 INPUT ./realanalysis.out
