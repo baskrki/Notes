@@ -867,6 +867,8 @@ INPUT ./Problem Set/Set5.tex
 INPUT Problem Set/Set5.tex
 INPUT ./Problem Set/Set5.tex
 INPUT Problem Set/Set5.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT realanalysis.aux
 INPUT ./realanalysis.out
 INPUT ./realanalysis.out

@@ -1,1 +1,16 @@
 \section{Problem Set 5}
+\begin{problem}
+    Let $a_n,b_n$ be two sequence of real numbers and $x$ be a real number. The fourier series is 
+    \[ \frac{a_0}{2}+\sum_{n=1}^{\infty} a_n \cos(nx)+b_n \sin(nx) \]
+    Show that if $\displaystyle \sum_{n=1}^{\infty} \left(|a_n|+|b_n|\right)$ converges, then so does the fourier series.
+\end{problem}
+
+\textit{Solution.}
+
+We can ignore the $\dps \frac{a_0}{2}$ term and just focus on the sum. Let 
+\[ S_N(x) = \sum_{n=1}^{N} a_n \cos(nx) + b_n \sin(nx) \]
+
+We will show that the sequence $\{S_N(x)\}$ is cauchy. Let $N,M \in \NN$ such that $M>N$.
+\[ |S_M(x)-S_N(x)| = \sum_{n=N+1}^{M} a_n \cos(nx) + b_n \sin(nx) \le \sum_{n=N+1}^{M} |a_n| + |b_n| \]
+As $N \to \infty$ the $\dps \sum_{n=N+1}^{M} |a_n| + |b_n| \to 0$. Thus the sequence is cauchy and from the 
+$\textbf{cauchy convergenve theorem}$ we know the series converges.
