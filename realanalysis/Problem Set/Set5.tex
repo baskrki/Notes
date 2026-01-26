@@ -32,3 +32,48 @@ An example of such a function would be
     Determine at which points the function $f(x)=\floor{x}$ is continuous or discontinuous.
 \end{problem}
 
+\textit{Solution.}
+
+Let $n \in \mathbb{Z}$. Suppose, for contradiction, that $\lfloor x \rfloor$ is continuous at $x = n$. Then, by definition, for every $\varepsilon > 0$ there exists $\delta > 0$ such that
+\[
+|x - n| < \delta \implies |\lfloor x \rfloor - \lfloor n \rfloor| < \varepsilon.
+\]
+
+Take $\varepsilon = \frac{1}{2}$. Consider $x = n - \frac{\delta}{2}$. Clearly, $|x - n| = \frac{\delta}{2} < \delta$, so it should satisfy the continuity condition.  
+
+However,
+\[
+\lfloor x \rfloor = \lfloor n - \tfrac{\delta}{2} \rfloor = n-1
+\]
+and
+\[
+\lfloor n \rfloor = n.
+\]
+
+Thus,
+\[
+|\lfloor x \rfloor - \lfloor n \rfloor| = |(n-1) - n| = 1 > \varepsilon = \frac{1}{2},
+\]
+which is a contradiction. Hence, $\lfloor x \rfloor$ is \textbf{discontinuous at every integer}.
+
+\bigskip
+
+Let $x_0 \notin \mathbb{Z}$ and set $n = \lfloor x_0 \rfloor$. Then $n < x_0 < n+1$. Define
+\[
+\delta = \min\{x_0 - n,\, n+1 - x_0\} > 0.
+\]
+
+For any $x$ with $|x - x_0| < \delta$, we have
+\[
+n < x < n+1 \implies \lfloor x \rfloor = n = \lfloor x_0 \rfloor.
+\]
+
+Hence,
+\[
+|\lfloor x \rfloor - \lfloor x_0 \rfloor| = 0,
+\]
+proving that $\lfloor x \rfloor$ is \textbf{continuous at every non-integer}.
+
+
+
+
