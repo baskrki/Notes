@@ -139,3 +139,16 @@ Therefore,
 for some $k \ge N$. Therefore,
 \[ |E(x)-E_k(x)| < \eps \]
 for $k \ge N$ and for all $x \in [-M,M]$. 
+
+\bigskip
+
+For $(3.)$, notice that
+
+\[ |E(x) - E(x_0 )| \le |E(x) - E_k (x)| + |E_k (x) - E_k (x_0 )| + |E_k (x_0 ) - E(x_0 )| \]
+Now, choose a $M > |x_0|$ such that $x \in [-M,M]$. Then, from $(2.)$,
+\[ |E(x) - E_k (x)| < \frac{\eps}{3} \quad \text{and} \quad |E(x_0)-E_k(x_0)| < \frac{\eps}{3} \]
+for large enough $k$. Also,
+\[ |E_k (x) - E_k (x_0 )| < \frac{\eps}{3}\]
+by $(1.)$ and thus,
+\[ |E(x) - E_k (x)| + |E_k (x) - E_k (x_0 )| + |E_k (x_0 ) - E(x_0 )| < 3 \times \frac{\eps}{3} \]
+\[ \implies |E(x) - E(x_0 )| < \eps \]
