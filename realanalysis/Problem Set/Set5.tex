@@ -103,15 +103,20 @@ Thus, $f(r)=g(r)$ for any $r \in \RR \setminus \QQ$ and therefore $f(x)=g(x)$ fo
 
         \item Let $M > 0$ be a fixed number. Show that for all $\eps > 0$, there exists $N \in \NN$ such that
             \[ |E_k (x) - E(x)| < \eps \]
-for all $k \ge N$ and for all $x \in [-M, M ]$.
+            for all $k \ge N$ and for all $x \in [-M, M ]$.
 
-Remark: We require that a single number $N$ that works for all $x \in [-M, M ]$.
+            Remark: We require that a single number $N$ that works for all $x \in [-M, M ]$.
 
+        \item Show that $E(x)$ is continuous on $\RR$.
     \end{enumerate}
 \end{problem}
 
 \textit{Solution.}
-Let $M>0$ and fix $x\in[-M,M]$. Then $|x|\le M$. We have
+
+For $(1.)$ just use the fact that if $f$ is continuous then $c \cdot f$ is continuous for some fixed constant $c$.
+
+\bigskip
+For $(2.)$, let $M>0$ and fix $x\in[-M,M]$. Then $|x|\le M$. We have
 \[
 E(x)-E_k(x)=\sum_{n=k+1}^{\infty}\frac{x^n}{n!}.
 \]
@@ -131,4 +136,6 @@ Therefore,
 \sup_{x\in[-M,M]} |E(x)-E_k(x)|
 \le \sum_{n=k+1}^{\infty}\frac{M^n}{n!} < \eps
 \]
-for some $k \ge N$.
+for some $k \ge N$. Therefore,
+\[ |E(x)-E_k(x)| < \eps \]
+for $k \ge N$ and for all $x \in [-M,M]$. 
