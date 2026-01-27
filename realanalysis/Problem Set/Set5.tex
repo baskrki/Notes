@@ -101,8 +101,34 @@ Thus, $f(r)=g(r)$ for any $r \in \RR \setminus \QQ$ and therefore $f(x)=g(x)$ fo
             \[ E_k(x) := 1+x+\frac{x^2}{2!} + \cdots + \frac{x^k}{k!} \]
             Show that $E_k(x)$ is continuous on $\RR$ for any $k \in \NN$.
 
-        \item 
+        \item Let $M > 0$ be a fixed number. Show that for all $\eps > 0$, there exists $N \in \NN$ such that
+            \[ |E_k (x) - E(x)| < \eps \]
+for all $k \ge N$ and for all $x \in [-M, M ]$.
+
+Remark: We require that a single number $N$ that works for all $x \in [-M, M ]$.
 
     \end{enumerate}
 \end{problem}
 
+\textit{Solution.}
+Let $M>0$ and fix $x\in[-M,M]$. Then $|x|\le M$. We have
+\[
+E(x)-E_k(x)=\sum_{n=k+1}^{\infty}\frac{x^n}{n!}.
+\]
+By the triangle inequality,
+\[
+|E(x)-E_k(x)|
+\le \sum_{n=k+1}^{\infty}\frac{|x|^n}{n!}.
+\]
+Since $|x|\le M$, we have
+\[
+|E(x)-E_k(x)|
+\le \sum_{n=k+1}^{\infty}\frac{M^n}{n!}
+\]
+The series $\dps \sum_{n=0}^{\infty}\frac{M^n}{n!}$ converges, hence its tail $\dps \sum_{n=k+1}^{\infty}\frac{M^n}{n!} \to 0$ as $k \to \infty$.
+Therefore,
+\[
+\sup_{x\in[-M,M]} |E(x)-E_k(x)|
+\le \sum_{n=k+1}^{\infty}\frac{M^n}{n!} < \eps
+\]
+for some $k \ge N$.
