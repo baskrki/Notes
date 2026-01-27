@@ -74,6 +74,22 @@ Hence,
 \]
 proving that $\lfloor x \rfloor$ is \textbf{continuous at every non-integer}.
 
+\begin{problem}
+    Let $f(x)$ and $g(x)$ be two continuous functions defined on $\RR$ with
+    $f(x) = g(x)$ for all $x \in \QQ$. Show that $f(x) = g(x)$ for all $x \in \RR$.
+\end{problem}
 
+\textit{Solution.} 
+Let $x_n$ be a rational number such that 
+\[ r - \frac{1}{n} < x_n < r+\frac{1}{n} \]
+where $r$ is any irrational number. From our definition of $x_n$, we have that $x_n \to r$.
+Thus,
+\begin{align*}
+    g(r)=g\left( \lim_{n \to \infty} x_n \right) &= \lim_{n \to \infty} g(x_n) \\
+    &= \lim_{n \to \infty} f(x_n) \\
+    &= f\left( \lim_{n \to \infty} x_n \right) \\
+    &= f(r)
+\end{align*}
+Thus, $f(r)=g(r)$ for any $r \in \RR \setminus \QQ$ and therefore $f(x)=g(x)$ for any $x \in \RR$.
 
 
