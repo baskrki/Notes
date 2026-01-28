@@ -66,3 +66,21 @@ is not convergent.
 
 \textit{Solution.}
 
+For $(1.)$, suppose the sequence $(x_n,y_n) \to (x,y)$ in $\RR^2$ then
+\begin{align*}
+    |y_n-y| &= \sqrt{(y_n-y)^2} \\
+    &\le \sqrt{(x_n-x)^2+(y_n-y)^2} \\
+    &= d((x_n,y_n),(x,y)) \\
+    &< \eps
+\end{align*}
+
+Now, suppose $x_n \to x$ and $y_n \to y$ then we claim that $(x_n,y_n) \to (x,y)$.
+Notice, that from the triangle inequality
+\begin{align*}
+    d((x_n,y_n),(x,y)) &\le d((x_n,y_n),(x_n,y)) + d((x_n,y),(x,y)) \\ 
+    &= \sqrt{(y_n-y)^2}+\sqrt{(x_n-y)^2} \\
+    &= |y_n-y|+|x_n-x| \\
+    &< \frac{\eps}{2} + \frac{\eps}{2} \\
+    &< \eps 
+\end{align*}
+Thus, $(x_n,y_n) \to (x,y)$.
