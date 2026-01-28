@@ -73,14 +73,38 @@ For $(1.)$, suppose the sequence $(x_n,y_n) \to (x,y)$ in $\RR^2$ then
     &= d((x_n,y_n),(x,y)) \\
     &< \eps
 \end{align*}
-
+Similarly for $|x_n-x|$.
 Now, suppose $x_n \to x$ and $y_n \to y$ then we claim that $(x_n,y_n) \to (x,y)$.
 Notice, that from the triangle inequality
 \begin{align*}
     d((x_n,y_n),(x,y)) &\le d((x_n,y_n),(x_n,y)) + d((x_n,y),(x,y)) \\ 
-    &= \sqrt{(y_n-y)^2}+\sqrt{(x_n-y)^2} \\
+    &= \sqrt{(y_n-y)^2}+\sqrt{(x_n-x)^2} \\
     &= |y_n-y|+|x_n-x| \\
     &< \frac{\eps}{2} + \frac{\eps}{2} \\
     &< \eps 
 \end{align*}
 Thus, $(x_n,y_n) \to (x,y)$.
+
+\bigskip
+
+For $(2.)$, suppose $(x_n,y_n)$ is cauchy sequence then
+\begin{align*}
+    |y_n-y_m| &= \sqrt{(y_n-y_m)^2} \\
+    &\le \sqrt{(x_n-x_m)^2+(y_n-y_m)^2} \\
+    &= d((x_n,y_n),(x_m,y_m)) \\
+    &< \eps
+\end{align*}
+
+Similarly for $|x_n-x_m|$. Now suppose $x_n$ and $y_n$ are cauchy sequence in $\RR$. Then,
+\begin{align*}
+    d((x_n,y_n),(x,y)) &\le d((x_n,y_n),(x_n,y_m)) + d((x_n,y_m),(x,y)) \\ 
+    &= \sqrt{(y_n-y_m)^2}+\sqrt{(x_n-x_m)^2} \\
+    &= |y_n-y_m|+|x_n-x_m| \\
+    &< \frac{\eps}{2} + \frac{\eps}{2} \\
+    &< \eps 
+\end{align*}
+Thus, $(x_n,y_n)$ is cauchy in $\RR^2$.
+
+\bigskip 
+
+For $(3.)$, from $(1.)$ and $(2.)$ it is clear that $(x_n,y_n)$ is cauchy if and only if $(x_n,y_n)$ converges.
