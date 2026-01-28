@@ -16,3 +16,39 @@ Notice that
     & \ge |f(x)-g(x)| \\
     &= d(f,g) 
 \end{align*}
+
+\begin{problem}
+    Let $X=\NN_{>0}$ and $d : X \times X \to \RR$ defined by 
+    \[ d(n,m) = \abs{\frac{1}{n}-\frac{1}{m}} \]
+    \begin{enumerate}
+        \item Show that the sequence $x_n=5n$ is a cauchy sequence.
+        \item Show that the sequence $x_n=5n$ doesn't converge.
+    \end{enumerate}
+    Thus the Metric space is not Cauchy complete.
+\end{problem}
+
+\textit{Solution.}
+Notice that,
+\begin{align*}
+    d(x_n,x_m) &= \frac{1}{5} \abs{\frac{1}{n}-\frac{1}{m}} \\
+    & \le \abs{\frac{1}{n}-\frac{1}{m}} \\
+    & \le \abs{\frac{1}{n}}+\abs{\frac{1}{m}} \\
+    &\le \frac{\eps}{2} + \frac{\eps}{2} \\
+    &=\eps
+\end{align*}
+
+the second last inequality is due to the archimedean property of $\RR$.
+
+Let $\eps = \frac{1}{2} > 0$. For any candidate $x \in X$, we have
+\[
+d(x_n, x) = \left| \frac{1}{5n} - \frac{1}{x} \right|.
+\]
+Since $x \ge 1$, we have $\frac{1}{x} \ge 0$, so for sufficiently large $n$,
+\[
+\frac{1}{5n} < \frac{1}{2x} \implies d(x_n, x) = \left| \frac{1}{5n} - \frac{1}{x} \right| > \frac{1}{2x} \ge \frac{1}{2} = \varepsilon.
+\]
+
+Hence, for all $N \in \mathbb{N}$, we can find $n \ge N$ such that $d(x_n, x) \ge \varepsilon$. Thus the sequence 
+is not convergent.
+
+
