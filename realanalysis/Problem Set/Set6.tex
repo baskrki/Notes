@@ -1,1 +1,18 @@
 \section{Problem Set 6}
+
+\begin{problem}
+    Let $X=C([0,1])$ and $d : X \times X \to \RR$ be defined by 
+    \[ d(f,g) = \max_{x \in [0,1]} |f(x)-g(x)| \]
+    Prove that $d$ satisfies 
+    \[ d(f,g) \le d(f,h) + d(h,g) \]
+    for all $f,g,h \in X$.
+\end{problem}
+
+\textit{Solution.}
+Notice that
+\begin{align*}
+    d(f,h) + d(h,g) &= \max_{x \in [0,1]} |f(x)-h(x)| + \max_{x \in [0,1]} |h(x)-g(x)| \\
+    & \ge |f(x)-h(x)|+|h(x)-g(x)| \quad (\text{ for all } x \in [0,1]) \\ 
+    & \ge |f(x)-g(x)| \\
+    &= d(f,g) 
+\end{align*}
