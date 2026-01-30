@@ -50,8 +50,16 @@ Show that $(x_n)$ has no convergent subsequence.
 
 \textit{Solution.}
 
-For $(1.)$, let $x_1=(a_1,a_2,\ldots)$ and $x_2=(a_1',a_2',\ldots)$. Similarly, let $y_1=(b_1,b_2,\ldots)$ and $y_2=(b_1',b_2',\ldots)$.
-Then, if $x_1=x_2$ and $y_1=y_2$ then $a_i=a_i'$ and $b_i=b_i'$ for all $i\ge 1$.
+For $(1.)$, Let $\dps S^a_N = \sum_{j=1}^{N} a_j^2$ and $\dps S^b_N = \sum_{j=1}^{N} b_j^2$. We know that $\dps \lim_{n \to \infty} S^a_n$
+and $\dps \lim_{n \to \infty} S^b_n$ exists, therefore $\dps \lim_{n \to \infty} S^a_n + S^b_n$ exists. And since,
+
+\[  0 \le (a_j - b_j)^2 = a_j^2+b_j^2- 2a_jb_j \le a_j^2+b_j^2+ 2|a_jb_j| \le 2(a_j^2+b_j^2)  \]
+The last inequality is due to AM-GM inequality. Therefore,
+\[ 0 \le (a_j-b_j)^2 \le 2(a_j^2+b_j^2)  \]
+and we have that $\dps \sum_{j=1}^{\infty} (a_j - b_j)^2$ converges from comparison test.
+
+\bigskip
+For $(2.)$, just takes the limit as $n \to \infty$.
 
 \begin{problem}
 Let $(X,d)$ be a metric space and $(x_n)$ a sequence in $X$. Denote
