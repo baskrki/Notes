@@ -1,1 +1,69 @@
 \section{Problem Set 7}
+
+\begin{problem}
+
+Consider the set
+\[
+X := \left\{ (a_1,a_2,a_3,\ldots) \;\middle|\; \sum_{j=1}^{\infty} a_j^2 \text{ converges} \right\}.
+\]
+
+Define the function $d : X \times X \to \RR$ as follows. For
+\[
+x = (a_1,a_2,a_3,\ldots), \quad y = (b_1,b_2,b_3,\ldots) \in X,
+\]
+define
+\[
+d(x,y) := \sqrt{\sum_{j=1}^{\infty} (a_j - b_j)^2 }.
+\]
+
+\begin{enumerate}
+\item Show that the function $d$ is well-defined. Equivalently, show that for
+\[
+x = (a_1,a_2,a_3,\ldots) \quad \text{and} \quad y = (b_1,b_2,b_3,\ldots) \in X,
+\]
+the series
+\[
+\sum_{j=1}^{\infty} (a_j - b_j)^2
+\]
+converges.
+
+\item Show that the function $d$ satisfies the triangle inequality. You may use the following triangle inequality in $\mathbb{R}^n$ without proof. For all $n \ge 1$,
+\[
+\sqrt{\sum_{j=1}^{n} (a_j - c_j)^2}
+\le
+\sqrt{\sum_{j=1}^{n} (a_j - b_j)^2}
++
+\sqrt{\sum_{j=1}^{n} (b_j - c_j)^2}.
+\]
+
+\item Consider a sequence in $X$ defined as
+\[
+x_1 = (1,0,0,0,\ldots), \quad
+x_2 = (0,1,0,0,\ldots), \quad \text{and so on}.
+\]
+In general,
+\[
+x_n = (0,\ldots,0,\underbrace{1}_{n\text{th position}},0,\ldots).
+\]
+Show that $(x_n)$ has no convergent subsequence.
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+    
+Let $(X,d)$ be a metric space and $(x_n)$ a sequence in $X$. Denote
+\[
+E = \{x_1, x_2, x_3, \ldots\}.
+\]
+Suppose $(x_n)$ has no convergent subsequence. Show that for all $k \in \mathbb{N}$, there exists $r_k > 0$ such that
+\[
+B(x_k, r_k) \cap E = \{x_k\}.
+\]
+
+You may use the following fact without proof. Fix $x \in X$. Suppose that for all $r > 0$, there are infinitely many elements in $E \cap B(x,r)$. Then $(x_n)$ has a subsequence which converges to $x$.
+
+\medskip
+
+\noindent\textbf{Remark.} You might find it easier to first show this when $(X,d) = \mathbb{R}$ and then adapt your argument to a general metric space $(X,d)$.
+
+\end{problem}
