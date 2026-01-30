@@ -89,9 +89,9 @@ You may use the following fact without proof. Fix $x \in X$. Suppose that for al
 
 \end{problem}
 
-\textit{Solution.} Using the fact, if $x_{n_k} \not \to x$ then there exists a $r>0$ such that $E \cap B(x,r)$ is finite.
-Since no subsequence converges to $x_k$ for $k \in \NN$, we have $r>0$ s.t $E \cap B(x_k,r)$ is finite. 
-Suppose
+\textit{Solution.} Using the fact, since no sequence of $(x_n)$ converges to $x$ there exists a $r>0$ such that $E \cap B(x,r)$ is finite.
+Since no subsequence converges to $x_k$ for $k \in \NN$, we have $r>0$ s.t $E \cap B(x_k,r)$ is finite. If $\abs{E \cap B(x_k,r)}=1$ then 
+we have the desired condition but suppose $\abs{E \cap B(x_k,r)}>1$ then
 \[ E \cap B(x_k,r)= \{x_k,x_{m_1},\ldots,x_{m_\ell}\} \]
 Then, since $d(x_k,x_{m_i})>0$ for all $1 \le i \le \ell$ we have
 \[ E \cap B\left(x_k,\min_{1 \le i \le \ell}\{d(x_k,x_{m_i})\}\right)=\{x_k\} \]
