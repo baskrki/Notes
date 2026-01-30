@@ -144,3 +144,34 @@ some for $0 < c < x$, we have $e^c \ge 1$ we have
 Now assume $x < 0$, we have $x=-a$ thus using MVT again we get,
 \[ \frac{e^{-a}-1}{-a} = e^{c} \]
 Since $0 > c > -a$ we get $\dps e^{c} \le 1 \implies e^{-a} = e^c (-a)+1 \ge -a+1$.
+
+\begin{problem}
+Let $X=C([0,1])$ and let \( d : X \times X \to \mathbb{R} \) be defined by
+\[
+d(f,g) = \max_{x \in [0,1]} |f(x) - g(x)|.
+\]
+
+Suppose \( (f_n) \subset X \) is a Cauchy sequence.
+
+\begin{enumerate}
+    \item Fix an arbitrary \( x_0 \in [0,1] \). Show that $\dps \lim_{n \to \infty} f_n(x_0)$ exists.
+
+    \item Define the function \( f : [0,1] \to \mathbb{R} \) by
+    \[
+    f(x) := \lim_{n \to \infty} f_n(x).
+    \]
+    Show that for all \( \varepsilon > 0 \), there exists \( N \in \mathbb{N} \) such that
+    \[
+    |f_n(x) - f(x)| \le \varepsilon
+    \]
+    for all \( x \in [0,1] \) and for all \( n \ge N \).
+
+    \item Show that \( f(x) \) is continuous on \([0,1]\). Equivalently, show that \( f \in X \).
+
+    \item Show that
+    \[
+    \lim_{n \to \infty} f_n = f
+    \]
+    as a sequence in \( X \).
+\end{enumerate}
+\end{problem}
