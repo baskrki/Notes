@@ -175,3 +175,40 @@ Suppose \( (f_n) \subset X \) is a Cauchy sequence.
     as a sequence in \( X \).
 \end{enumerate}
 \end{problem}
+
+\textit{Solution.} 
+
+For $(1.)$, since the $f_n$ is Cauchy that means $f_n(x_0)$ is also Cauchy. But since its a real valued function and $\RR$ is complete
+we have that $f_n(x_0)$ is convergent. Thus the $\dps \lim_{n \to \infty} f_n(x_0)$ exists.
+
+\bigskip
+
+For $(2.)$ we will use the fact that, $\dps \lim_{n \to \infty} |a_n\pm b_n|= \abs{\lim_{n \to \infty}a_n \pm \lim_{n \to \infty}b_n}$
+if both the limits exist. Since $f_n$ is cauchy, we have
+\[ |f_n(x) - f_m(x)| < \eps \]
+for some fixed $x \in [0,1]$ and for $n,m \ge N$. Then using the properties of limits we have,
+\[ \lim_{m \to \infty} |f_n(x)-f_m(x)| < \eps \]
+Therefore using the fact, we have 
+\[ |f_n(x)-f(x)| < \eps  \]
+
+\bigskip 
+
+For $(3.)$, let $x_0 \in [0,1]$ then
+\[ |f(x)-f(x_0)| \le |f(x)-f_n(x)|+|f_n(x)-f_n(x_0)|+|f_n(x_0)-f(x_0)|  \]
+
+Now, for $n \ge N$ we have $|f(x)-f_n(x)| < \eps/3$ and $|f(x_0)-f_n(x_0)| < \eps/3$ from $(2).$ and since $f_n \in C([0,1])$ we can pick a 
+$\delta_1$ for s.t whenever $0 < |x-x_0| < \delta_1$ we have $|f_n(x)-f_n(x_0)| < \eps/3$. 
+
+\bigskip
+
+Thus, if we choose $\delta = \delta_1$ then we have 
+\begin{align*}
+    |f(x)-f(x_0)| &\le |f(x)-f_n(x)|+|f_n(x)-f_n(x_0)|+|f_n(x_0)-f(x_0)| < \eps
+\end{align*}
+Thus $f \in C([0,1])$.
+
+\bigskip
+
+For $(4.)$, since we know that $f \in C([0,1])$ and due to EVT we have that the maximum is attained for $|f_n(x)-f(x)|$. Thus
+\[ \max_{x\in [0,1]} |f_n(x)-f(x)| < \eps \]
+Thus, $d(f_n,f) < \eps$ for any $\eps > 0$ so we have $f_n \to f$ in $X$.
