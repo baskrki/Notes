@@ -63,10 +63,13 @@ For $(2.)$, just takes the limit as $n \to \infty$.
 
 \bigskip
 
-For $(3.)$, suppose there is a convergent subsequence and let $x_n \to x$
-\[ d(x_n,x_m) \le d(x_n,x)+d(x,x_m) \]
-Now, notice that for $n \neq m$ we have $d(x_n,x_m)=\sqrt{2}$.
-Thus, 
+For $(3.)$, suppose there is a convergent subsequence and let $x_{n_k} \to x$
+\[ d(x_{n_k},x_{n_{\ell}}) \le d(x_{n_k},x)+d(x,x_{n_{\ell}}) \]
+Now, notice that for $n_k \neq n_\ell$ we have $d(x_{n_k},x_{n_\ell})=\sqrt{2}$.
+Thus, for large $n_k$ and $m_{\ell}$ we have
+\[ d(x_{n_k},x_{n_\ell}) \le d(x_{n_k},x)+d(x,x_{n_\ell}) < \frac{\eps}{2} + \frac{\eps}{2} \]
+\[ \implies \sqrt{2} < \eps \]
+But for $\eps < \sqrt{2}$ thats false.
 
 \begin{problem}
 Let $(X,d)$ be a metric space and $(x_n)$ a sequence in $X$. Denote
