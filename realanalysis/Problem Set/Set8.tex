@@ -28,3 +28,30 @@ Thus, $g'(0)$ also exists and
 \dps \frac{xf'(x)-f(x)}{x^2} & x \neq 0 \\
 \dps \frac{f''(0)}{2} & x = 0
 \end{cases} \]
+
+\begin{problem}
+    Suppose there exist two functions $S : \RR \to \RR$ and $C : \RR \to \RR$ which satisfy the following properties:
+\begin{itemize}
+    \item $\frac{d}{dx}S(x) = C(x), \quad \frac{d}{dx}C(x) = S(x)$.
+    \item $S(0) = 0, \quad C(0) = 1$.
+\end{itemize}
+
+\noindent (1) Let $S^{(n)}(x)$ be the $n$th derivative of $S(x)$. Show that for $k \in \mathbb{N} \cup \{0\}$,
+\[
+S^{(2k)}(x) = S(x), \quad S^{(2k+1)}(x) = C(x).
+\]
+
+\noindent (2) Show that for all $x \in \mathbb{R}$,
+\[
+S(x) = \sum_{n=0}^{\infty} \frac{x^{2n+1}}{(2n+1)!}.
+\]
+\end{problem}
+
+\textit{Solution.}
+
+For $(1.)$ just use induction.
+
+\bigskip
+
+For $(2.)$, restrict $S$ to $[0,x]$ for some fixed $x>0$. Then, 
+\[ S(x)=S(0)+\sum_{n=1}^{k} \frac{S^{n}(0)x^n}{(n)!}= \sum_{n=0}^{k} \frac{x^{2n+1}}{(2n+1)!} \]
