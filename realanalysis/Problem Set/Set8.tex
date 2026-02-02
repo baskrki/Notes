@@ -62,3 +62,43 @@ $S^n(x) = S(x)$ or $C(x)$, thus $|S^n(x)| \le M$ for $n \ge 0$.
 
 Thus,
 \[ S(x)=\sum_{n=0}^{\infty} \frac{x^{2n+1}}{(2n+1)!} \]
+
+\begin{problem}
+Let $a < b$ be two real numbers and let $f : [a,b] \to \mathbb{R}$ be a function.
+Suppose $f(x)$ is continuous on $[a,b]$ and differentiable on $(a,b)$.
+Suppose $f'(x) > 0$ for all $x \in (a,b)$.
+
+\begin{enumerate}
+\item Show that $f(x)$ is strictly increasing on $[a,b]$. That is,
+$f(x_1) < f(x_2)$ for all $x_1 < x_2$ in $[a,b]$.
+
+\item Show that for all $y \in (f(a), f(b))$, there exists a unique
+$x \in (a,b)$ such that $f(x) = y$.
+
+\item Let the function $g : (f(a), f(b)) \to (a,b)$ be the inverse function of $f(x)$.
+In other words, $g(y) = x$ if $f(x) = y$. Show that $g$ is continuous on
+$(f(a), f(b))$.
+
+\item Show that $g$ is differentiable on $(f(a), f(b))$ and that
+\[
+g'(y) = \frac{1}{f'(g(y))}
+\quad \text{for all } y \in (f(a), f(b)).
+\]
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+Define the function $f : [-1,1] \to \mathbb{R}$ by
+\[
+f(x) =
+\begin{cases}
+1, & x \in [-1,0) \cup (0,1], \\
+0, & x = 0.
+\end{cases}
+\]
+
+Show that $f(x)$ is Riemann integrable on $[-1,1]$ and that
+\[
+\int_{-1}^{1} f(x)\,dx = 2.
+\]
+\end{problem}
