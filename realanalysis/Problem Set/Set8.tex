@@ -54,10 +54,11 @@ For $(1.)$ just use induction.
 \bigskip
 
 For $(2.)$, restrict $S$ to $[0,x]$ for some fixed $x>0$. Then, 
-\[ S(x)=S(0)+\sum_{n=1}^{k} \frac{S^{n}(0)x^n}{(n)!} + R_k(x)= \sum_{n=0}^{\floor{k/2}} \frac{x^{2n+1}}{(2n+1)!}+R_k(x) \]
+\[ S(x)=\sum_{n=0}^{k} \frac{S^{n}(0)x^n}{(n)!} + R_k(x)= \sum_{n=0}^{\floor{k/2}} \frac{x^{2n+1}}{(2n+1)!}+R_k(x) \]
 
-But since $S$ and $C$ are bounded and continuous on $[0,x]$, we have $S^n(x) = S(x) \text{ or } C(x)$, thus $|S^n(x)| \le M$.
-\[ |R_k| = \abs{\frac{S^{k+1}x^{k+1}}{(k+1)!}} \le \abs{\frac{M x^{k+1}}{(k+1)!}} < \eps   \] 
+But since $S$ and $C$ are bounded and continuous on $[0,x]$ and we have 
+$S^n(x) = S(x)$ or $C(x)$, thus $|S^n(x)| \le M$ for $n \ge 0$.
+\[ |R_k| = \abs{\frac{S^{k+1}(c)x^{k+1}}{(k+1)!}} \le \abs{\frac{M x^{k+1}}{(k+1)!}} < \eps   \] 
 
 Thus,
 \[ S(x)=\sum_{n=0}^{\infty} \frac{x^{2n+1}}{(2n+1)!} \]
