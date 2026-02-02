@@ -1,1 +1,23 @@
 \section{Problem Set 8}
+
+\begin{problem}
+    Let $f: \RR \to \RR$ be a function. Suppose both $f'(x)$ and $f''(x)$ are continuous on $\RR$ and that $f(0)=0$. Define the function
+    \[ g(x) = \begin{cases}
+        f(x)/x & x \neq 0 \\
+        f'(0) & x=0
+    \end{cases} \]
+    Show that $g'(x)$ exists for all $x \in \RR$ and express $g'(x)$ in terms of $f(x)$ and its derivative.
+\end{problem}
+
+\textit{Solution.} 
+
+For $x \neq 0$, we have that 
+\[ g'(x) = \frac{xf'(x)-f(x)}{x^2} \]
+
+For $x=0$, we can use the definition of the derivative,
+
+\[ g(x) = \lim_{x \to 0} \frac{g(x)-g(0)}{x-0} = \lim_{x \to 0} \frac{f(x)-xf'(0)}{x^2} \]
+
+Now using taylor's formula, we have that 
+\[ f(x)=f(0)+xf'(0)+x^2f''(0) \cdot \frac12 \]
+
