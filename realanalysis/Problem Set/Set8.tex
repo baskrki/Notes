@@ -16,11 +16,15 @@ For $x \neq 0$, we have that
 
 For $x=0$, we can use the definition of the derivative,
 
-\[ g(x) = \lim_{x \to 0} \frac{g(x)-g(0)}{x-0} = \lim_{x \to 0} \frac{f(x)-xf'(0)}{x^2} \]
+\[ g'(0) = \lim_{x \to 0} \frac{g(x)-g(0)}{x-0} = \lim_{x \to 0} \frac{f(x)-xf'(0)}{x^2} \]
 
-Now using taylor's formula, we have that 
-\[ f(x)=f(0)+xf'(0)+x^2f''(0) \cdot \frac12 \]
-\[ \implies \frac{f(x)-xf'(0)}{x^2} = \frac{1}{2} \cdot f''(0) \]
-\[ \implies \lim_{x \to 0} \frac{f(x)-xf'(0)}{x^2} = \frac{f''(0)}{2} \]
+Now using taylor's formula near $0$, we have that 
+\[ f(x)=f(0)+xf'(0)+x^2f''(c_x) \cdot \frac12 \]
+\[ \implies \frac{f(x)-xf'(0)}{x^2} = \frac{1}{2} \cdot f''(c_x) \]
+\[ \implies \lim_{x \to 0} \frac{f(x)-xf'(0)}{x^2} = \lim_{x \to 0}\frac{f''(c_x)}{2} = \frac{f''(0)}{2} \]
 
-Thus, $g'(0)$ also exists.
+Thus, $g'(0)$ also exists and 
+\[ g'(x)=\begin{cases}
+\dps \frac{xf'(x)-f(x)}{x^2} & x \neq 0 \\
+\dps \frac{f''(0)}{2} & x = 0
+\end{cases} \]
