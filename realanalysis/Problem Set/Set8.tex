@@ -180,3 +180,27 @@ Show that $f(x)$ is Riemann integrable on $[-1,1]$ and that
 \int_{-1}^{1} f(x)\,dx = 2.
 \]
 \end{problem}
+
+\textit{Solution.}
+
+For any partition $P = \{x_0, x_1, \dots, x_n\}$ of $[-1, 1]$, every sub interval $[x_{i-1}, x_i]$ contains points $x \neq 0$.
+ Thus, the supremum on each subinterval is $M_i = 1$. The upper sum is:
+\[
+U(f, P) = \sum_{i=1}^{n} M_i \Delta x_i = \sum_{i=1}^{n} 1 \cdot \Delta x_i = 1 \cdot (1 - (-1)) = 2
+\]
+Hence, the upper integral is $\dps \ol{\int_{-1}^1} f(x) \, dx = \inf_P U(f, P) = 2$.
+
+\bigskip
+Let $\eps > 0$. Choose a partition $P_\eps = \{-1, -\frac{\eps}{4}, \frac{\eps}{4}, 1\}$. The infimums $m_i$ for the three sub 
+intervals are $m_1 = 1$, $m_2 = 0$ (since $0 \in [-\frac{\eps}{4}, \frac{\eps}{4}]$), and $m_3 = 1$. The lower sum is:
+\[
+L(f, P_\eps) = 1\left(1 - \frac{\eps}{4}\right) + 0\left(\frac{\eps}{2}\right) + 1\left(1 - \frac{\eps}{4}\right) = 2 - \frac{\eps}{2}
+\]
+Since $\dps L(f, P_\eps) \leq \ul{\int_{-1}^1} f(x) \, dx \leq 2$, and we can make $L(f, P_\eps)$ arbitrarily close to 2 by choosing a 
+small $\eps$, the lower integral is $\dps \ul{\int_{-1}^1} f(x) \, dx = 2$.
+
+Since the upper and lower integrals are equal:
+\[
+\underline{\int_{-1}^1} f(x) \, dx = \overline{\int_{-1}^1} f(x) \, dx = 2
+\]
+The function $f$ is Riemann integrable on $[-1, 1]$ and $\dps \int_{-1}^1 f(x) \, dx = 2$.
