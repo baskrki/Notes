@@ -41,7 +41,7 @@ Thus, $g'(0)$ also exists and
 S^{(2k)}(x) = S(x), \quad S^{(2k+1)}(x) = C(x).
 \]
 
-\noindent (2) Show that for all $x \in \mathbb{R}$,
+\noindent (2) Show that for all $x \in \RR$,
 \[
 S(x) = \sum_{n=0}^{\infty} \frac{x^{2n+1}}{(2n+1)!}.
 \]
@@ -64,7 +64,7 @@ Thus,
 \[ S(x)=\sum_{n=0}^{\infty} \frac{x^{2n+1}}{(2n+1)!} \]
 
 \begin{problem}
-Let $a < b$ be two real numbers and let $f : [a,b] \to \mathbb{R}$ be a function.
+Let $a < b$ be two real numbers and let $f : [a,b] \to \RR$ be a function.
 Suppose $f(x)$ is continuous on $[a,b]$ and differentiable on $(a,b)$.
 Suppose $f'(x) > 0$ for all $x \in (a,b)$.
 
@@ -89,22 +89,84 @@ g'(y) = \frac{1}{f'(g(y))}
 
 \textit{Solution.}
 
-For $(1.)$, we restrict the function to $[x_1,x_2]$. Then using MVT we have
-\[ \frac{f(x_2)-f(x_1)}{x_2-x_1}=f'(c) \]
-for some $c \in (x_1,x_2)$. Thus,
-\[ f(x_2)-f(x_1) = f'(c)(x_2-x_1) > 0 \]
+For $(1.)$, Let $x_1<x_2$ be points in $[a,b]$. By the Mean Value Theorem, there exists
+$c\in(x_1,x_2)$ such that
+\[
+\frac{f(x_2)-f(x_1)}{x_2-x_1}=f'(c).
+\]
+Since $f'(c)>0$ and $x_2-x_1>0$, it follows that
+\[
+f(x_2)-f(x_1)>0,
+\]
+and hence $f(x_1)<f(x_2)$. Therefore, $f$ is strictly increasing on $[a,b]$.
 
 \bigskip
-For $(2.)$, by IVT it must take on every value between $f(a)$ and $f(b)$. Suppose $f(a)=f(b)$. 
-If $a>b$ then $f(a)>f(b)$ from $(1.)$ also if $a<b$ then $f(a)<f(b)$. Thus, $a=b$.
+
+For $(2.)$, since $f$ is continuous on $[a,b]$, the IVT implies that
+for every $y\in(f(a),f(b))$ there exists $x\in(a,b)$ such that $f(x)=y$. To prove uniqueness, suppose $x_1<x_2$ and $f(x_1)=f(x_2)$. 
+This is a contradiction as $f(x_1)<f(x_2)$.
+
+
+\bigskip
+For $(3.)$, fix $y_0\in(f(a),f(b))$ and let $x_0=g(y_0)$. Let $\eps >0$ be given.
+Since $f$ is strictly increasing, we have
+\[
+f(x_0-\varepsilon) < f(x_0) < f(x_0+\varepsilon).
+\]
+Define
+\[
+\delta
+:=
+\min\!\left\{
+f(x_0+\varepsilon)-f(x_0),\;
+f(x_0)-f(x_0-\varepsilon)
+\right\}.
+\]
+Then $\delta>0$.
+
+Now suppose $y\in(f(a),f(b))$ satisfies $|y-y_0|<\delta$.
+Then
+\[
+f(x_0-\varepsilon) < y < f(x_0+\varepsilon).
+\]
+By the definition of the inverse function and since $f$ is increasing , we have
+\[
+x_0-\varepsilon < g(y) < x_0+\varepsilon.
+\]
+Hence,
+\[
+|g(y)-g(y_0)|<\varepsilon.
+\]
+Thus $g$ is continuous on $(f(a),f(b))$.
+
 \bigskip
 
-For $(3.)$, Since $f$ is continuous on $[a,b]$ we have a $\delta$ such that if $|x-x_0| < \delta$ then $|f(x)-f(x_0)|<\eps$.
-To show that $g$ is continuous, we need to show $|g(f(x))-g(f(x_0))| < \eps$ which is just $|x-x_0|<\eps$. Thus we can just set our 
-delta to be $\eps$.
+For $(4.)$, fix $y_0\in(f(a),f(b))$ and let $x_0=g(y_0)$, so that $f(x_0)=y_0$. For $y\neq y_0$,
+write $y=f(x)$, so that $x=g(y)$. Then
+\[
+\frac{g(y)-g(y_0)}{y-y_0}
+=
+\frac{x-x_0}{f(x)-f(x_0)}
+=
+\frac{1}{\dfrac{f(x)-f(x_0)}{x-x_0}}.
+\]
+Taking the limit as $y\to y_0$ is equivalent to taking the limit as $x\to x_0$,
+since $g$ is continuous. Therefore,
+\[
+\lim_{y\to y_0}\frac{g(y)-g(y_0)}{y-y_0}
+=
+\frac{1}{\lim_{x\to x_0}\dfrac{f(x)-f(x_0)}{x-x_0}}
+=
+\frac{1}{f'(x_0)}.
+\]
+Thus $g$ is differentiable at $y_0$ and
+\[
+g'(y_0)=\frac{1}{f'(x_0)}=\frac{1}{f'(g(y_0))}.
+\]
+Since $y_0$ was arbitrary, this holds for all $y\in(f(a),f(b))$.
 
 \begin{problem}
-Define the function $f : [-1,1] \to \mathbb{R}$ by
+Define the function $f : [-1,1] \to \RR$ by
 \[
 f(x) =
 \begin{cases}
