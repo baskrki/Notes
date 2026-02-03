@@ -204,3 +204,32 @@ Since the upper and lower integrals are equal:
 \underline{\int_{-1}^1} f(x) \, dx = \overline{\int_{-1}^1} f(x) \, dx = 2
 \]
 The function $f$ is Riemann integrable on $[-1, 1]$ and $\dps \int_{-1}^1 f(x) \, dx = 2$.
+
+\begin{problem}
+    Let $f:(a,b)\to\mathbb{R}$ be a function. The function $f(x)$ is called
+\textbf{convex} if for all $x_1<x_2$ in $(a,b)$ and all $\lambda\in[0,1]$,
+\[
+f\bigl(\lambda x_1+(1-\lambda)x_2\bigr)
+\le
+\lambda f(x_1)+(1-\lambda)f(x_2).
+\]
+
+\begin{enumerate}
+\item Suppose that $f''(x)$ exists and is nonnegative for all
+$x\in(a,b)$. Show that $f(x)$ is convex.
+
+\item Suppose that $f''(x)$ exists for all $x\in(a,b)$. Show that
+\[
+f''(x)=\lim_{h\to 0}
+\frac{f(x+h)+f(x-h)-2f(x)}{h^2}.
+\]
+
+\item Suppose that $f''(x)$ exists for all $x\in(a,b)$ and that $f(x)$ is
+convex. Show that for all $x\in(a,b)$,
+\[
+f''(x)\ge 0.
+\]
+\end{enumerate}
+\end{problem}
+
+Will come back later to finish this.
