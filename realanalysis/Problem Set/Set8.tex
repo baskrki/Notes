@@ -95,10 +95,13 @@ for some $c \in (x_1,x_2)$. Thus,
 \[ f(x_2)-f(x_1) = f'(c)(x_2-x_1) > 0 \]
 
 \bigskip
-For $(2.)$, suppose $f(a)=f(b)$. If $a>b$ then $f(a)>f(b)$ from $(1.)$ also if $a<b$ then $f(a)<f(b)$. Thus, $a=b$.
+For $(2.)$, by IVT it must take on every value between $f(a)$ and $f(b)$. Suppose $f(a)=f(b)$. 
+If $a>b$ then $f(a)>f(b)$ from $(1.)$ also if $a<b$ then $f(a)<f(b)$. Thus, $a=b$.
 \bigskip
 
-For $(3.)$,
+For $(3.)$, Since $f$ is continuous on $[a,b]$ we have a $\delta$ such that if $|x-x_0| < \delta$ then $|f(x)-f(x_0)|<\eps$.
+To show that $g$ is continuous, we need to show $|g(f(x))-g(f(x_0))| < \eps$ which is just $|x-x_0|<\eps$. Thus we can just set our 
+delta to be $\eps$.
 
 \begin{problem}
 Define the function $f : [-1,1] \to \mathbb{R}$ by
