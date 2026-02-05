@@ -165,3 +165,18 @@ $U=\{0\}$ or $U=V$.
 $u_1,\ldots,u_n,v_1,\ldots,v_{m-n}$. Define 
 \[ T(a_1 u_1 + \cdots+a_{n}u_n+\cdots a_{m} v_{m-n})= a_1 v_1 \]
 It is easy to see that $T \in \LL(V)$ but $U$ is not invariant under $T$ as $T(u_1)=v_1$.
+
+\paragraph{Problem :} Suppose $T\in \LL(\RR^2)$ is defined by $T(x,y)=(-3y,x)$. Find the eigenvalues of $T$.
+
+\vspace{4mm}
+\textit{Solution :} If $\lambda$ is a eigenvalues then $(-3y,x)=T(x,y)=\lambda(x,y)=(\lambda x, \lambda y)$ then $-3y=\lambda^2 y$.
+Notice that $y \neq 0$ because if $y=0$ then $x=0$ but $(x,y) \neq (0,0)$. Thus, $\lambda = \pm \sqrt{3}i$.
+
+\paragraph{Problem :} Suppose $P \in \LL(V)$ is such that $P^2=P$. Prove that if $\lambda$ is an eigenvalue of $P$, then $\lambda = 0$ or 
+$1$.
+
+\vspace{4mm}
+\textit{Solution :} If $\lambda$ is a eigenvalue then $\exists v \neq 0$ such that $P(v)=\lambda v$. Therefore,
+\[ \lambda v = P(P(v))=P(\lambda v) = \lambda \cdot \lambda v \]
+\[ \implies \lambda^2 v = \lambda v \implies v(\lambda^2 - \lambda) = 0 \]
+\[ \implies \lambda^2 = \lambda \implies \lambda = 1,0 \]
