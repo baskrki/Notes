@@ -128,4 +128,26 @@ From our definition, $U$ is invariant under $T$ if $T|_{U}$ is an operator on $U
     \[ \implies T(p(T)v)=Tu \]
     \[ \implies p(T)(Tv)=Tu \]
     Hence, $Tu \in \operatorname{range} p(T)$. Thus, $\operatorname{range} p(T)$ is invariant under $T$, as desired.
-\end{proof}
+\end{proof}\
+
+\subsubsection{Exercise}
+
+\paragraph{Problem :} Suppose $T \in \LL(V)$ and $U$ is a subspace of $V$.
+\begin{enumerate}
+    \item Prove that $U \subseteq \Null T$, then $U$ is invariant under $T$.
+    \item Prove that $\range T \subseteq U$, then $U$ is invariant under $T$.
+\end{enumerate}
+
+\vspace{4mm}
+\textit{Solution :} For $1.$ just notice that $Tu = 0 \in U$ for all $u \in U$. Thus, it is invariant under $T$.
+
+For $2.$ notice that $Tu = k \in \range T \subseteq U$, thus $k \in U$. Therefore it is invariant under $T$.
+
+\paragraph{Problem :} Suppose that $T \in \LL(V)$ and $V_1, \ldots, V_m$ are subspaces of $V$ invariant under $T$. Prove that 
+$V_1 + \cdots + V_m$ is also invariant under $T$.
+
+\vspace{4mm}
+\textit{Solution :} Let $u \in V_1 + \cdots + V_m$ then $Tu = Tv_1 + \cdots + Tv_m$. Since $Tv_i \in V_i$ we have that 
+\[ Tv_1 + \cdots + Tv_m \in V_1 + \cdots + V_m \]
+Thus $V_1+\cdots+V_m$ is invariant under $T$.
+
