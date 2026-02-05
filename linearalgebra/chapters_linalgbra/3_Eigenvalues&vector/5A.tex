@@ -140,7 +140,6 @@ From our definition, $U$ is invariant under $T$ if $T|_{U}$ is an operator on $U
 
 \vspace{4mm}
 \textit{Solution :} For $1.$ just notice that $Tu = 0 \in U$ for all $u \in U$. Thus, it is invariant under $T$.
-
 For $2.$ notice that $Tu = k \in \range T \subseteq U$, thus $k \in U$. Therefore it is invariant under $T$.
 
 \paragraph{Problem :} Suppose that $T \in \LL(V)$ and $V_1, \ldots, V_m$ are subspaces of $V$ invariant under $T$. Prove that 
@@ -151,3 +150,18 @@ $V_1 + \cdots + V_m$ is also invariant under $T$.
 \[ Tv_1 + \cdots + Tv_m \in V_1 + \cdots + V_m \]
 Thus $V_1+\cdots+V_m$ is invariant under $T$.
 
+\paragraph{Problem :} Suppose $T \in \LL(V)$. Prove that the intersection of every collection of subspaces of $V$ invariant under $T$ is 
+invariant under $T$.
+
+\vspace{4mm}
+\textit{Solution :} Let $\dps \bigcap_{\alpha} V_{\alpha} = K$ where $V_{\alpha}$ is a subspace of $V$ invariant under $T$. 
+If $v \in K$ then $Tv \in V_{\alpha}$ for every $\alpha$, hence $Tv \in K$.
+
+\paragraph{Problem :} If $V$ is a finite-dimensional and $U$ is a subspace of $V$ that is invariant under every operator on $V$, then 
+$U=\{0\}$ or $U=V$.
+
+\vspace{4mm}
+\textit{Solution :} Suppose $U \neq \{0\}$ and $U \neq V$. Let $u_1,\ldots,u_n$ be a basis of $U$ and extend it to basis of $V$, 
+$u_1,\ldots,u_n,v_1,\ldots,v_{m-n}$. Define 
+\[ T(a_1 u_1 + \cdots+a_{n}u_n+\cdots a_{m} v_{m-n})= a_1 v_1 \]
+It is easy to see that $T \in \LL(V)$ but $U$ is not invariant under $T$ as $T(u_1)=v_1$.
