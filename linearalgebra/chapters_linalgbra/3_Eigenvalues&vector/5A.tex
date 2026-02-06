@@ -180,3 +180,15 @@ $1$.
 \[ \lambda v = P(P(v))=P(\lambda v) = \lambda \cdot \lambda v \]
 \[ \implies \lambda^2 v = \lambda v \implies v(\lambda^2 - \lambda) = 0 \]
 \[ \implies \lambda^2 = \lambda \implies \lambda = 1,0 \]
+
+\paragraph{Problem :} Suppose $T \in \LL(V)$. Suppose $S \in \LL(V)$ is invertible.
+\begin{enumerate}
+    \item Prove that $T$ and $S^{-1}TS$ have the same eigenvalues.
+    \item What is the relationship between eigenvectors of $T$ and eigenvectors of $S^{-1}TS$?
+\end{enumerate}
+
+\vspace{4mm}
+\textit{Solution :} If $\lambda$ is a eigenvalue of $T$ then $T(v)=\lambda v$. Since $S$ is invertible $\exists w \in V$ such that $S(w)=v$
+thus $(S^{-1}(T(S(w)))=S^{-1}(\lambda v) = \lambda w$. If $\lambda$ is a eigenvalue of $S^{-1} T S$ then $S^{-1}(T(Sw))=\lambda w$ thus
+$T(S(w))=S(\lambda w) = \lambda S(w)$. The relationship between the eigenvectors is that, eigenvectors of $S^{-1}TS$ maps to eigenvectors 
+of $T$.

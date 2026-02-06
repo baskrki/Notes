@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1770289028.64089 "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" "linalgebra.pdf" "linalgebra" 1770289029.66917 0
+["pdflatex"] 1770351107.45229 "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" "linalgebra.pdf" "linalgebra" 1770351108.20087 0
   "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" 1770288095.72777 2050 dba0c00d3d52dd8be207b82988ec10e3 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -115,11 +115,11 @@
   "chapters_linalgbra/1_Linear_Maps/3E.tex" 1762232764.31926 11593 80a881d9ca5765811c0d4862df5c7825 ""
   "chapters_linalgbra/1_Linear_Maps/3F.tex" 1764297050.52492 10134 ae0ffa3b7b1a9c0bf0b5502f3e49df59 ""
   "chapters_linalgbra/2_Polynomials/poly.tex" 1764296316.28247 2596 0030937fa0962e32f66c43f03082a413 ""
-  "chapters_linalgbra/3_Eigenvalues&vector/5A.tex" 1770289028.35718 7965 c0eb00bcffb275820ae867038a4e215f ""
-  "linalgebra.aux" 1770289029.54676 11794 3325a4cbe4e93a00ddc1392052497ade "pdflatex"
-  "linalgebra.out" 1770289029.54817 7090 baed65c675733f1874af2370eab6ee84 "pdflatex"
+  "chapters_linalgbra/3_Eigenvalues&vector/5A.tex" 1770351107.22158 8683 489ad69c0625b60d8131520c4996fa91 ""
+  "linalgebra.aux" 1770351108.11324 11890 837c9fd365c6b8bc725021c2f2ab16fb "pdflatex"
+  "linalgebra.out" 1770351108.11524 7090 baed65c675733f1874af2370eab6ee84 "pdflatex"
   "linalgebra.tex" 1770288095.72777 2050 dba0c00d3d52dd8be207b82988ec10e3 ""
-  "linalgebra.toc" 1770289029.54917 7097 52e49ce5760cc7da01754887df6eaa80 "pdflatex"
+  "linalgebra.toc" 1770351108.11524 7152 29f40ed8b69e661a63985763bccd67ee "pdflatex"
   (generated)
   "linalgebra.aux"
   "linalgebra.log"
