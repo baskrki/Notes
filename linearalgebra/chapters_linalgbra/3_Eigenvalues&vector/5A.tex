@@ -211,4 +211,18 @@ Prove that $\lambda$ is an eigenvalue of the complexification $T_{\CC}$ if and o
 \vspace{4mm}
 \textit{Solution :} If $\lambda$ is an eigenvalue then $T(v+iw)=\lambda(v+iw)$ thus we have 
 \[ \ol{T(v+iw)}=T(\ol{v+iw})= \ol{\lambda}(\ol{v+iw}) \]
-Since $v+iw \neq 0$ their conjugate isn't zero as well.
+Since $v+iw \neq 0$ so their conjugate isn't zero as well.
+
+\paragraph{Problem :} Suppose $T \in \LL(V)$ is invertible.
+
+\begin{enumerate}
+    \item Suppose $\lambda \in F$ with $\lambda \neq 0$. Prove that $\lambda$ is an eigenvalue of $T$ if and only if 
+          $\frac{1}{\lambda}$ is an eigenvalue of $T^{-1}$.
+    \item Prove that $T$ and $T^{-1}$ have same eigenvectors.
+\end{enumerate}
+
+\vspace{4mm}
+\textit{Solution :} If $\lambda$ is an eigenvalue of $T$ then 
+\[ T(v)=\lambda v \iff v = \lambda T^{-1}(v) \iff \frac{1}{\lambda} v = T^{-1}(v) \]
+
+This proves both of the statement.
