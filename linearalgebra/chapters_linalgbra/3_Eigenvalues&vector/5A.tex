@@ -13,13 +13,13 @@
 From our definition, $U$ is invariant under $T$ if $T|_{U}$ is an operator on $U$. 
 
 \begin{definition}
-    Suppose $T \in \LL(V)$. A number $\lambda \in \mathbf{F}$ is called a \textit{eigenvalue} of $T$  if there exists a $v \in V$ such that
+    Suppose $T \in \LL(V)$. A number $\lambda \in \FF$ is called a \textit{eigenvalue} of $T$  if there exists a $v \in V$ such that
     $v \neq 0$ and $Tv = \lambda v$.
 \end{definition}
 
 \begin{remark}
     Thus, $V$ has one-dimensional subspace invariant under $T$ if and only if $T$ has an eigenvalue. If $U$ is an one-dimensional subspace
-    then $Tv = \lambda v$ for some $\lambda \in \mathbf{F}$. Conversely, if $Tv = \lambda v$ for some $\lambda \in \mathbf{F}$ then 
+    then $Tv = \lambda v$ for some $\lambda \in \FF$. Conversely, if $Tv = \lambda v$ for some $\lambda \in \FF$ then 
     $\operatorname{span}{v}$ is one-dimensional subspace $V$ invariant under $T$.
 \end{remark}
 
@@ -40,7 +40,7 @@ From our definition, $U$ is invariant under $T$ if $T|_{U}$ is an operator on $U
 \end{proof}
 
 \begin{definition}
-    Suppose $T \in \LL(V)$ and $\lambda \in \mathbf{F}$ is an eigenvalue of $T$. A vector $v \in V$ is called and \textit{eigenvector}
+    Suppose $T \in \LL(V)$ and $\lambda \in \FF$ is an eigenvalue of $T$. A vector $v \in V$ is called and \textit{eigenvector}
     corresponding to $\lambda$ if $v \neq 0$ and $Tv = \lambda v$.
 \end{definition}
 
@@ -51,7 +51,7 @@ From our definition, $U$ is invariant under $T$ if $T|_{U}$ is an operator on $U
 \begin{proof}
     For the sake of contradiction, suppose the result is false. Then there exists a smallest positive integer $m>1$ such that there exists a 
     list $v_1,\ldots,v_m$ of linearly dependent eigenvectors $\lambda_1,\ldots,\lambda_m$ of $T$, corresponding to distinct eigenvalues.
-    Due to the minimality of $m$, there exists $a_1,\ldots,a_m \in \mathbf{F}$ such that
+    Due to the minimality of $m$, there exists $a_1,\ldots,a_m \in \FF$ such that
     \[ a_1 v_1 + \ldots + a_m v_m =0 \] 
     Applying $T-\lambda I$ we get
     \[ a_1(\lambda_1 - \lambda_m)v_1 + \cdots + a_m(\lambda_{m-1}-\lambda_{m})v_{m-1}=0 \]
@@ -81,14 +81,14 @@ From our definition, $U$ is invariant under $T$ if $T|_{U}$ is an operator on $U
 \end{definition}
 
 \begin{definition}
-    Suppose $T \in \LL(V)$ and $p \in \mathcal{P}(\mathbf{F})$ is a polynomial given by 
+    Suppose $T \in \LL(V)$ and $p \in \mathcal{P}(\FF)$ is a polynomial given by 
     \[ p(z) = a_0 + a_1 z + \cdots + a_m z^m \]
-    for all $z \in \mathbf{F}$. Then $p(T)$ is the operator on $V$ defined by 
+    for all $z \in \FF$. Then $p(T)$ is the operator on $V$ defined by 
     \[ p(T) = a_0 I + a_1 T + a_2 T^2 + \cdots + a_m T^m \]
 \end{definition}
 
 \begin{proposition}
-    Let $T \in \LL(V)$, then the function $f : \mathcal{P}(\mathbf{F}) \to \LL(V)$ given by $p \mapsto p(T)$ is linear.
+    Let $T \in \LL(V)$, then the function $f : \mathcal{P}(\FF) \to \LL(V)$ given by $p \mapsto p(T)$ is linear.
 \end{proposition}
 
 \begin{proof}
@@ -96,7 +96,7 @@ From our definition, $U$ is invariant under $T$ if $T|_{U}$ is an operator on $U
 \end{proof}
 
 \begin{proposition}
-    Suppose $p,q \in \mathcal{P}(\mathbf{F})$ and $T \in \LL(V)$
+    Suppose $p,q \in \mathcal{P}(\FF)$ and $T \in \LL(V)$
     Then 
     \begin{enumerate}
         \item $(pq)(T) = p(T) q(T)$
@@ -114,7 +114,7 @@ From our definition, $U$ is invariant under $T$ if $T|_{U}$ is an operator on $U
 \end{definition}
 
 \begin{proposition}
-    Suppose $T \in \LL(V)$ and $p \in \mathcal{P}(\mathbf{F})$. Then $\operatorname{null} p(T)$ and $\operatorname{range} p(T)$ are invariant 
+    Suppose $T \in \LL(V)$ and $p \in \mathcal{P}(\FF)$. Then $\operatorname{null} p(T)$ and $\operatorname{range} p(T)$ are invariant 
     under $T$.
 \end{proposition}
 
@@ -192,3 +192,22 @@ $1$.
 thus $(S^{-1}(T(S(w)))=S^{-1}(\lambda v) = \lambda w$. If $\lambda$ is a eigenvalue of $S^{-1} T S$ then $S^{-1}(T(Sw))=\lambda w$ thus
 $T(S(w))=S(\lambda w) = \lambda S(w)$. The relationship between the eigenvectors is that, eigenvectors of $S^{-1}TS$ maps to eigenvectors 
 of $T$.
+
+\paragraph{Problem :} Give an example of a operator in $\RR^4$ that has no eigenvalues.
+
+\vspace{4mm}
+\textit{Solution :} $T(w,x,y,z)=(-x,w,-z,y)$
+
+\paragraph{Problem :} Suppose $V$ is finite-dimensional, $T \in \LL(V)$, and $\lambda \in \FF$. Show that $\lambda$ is an eigenvalue of $T$ 
+if and only if $\lambda$ is an eigenvalue of the dual operator  $T' \in \LL(V')$.
+
+\vspace{4mm}
+\textit{Solution :} From exercise $17$ of $3F$ we know that $T$ is invertible if and only if $T'$ is invertible. Thus,
+$T-\lambda I$ is not invertible if and only if $(T-\lambda I)=T'-\lambda I$ is not invertible. Thus we are done.
+
+\paragraph{Problem :} Suppose $\FF = \RR$, $T \in \LL(V)$, and $\lambda \in \CC$. 
+Prove that $\lambda$ is an eigenvalue of the complexification $T_{\CC}$ if and only if $\bar{\lambda}$ is an eigenvalue of $T_{\CC}$.
+
+\vspace{4mm}
+\textit{Solution :} If $\lambda$ is an eigenvalue then $T(v+iw)=\lambda(v+iw)$ thus we have 
+\[ \ol{T(v+iw)}=T(\ol{v+iw})= \ol{\lambda}(\ol{v+iw}) \]
