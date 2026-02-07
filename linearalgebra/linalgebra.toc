@@ -105,3 +105,4 @@
 \contentsline {paragraph}{Problem :}{47}{section*.68}%
 \contentsline {paragraph}{Problem :}{47}{section*.69}%
 \contentsline {paragraph}{Problem :}{48}{section*.70}%
+\contentsline {subsection}{\numberline {3.2}The Minimal Polynomial}{49}{subsection.3.2}%
