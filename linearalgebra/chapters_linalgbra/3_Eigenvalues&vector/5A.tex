@@ -226,3 +226,14 @@ Since $v+iw \neq 0$ so their conjugate isn't zero as well.
 \[ T(v)=\lambda v \iff v = \lambda T^{-1}(v) \iff \frac{1}{\lambda} v = T^{-1}(v) \]
 
 This proves both of the statement.
+
+\paragraph{Problem :} Suppose $V$ is finite-dimensional and $S,T \in \LL(V)$. Prove that $ST$ and $TS$ have the same eigenvalues.
+
+\vspace{4mm}
+\textit{Solution :} If $ST$ has eigenvalue $\lambda$ then 
+\[ ST(v)=\lambda v \]
+\[ \implies T(STv) = \lambda T(v) \]
+If $Tv \neq 0$ then we are done. If $Tv=0$ then 
+\[ S(Tv)=S(0)=0=\lambda v \implies \lambda = 0 \]
+Thus, $ST - \lambda I = ST$ is no invertible thus $TS$ is also not invertible. Therefore $0$ is also an eigenvalue of $TS$.
+
