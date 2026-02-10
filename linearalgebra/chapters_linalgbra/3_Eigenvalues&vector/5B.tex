@@ -7,5 +7,17 @@
 \end{theorem}
 
 \begin{proof}
-    
+    Let $V$ be a finite-dimensional non-zero complex vector space of dimension $n>0$ and $T \in \LL(V)$.
+    Choose $v \in V$ such that $v \neq 0$. Then 
+    \[ v, Tv, T^2v,\ldots,T^nv \]
+    This has length $n+1>n$ thus it is linearly dependent list. Therefore there exists $a_0,\ldots,a_n \in \CC$ not all zero, such that
+    \[ a_0v+a_1 Tv + \cdots + a_n T^nv = 0 \] 
+    Let $p(z)=a_0+a_1z+\cdots+a_nz^n$ be a polynomial with minimal degree such that $p(T)=0$.
+    Since $a_i \in \CC$ there exist complex roots $\lambda$ and a polynomial $q(z)$ such that
+    \[ p(z)=(z-\lambda)q(z) \]
+    Apply $T$ to this polynomial gives us,
+    \[ p(T)=(T-\lambda)(q(T)) \]
+    and applying $v$ gives us,
+    \[ (T-\lambda)(q(T)v)=0 \implies T(q(T)v)=\lambda q(T)v \]
+    Thus $\lambda$ is an eigenvalue as $ Tv \neq 0$ because $q(T)v \neq 0$ deu to the minimality of $p$.
 \end{proof}
