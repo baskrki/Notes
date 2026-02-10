@@ -21,3 +21,47 @@
     \[ (T-\lambda)(q(T)v)=0 \implies T(q(T)v)=\lambda q(T)v \]
     Thus $\lambda$ is an eigenvalue as $ Tv \neq 0$ because $q(T)v \neq 0$ deu to the minimality of $p$.
 \end{proof}
+
+\begin{theorem}
+    Suppose $V$ is a finite-dimensional and $T \in \LL(V)$. Then there is a unique monic polynomial $p \in \PP(\FF)$ of smallest degree
+    such that $p(T)=0$. Furthermore, $\deg  p \le \dim V$.
+\end{theorem}
+
+\begin{proof}
+We proceed by induction on $\dim V$. If $\dim V = 0$, then $I$ is the zero operator, and we take $p(z) = 1$, which is monic and
+ has $\deg p = 0 \le 0$.
+
+Suppose $\dim V > 0$ and the result holds for all operators on spaces of smaller dimension. Pick a non-zero vector $v \in V$. 
+The list $v, Tv, \dots, T^{\dim V}v$ has length $1 + \dim V$, so it is linearly dependent. By linear dependence, lemma there exists a 
+smallest positive integer $m$ such that $T^m v$ is a linear combination of $v,Tv,\ldots,T^{m-1}v$. 
+Thus, there exist scalars $c_0, \dots, c_{m-1}$ such that:
+\[ c_0 v + c_1 Tv + \dots + c_{m-1} T^{m-1}v + T^m v = 0 \]
+Define the monic polynomial $q(z) = z^m + c_{m-1}z^{m-1} + \dots + c_0$. Then $q(T)v = 0$.
+
+By the choice of $m$, the list $v, Tv, \dots, T^{m-1}v$ is linearly independent. Since $q(T)(T^k v) = T^k(q(T)v) = 0$, all $m$ vectors 
+in this list are in $\text{null } q(T)$. Thus, $\dim \text{null } q(T) \ge m$ (by Independent list $>$ span list inequality).
+By the Fundamental theorem of linear maps,
+\[ \dim \text{range } q(T) = \dim V - \dim \text{null } q(T) \le \dim V - m \]
+Since $\text{range } q(T)$ is invariant under $T$, we apply the induction hypothesis to $T|_{\text{range } q(T)}$. There exists a monic 
+polynomial $s$ with $\deg s \le \dim V - m$ such that $s(T|_{\text{range } q(T)}) = 0$.
+
+Let $p = sq$. Then $p$ is monic and $\deg p = \deg s + \deg q \le (\dim V - m) + m = \dim V$.
+For any $v \in V$, $q(T)v \in \text{range } q(T)$, so $s(T)(q(T)v) = 0$. Thus $p(T) = 0$.
+\end{proof}
+
+Here is another way to prove the existence of minimal polynomial and its uniqueness. The proof below doesn't prove the inequality
+$\dim V \ge \deg p$.  
+
+\begin{proof}
+    let $n= \dim V$ then $\dim \LL(V) = n^2$. Choose the list 
+    \[ I,T,\ldots,T^{n^2} \] 
+    This list is linearly dependent because $n^2 + 1> n^2$. Let $m$ be the smallest positive number such that $I,T,\ldots,T^m$ is 
+    linearly dependent. By the linear dependence lemma we have,
+    \[ T^m+a_{m-1}T^{m-1}+\cdots+a_0I=0 \] 
+    Construct a monic polynomial $p(z)=z^m+a_{m-1}z^{m-1}+\cdots+a_0$. By the choice of $m$ this is the smallest degree monic polynomial
+    which satisfies $p(T)=0$.
+
+    For the uniqueness, suppose $p \neq q \in \PP(\FF)$ are monic polynomial such that $p(T)=0$ and $q(T)=0$. Let $h(z)=p(z)-q(z)$.
+    Notice that $\deg h < m$ because both are monic and have same degree and since $p \neq q$ we have $h \not \equiv 0$.
+    Thus $h(T)=p(T)-q(T)=0$ which contradicts our previous statement.
+\end{proof}
