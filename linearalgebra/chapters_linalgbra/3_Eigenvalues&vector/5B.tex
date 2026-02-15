@@ -70,3 +70,45 @@ $\dim V \ge \deg p$.
     Suppose $V$ is a finite-dimensional and $T \in \LL(V)$. Then the \textit{minimal polynomial} of $T$ is the unique monic polynomial 
     $p \in \PP(\FF)$ of smallest degree such that $p(T)=0$.
 \end{definition}
+
+\begin{proposition}
+    Suppose $V$ is finite-dimensional and $T \in \LL(V)$.
+    \begin{enumerate}
+        \item $\lambda$ is a root of the minimal polynomial $\iff$ $\lambda$ is an eigenvalues of $T$.
+        \item If $V$ is a complex vector space, then minimal polynomial has the form 
+            \[ (z-\lambda_1)\cdots(z-\lambda_m) \]
+            where $\lambda_1,\cdots,\lambda_m$ is a list of all eigenvalues of $T$, possibly with repetition.
+    \end{enumerate}
+\end{proposition}
+
+\begin{proof}
+    For $(1.)$,
+    Let $p$ be a minimal polynomial and suppose $\lambda$ is a root of the minimal polynomial.
+    Then, we know by \textbf{FTA} we can write $p$ as $p(z) = (z-\lambda)q(z)$ for some $q(z)$. Applying this Polynomial to $T$ we get 
+    \[ p(T)v=(T-\lambda I)(q(T)v)\]
+    for all $v \in V$. We know that $q(T)v \neq 0$ for some $v \in V$ because its not the minimal polynomial and $q(T)v=k$, 
+    thus $T(k)=\lambda k$. Hence $\lambda$ is an eigenvalue.
+
+    \bigskip
+
+    Now, let $\lambda \in \FF$ be a eigenvalue of $T$. Then, $T^k(v)=\lambda^k v$. Thus,
+    \[ p(T)v = p(\lambda) v \implies p(\lambda) v = 0 \implies p(\lambda)=0\] 
+    Thus $\lambda$ is a root of the polynomial.
+    
+    \bigskip
+
+    For $(2.)$, Use $(1.)$ and \textbf{FTA}.
+\end{proof}
+
+\begin{proposition}
+    Suppose $V$ is finite-dimensional, $T \in \LL(V)$ and $q \in \PP(\FF)$. Then $q(T)=0 \iff$ $q$ is a polynomial multiple of the minimal
+    polynomial.
+\end{proposition}
+
+\begin{proof}
+    Let $p$ be the minimal polynomial. Then, $\exists s,r$ such that $\deg r < \deg p$ and 
+    \[ q = ps + r \]
+    We have
+    \[ 0 = q(T)= p(T)s(T)+r(T)=r(T) \]
+    Thus $r \equiv 0$ as if not then would violet $p$ being the minimal polynomial. Thus, $q=ps$.
+\end{proof}
