@@ -112,3 +112,14 @@ $\dim V \ge \deg p$.
     \[ 0 = q(T)= p(T)s(T)+r(T)=r(T) \]
     Thus $r \equiv 0$ as if not then would violets $p$ being the minimal polynomial. Thus $q=ps$.
 \end{proof}
+
+\begin{proposition}
+    Suppose $V$ is a finite-dimensional, $T \in \LL(V)$, and $U$ is a subspace of $V$ that is invariant under $T$. Then the minimal
+    polynomial of $T$ is a multiple of minimal polynomial of $T|_U$. 
+\end{proposition}
+
+\begin{proof}
+    Let $p$ be the minimal polynomial of $T$. Then, $p(T)v=0$ for every $v \in V$. Therefore, $p(T)u = 0$ for every $u \in U$.
+    Since $T$ is invariant under $U$ we have $p(T|_U) =0$. Thus using previous results we get that $p$ is a multiple of the minimal 
+    polynomial of $T|_U$.
+\end{proof}
