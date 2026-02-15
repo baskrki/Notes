@@ -123,3 +123,16 @@ $\dim V \ge \deg p$.
     Since $T$ is invariant under $U$ we have $p(T|_U) =0$. Thus using previous results we get that $p$ is a multiple of the minimal 
     polynomial of $T|_U$.
 \end{proof}
+
+\begin{proposition}
+    Suppose $V$ is finite-dimensional and $T \in \LL(V)$. Then $T$ is not invertible if and only if constant term of minimal polynomial
+    $p$ of $T$ is $0$. 
+\end{proposition}
+
+\begin{proof}
+    \begin{align*}
+        T \text{ is not invertible } &\iff  0 \text{ is an eigenvalue of }T \\
+        &\iff 0 \text{ is a root of }p \\
+        &\iff \text{constant term of } p \text{ is zero.}
+    \end{align*}
+\end{proof}
