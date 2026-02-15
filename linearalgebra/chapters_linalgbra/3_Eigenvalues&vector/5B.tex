@@ -86,7 +86,7 @@ $\dim V \ge \deg p$.
     Let $p$ be a minimal polynomial and suppose $\lambda$ is a root of the minimal polynomial.
     Then, we know by \textbf{FTA} we can write $p$ as $p(z) = (z-\lambda)q(z)$ for some $q(z)$. Applying this Polynomial to $T$ we get 
     \[ p(T)v=(T-\lambda I)(q(T)v)\]
-    for all $v \in V$. We know that $q(T)v \neq 0$ for some $v \in V$ because its not the minimal polynomial and $q(T)v=k$, 
+    for all $v \in V$. We know that $q(T)v \neq 0$ for some $v \in V$ because $\deg q < \deg p$ and $q(T)v=k$, 
     thus $T(k)=\lambda k$. Hence $\lambda$ is an eigenvalue.
 
     \bigskip
@@ -110,5 +110,5 @@ $\dim V \ge \deg p$.
     \[ q = ps + r \]
     We have
     \[ 0 = q(T)= p(T)s(T)+r(T)=r(T) \]
-    Thus $r \equiv 0$ as if not then would violet $p$ being the minimal polynomial. Thus, $q=ps$.
+    Thus $r \equiv 0$ as if not then would violets $p$ being the minimal polynomial. Thus $q=ps$.
 \end{proof}
