@@ -136,3 +136,26 @@ $\dim V \ge \deg p$.
         &\iff \text{constant term of } p \text{ is zero.}
     \end{align*}
 \end{proof}
+
+\subsubsection{Eigenvalue on Odd-Dimensional Real Vector Space}
+
+\begin{proposition}
+    Suppose $\FF=\RR$ and $V$ is finite-dimensional. Suppose also that $T \in \LL(V)$ and $b,c \in \RR$ with $b^2 < 4c$. Then 
+    $\dim \Null(T^2 + bT+cI)$ is an even number. 
+\end{proposition}
+
+\begin{proof}
+    We know that $\dim \Null (T^2+bT+cI)$ is invariant under $T$. Thus, we will work on $V'=\Null (T^2+bT+cI)$ and $T'=T|_{\Null (T^2+bT+cI)}$.
+    Let $v \in \Null (T^2+bT+cI)$ such that $Tv = \lambda v$.
+    \[ 0 = (T^2+bT+cI)v = (\lambda^2 + b \lambda + c)v = \bigg( \bigg(\lambda+ \frac{b}{2}\bigg)^2+c-\frac{b^2}{4} \bigg)v   \]
+    Thus $v=0$ as the first term is positive. This proves that $T'$ has no eigenvalue.
+
+    Let $U$ be a subspace of $V'$ that is invariant under $T'$ and has the largest dimension among all subspaces of $V'$ that are invariant 
+    under $T'$ and have even dimension. If $U=V'$ then we are done, if not then suppose $w \in V'$ and $w \not \in U$.
+    Let $W = \Span(w,Tw)$. Then $W$ is invariant under $T'$ and $\dim W = 2$. Also,
+    \[ \dim (U+W) = \dim U + \dim W - \dim (U \cap W) = \dim U + 2\]
+    where $\dim (U \cap W) = \{0\}$ as $\dim (U \cap W) \le 2$ and if $\dim (U \cap W) = 2 = \dim W$ then $U \cap W =W$ but that is false
+    as $w \not \in U$ but $w \in W$. Also, $\dim (U \cap W) =1$ implies that $T'$ has an eigenvalue.
+    Because $U+W$ is invariant under $T'$ , the equation above shows that there exists a subspace of $V'$ invariant under $T'$ 
+    of even dimension larger than $\dim U$. Thus the assumption that $U \neq V'$ was incorrect. Hence $V'$ has even dimension.
+\end{proof}
