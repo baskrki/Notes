@@ -1,5 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1771986647.3191 "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" "linalgebra.pdf" "linalgebra" 1771986648.29129 0
+["pdflatex"] 1771987450.93744 "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" "linalgebra.pdf" "linalgebra" 1771987451.65546 0
+  "%OUTDIR%/linalgebra.aux" 1771987451.56846 13149 a9480f1ac2ffb54efa63c51627c554bb "pdflatex"
+  "%OUTDIR%/linalgebra.out" 1771987451.56946 8016 07ee539ae9ba70f3c290c415bc72658e "pdflatex"
+  "%OUTDIR%/linalgebra.toc" 1771987451.57046 7960 316bbfa680c56cca40c5b1c62491a54c "pdflatex"
   "/home/basudevkarki/Desktop/Notes/linearalgebra/linalgebra.tex" 1771908684.64158 2219 08978e7d2bc7ee6fc80a97f851c854b8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -117,15 +120,12 @@
   "chapters_linalgbra/1_Linear_Maps/3F.tex" 1764297050.52492 10134 ae0ffa3b7b1a9c0bf0b5502f3e49df59 ""
   "chapters_linalgbra/2_Polynomials/poly.tex" 1764296316.28247 2596 0030937fa0962e32f66c43f03082a413 ""
   "chapters_linalgbra/3_Eigenvalues&vector/5A.tex" 1770440590.62719 10767 850f3368f809016deabb7afbf7a1857f ""
-  "chapters_linalgbra/3_Eigenvalues&vector/5B.tex" 1771986646.16801 9077 d4bd5187869a9712e25d86d240b103fa ""
-  "linalgebra.aux" 1771986648.146 13053 7365c981909d0081ac2c1fc4833ae5dc "pdflatex"
-  "linalgebra.out" 1771986648.148 8016 07ee539ae9ba70f3c290c415bc72658e "pdflatex"
+  "chapters_linalgbra/3_Eigenvalues&vector/5B.tex" 1771987449.83725 9305 098869794a8ed2a7ecbfec36e92e11e5 ""
   "linalgebra.tex" 1771908684.64158 2219 08978e7d2bc7ee6fc80a97f851c854b8 ""
-  "linalgebra.toc" 1771986648.14958 7905 671a5d67273614ea76933ad1e5de349f "pdflatex"
   (generated)
-  "linalgebra.aux"
-  "linalgebra.log"
-  "linalgebra.out"
+  "%OUTDIR%/linalgebra.aux"
+  "%OUTDIR%/linalgebra.log"
+  "%OUTDIR%/linalgebra.out"
+  "%OUTDIR%/linalgebra.toc"
   "linalgebra.pdf"
-  "linalgebra.toc"
   (rewritten before read)
