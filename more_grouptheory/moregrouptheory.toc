@@ -1,2 +1,1 @@
-\contentsline {section}{\numberline {1}H\"older's Program}{2}{section.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
