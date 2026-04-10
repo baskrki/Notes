@@ -1,0 +1,68 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{morebry}[2025/01/01 Custom Theorem Styles]
+
+% ── Required packages ──────────────────────────────────────────
+\RequirePackage{amsmath, amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{thmtools}
+\RequirePackage[framemethod=TikZ]{mdframed}
+\RequirePackage[dvipsnames]{xcolor}
+
+% ── Colors ─────────────────────────────────────────────────────
+\definecolor{probgreen}{RGB}{30, 130, 75}
+
+% ── Problem ────────────────────────────────────────────────────
+\declaretheoremstyle[
+    mdframed={
+        linewidth=1pt,
+        linecolor=probgreen,
+        backgroundcolor=probgreen!4,
+        innertopmargin=10pt,
+        innerbottommargin=10pt,
+        innerleftmargin=10pt,
+        innerrightmargin=10pt,
+    },
+    headfont=\bfseries\color{probgreen},
+    bodyfont=\normalfont,
+    headpunct={.},
+    postheadspace={0.5em},
+]{probstyle}
+\declaretheorem[style=probstyle, name=\sffamily Problem, numbered=yes]{probl}
+
+% ── Theorem ────────────────────────────────────────────────────
+\declaretheoremstyle[
+    mdframed={
+        linewidth=1pt,
+        linecolor=blue!70!black,
+        backgroundcolor=blue!5,
+        innertopmargin=10pt,
+        innerbottommargin=10pt,
+        innerleftmargin=10pt,
+        innerrightmargin=10pt,
+    },
+    headfont=\bfseries\color{blue!70!black},
+    bodyfont=\normalfont,
+    headpunct={.},
+    postheadspace={0.5em},
+]{thmstyle}
+\declaretheorem[style=thmstyle, name=\sffamily Theorem, numbered=yes]{thm}
+
+% ── Proposition ────────────────────────────────────────────────
+\declaretheoremstyle[
+    mdframed={
+        linewidth=1pt,
+        linecolor=orange!80!black,
+        backgroundcolor=orange!5,
+        innertopmargin=10pt,
+        innerbottommargin=10pt,
+        innerleftmargin=10pt,
+        innerrightmargin=10pt,
+    },
+    headfont=\bfseries\color{orange!80!black},
+    bodyfont=\normalfont,
+    headpunct={.},
+    postheadspace={0.5em},
+]{propstyle}
+\declaretheorem[style=propstyle, name=\sffamily Proposition, numbered=yes]{prop}
+
+\endinput
