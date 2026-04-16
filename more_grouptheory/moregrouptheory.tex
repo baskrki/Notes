@@ -1,16 +1,37 @@
-\documentclass{scrartcl}
-\usepackage[sexy]{evan}
-\usepackage[margin=1in]{geometry}
-\usepackage{morebry}
+\documentclass[12pt]{report}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
 
-\ihead{More Group Theory}
-\ohead{Basu Dev Karki}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{\nouppercase{\leftmark}}
+\fancyhead[L]{\nouppercase{\rightmark}}
+\fancyfoot[C]{\thepage}
+
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}  % only store chapter title, no "Chapter X"
+}
+
+\renewcommand{\sectionmark}[1]{%
+  \markright{#1}  % store only section title, no "X.Y"
+}
+
+\theoremstyle{definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{remark}{Remark}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corallary}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{observation}{Observation}
+\newtheorem{definition}{Definition}
 
 \begin{document}
 
-\tableofcontents
-
-\eject
-
+{
+    \thispagestyle{plain}
+    \tableofcontents
+    \eject
+}
 
 \end{document}
